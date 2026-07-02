@@ -13,10 +13,9 @@ RUN npm install
 WORKDIR /app
 COPY . .
 
-COPY scripts/docker-dev.sh /usr/local/bin/docker-dev.sh
-RUN chmod +x /usr/local/bin/docker-dev.sh
+RUN chmod +x scripts/docker-dev.sh
 
 WORKDIR /app/web
 EXPOSE 3001
 
-CMD ["docker-dev.sh"]
+CMD ["/app/scripts/docker-dev.sh"]

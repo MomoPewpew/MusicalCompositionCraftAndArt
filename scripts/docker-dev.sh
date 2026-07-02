@@ -14,4 +14,5 @@ if [[ ! -f data/examples.json ]]; then
 fi
 
 cd web
+npm install
 exec npm run dev
