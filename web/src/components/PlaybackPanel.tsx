@@ -5,6 +5,12 @@ import { Midi } from "@tonejs/midi";
 import * as Tone from "tone";
 
 import { loadPianoSoundfont, resetPianoSoundfont } from "@/lib/pianoSoundfont";
+import {
+  readGlobalVolume,
+  readMidiTempo,
+  writeGlobalVolume,
+  writeMidiTempo
+} from "@/lib/playbackPreferences";
 
 const MIDI_GAIN_BOOST = 2;
 
@@ -32,6 +38,7 @@ type PlaybackShellProps = {
   currentTime: number;
   duration: number;
   volume: number;
+  volumeMax?: number;
   onPlayPause: () => void;
   onSeek: (value: number) => void;
   onVolumeChange: (value: number) => void;
@@ -47,6 +54,7 @@ function PlaybackShell({
   currentTime,
   duration,
   volume,
+  volumeMax = 100,
   onPlayPause,
   onSeek,
   onVolumeChange,
@@ -96,19 +104,26 @@ function PlaybackShell({
             aria-label="Seek"
           />
 
-          <div className="flex min-w-[8rem] items-center gap-2">
+          <div className="flex min-w-[10rem] items-center gap-2">
             <span className="text-[11px] text-zinc-500 dark:text-zinc-500">Vol</span>
             <input
               type="range"
               min={0}
-              max={1}
-              step={0.01}
+              max={volumeMax}
+              step={1}
               value={volume}
               onChange={(event) => onVolumeChange(Number(event.target.value))}
               disabled={disabled}
               className="flex-1"
               aria-label="Volume"
+              aria-valuemin={0}
+              aria-valuemax={volumeMax}
+              aria-valuenow={volume}
+              aria-valuetext={`${volume}%`}
             />
+            <span className="min-w-[2.75rem] text-right text-[11px] tabular-nums text-zinc-500 dark:text-zinc-500">
+              {volume}%
+            </span>
           </div>
         </div>
 
@@ -123,8 +138,18 @@ export function AudioPlayback({ src }: { src: string }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(0.9);
+  const [volume, setVolumeState] = useState(90);
   const [ended, setEnded] = useState(false);
+
+  useEffect(() => {
+    setVolumeState(Math.min(readGlobalVolume(), 100));
+  }, []);
+
+  const setVolume = useCallback((value: number) => {
+    const clamped = Math.min(100, Math.max(0, Math.round(value)));
+    setVolumeState(clamped);
+    writeGlobalVolume(clamped);
+  }, []);
 
   useEffect(() => {
     setEnded(false);
@@ -156,7 +181,7 @@ export function AudioPlayback({ src }: { src: string }) {
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = volume;
+      audioRef.current.volume = volume / 100;
     }
   }, [volume]);
 
@@ -212,13 +237,39 @@ export function MidiPlayback({ src }: { src: string }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(1);
-  const [tempo, setTempo] = useState(100);
+  const [volume, setVolumeState] = useState(100);
+  const [tempo, setTempoState] = useState(100);
   const [ended, setEnded] = useState(false);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const tempoRef = useRef(100);
 
-  const applyVolume = useCallback((piano: Awaited<ReturnType<typeof loadPianoSoundfont>>, level: number) => {
-    piano.masterGain.gain.value = level * MIDI_GAIN_BOOST;
+  useEffect(() => {
+    setVolumeState(readGlobalVolume());
+  }, []);
+
+  useEffect(() => {
+    const savedTempo = readMidiTempo(src);
+    setTempoState(savedTempo);
+    tempoRef.current = savedTempo;
+  }, [src]);
+
+  const setVolume = useCallback((value: number) => {
+    const clamped = Math.min(200, Math.max(0, Math.round(value)));
+    setVolumeState(clamped);
+    writeGlobalVolume(clamped);
+  }, []);
+
+  const setTempo = useCallback(
+    (value: number) => {
+      const clamped = Math.min(150, Math.max(50, Math.round(value)));
+      setTempoState(clamped);
+      writeMidiTempo(src, clamped);
+    },
+    [src]
+  );
+
+  const applyVolume = useCallback((piano: Awaited<ReturnType<typeof loadPianoSoundfont>>, percent: number) => {
+    piano.masterGain.gain.value = (percent / 100) * MIDI_GAIN_BOOST;
   }, []);
 
   const ensurePiano = useCallback(async () => {
@@ -267,7 +318,6 @@ export function MidiPlayback({ src }: { src: string }) {
     []
   );
 
-  const tempoRef = useRef(tempo);
   tempoRef.current = tempo;
 
   useEffect(() => {
@@ -455,6 +505,7 @@ export function MidiPlayback({ src }: { src: string }) {
         currentTime={currentTime}
         duration={duration}
         volume={volume}
+        volumeMax={200}
         onPlayPause={onPlayPause}
         onSeek={onSeek}
         onVolumeChange={setVolume}
