@@ -55,7 +55,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y openssh-client sshpass
 
-      - name: Deploy via SFTP
+      - name: Deploy via SFTP (upload out/ → landing/files/)
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
@@ -65,7 +65,8 @@ jobs:
         run: |
           test -d out
           : "${SSH_PORT:=22}"
-          : "${SSH_TARGET_DIR:=.}"
+          # SFTP accounts are usually chrooted to landing/; site files go in landing/files/.
+          : "${SSH_TARGET_DIR:=files}"
 
           SSH_HOST_CLEAN="$(printf %s "${SSH_HOST}" | tr -d '\r\n')"
           SSH_USERNAME_CLEAN="$(printf %s "${SSH_USERNAME}" | tr -d '\r\n')"
