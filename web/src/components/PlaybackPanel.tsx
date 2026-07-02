@@ -24,6 +24,7 @@ type PlaybackShellProps = {
   label: string;
   badge: string;
   isPlaying: boolean;
+  ended: boolean;
   currentTime: number;
   duration: number;
   volume: number;
@@ -38,6 +39,7 @@ function PlaybackShell({
   label,
   badge,
   isPlaying,
+  ended,
   currentTime,
   duration,
   volume,
@@ -47,6 +49,7 @@ function PlaybackShell({
   footer,
   disabled = false
 }: PlaybackShellProps) {
+  const playButtonLabel = isPlaying ? "Pause" : ended ? "Replay" : "Play";
   return (
     <div className={cardClass}>
       <div className="mb-2 flex items-center justify-between gap-3">
@@ -70,7 +73,7 @@ function PlaybackShell({
               "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10 dark:focus-visible:ring-white/20"
             ].join(" ")}
           >
-            {isPlaying ? "Pause" : "Play"}
+            {playButtonLabel}
           </button>
 
           <div className="min-w-[5.5rem] text-xs tabular-nums text-zinc-600 dark:text-zinc-400">
@@ -117,15 +120,22 @@ export function AudioPlayback({ src }: { src: string }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(0.9);
+  const [ended, setEnded] = useState(false);
 
   useEffect(() => {
+    setEnded(false);
+    setIsPlaying(false);
+    setCurrentTime(0);
     const audio = new Audio(src);
     audio.preload = "metadata";
     audioRef.current = audio;
 
     const onTimeUpdate = () => setCurrentTime(audio.currentTime);
     const onLoaded = () => setDuration(audio.duration || 0);
-    const onEnded = () => setIsPlaying(false);
+    const onEnded = () => {
+      setIsPlaying(false);
+      setEnded(true);
+    };
 
     audio.addEventListener("timeupdate", onTimeUpdate);
     audio.addEventListener("loadedmetadata", onLoaded);
@@ -149,27 +159,36 @@ export function AudioPlayback({ src }: { src: string }) {
   const onPlayPause = useCallback(async () => {
     const audio = audioRef.current;
     if (!audio) return;
-    if (audio.paused) {
-      await audio.play();
-      setIsPlaying(true);
-    } else {
+    if (!audio.paused) {
       audio.pause();
       setIsPlaying(false);
+      return;
     }
-  }, []);
+    if (ended || (duration > 0 && audio.currentTime >= duration - 0.05)) {
+      audio.currentTime = 0;
+      setCurrentTime(0);
+      setEnded(false);
+    }
+    await audio.play();
+    setIsPlaying(true);
+  }, [duration, ended]);
 
   const onSeek = useCallback((value: number) => {
     const audio = audioRef.current;
     if (!audio) return;
     audio.currentTime = value;
     setCurrentTime(value);
-  }, []);
+    if (duration > 0 && value < duration - 0.05) {
+      setEnded(false);
+    }
+  }, [duration]);
 
   return (
     <PlaybackShell
       label="Mockup"
       badge={src.split(".").pop()?.toLowerCase() ?? "audio"}
       isPlaying={isPlaying}
+      ended={ended}
       currentTime={currentTime}
       duration={duration}
       volume={volume}
@@ -191,6 +210,7 @@ export function MidiPlayback({ src }: { src: string }) {
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(0.8);
   const [tempo, setTempo] = useState(100);
+  const [ended, setEnded] = useState(false);
 
   const rebuildPart = useCallback(
     (midi: Midi, tempoPercent: number) => {
@@ -256,6 +276,7 @@ export function MidiPlayback({ src }: { src: string }) {
       baseBpmRef.current = midi.header.tempos[0]?.bpm ?? 120;
       rebuildPart(midi, tempoRef.current);
       setCurrentTime(0);
+      setEnded(false);
       setReady(true);
     }
 
@@ -290,10 +311,18 @@ export function MidiPlayback({ src }: { src: string }) {
   useEffect(() => {
     const interval = window.setInterval(() => {
       if (!isPlaying) return;
-      setCurrentTime(Tone.Transport.seconds);
+      const time = Tone.Transport.seconds;
+      setCurrentTime(time);
+      if (duration > 0 && time >= duration - 0.05) {
+        Tone.Transport.pause();
+        Tone.Transport.seconds = duration;
+        setCurrentTime(duration);
+        setIsPlaying(false);
+        setEnded(true);
+      }
     }, 100);
     return () => window.clearInterval(interval);
-  }, [isPlaying]);
+  }, [duration, isPlaying]);
 
   useEffect(() => {
     if (synthRef.current) {
@@ -307,18 +336,32 @@ export function MidiPlayback({ src }: { src: string }) {
     if (isPlaying) {
       Tone.Transport.pause();
       setIsPlaying(false);
-    } else {
-      Tone.Transport.start();
-      setIsPlaying(true);
+      return;
     }
-  }, [isPlaying, ready]);
+    if (ended || (duration > 0 && currentTime >= duration - 0.05)) {
+      const midi = midiRef.current;
+      if (midi) {
+        Tone.Transport.stop();
+        Tone.Transport.cancel();
+        rebuildPart(midi, tempo);
+      }
+      Tone.Transport.seconds = 0;
+      setCurrentTime(0);
+      setEnded(false);
+    }
+    Tone.Transport.start();
+    setIsPlaying(true);
+  }, [currentTime, duration, ended, isPlaying, ready, rebuildPart, tempo]);
 
   const onSeek = useCallback(
     (value: number) => {
       Tone.Transport.seconds = value;
       setCurrentTime(value);
+      if (duration > 0 && value < duration - 0.05) {
+        setEnded(false);
+      }
     },
-    []
+    [duration]
   );
 
   const tempoFooter = (
@@ -347,6 +390,7 @@ export function MidiPlayback({ src }: { src: string }) {
       label="MIDI"
       badge="mid"
       isPlaying={isPlaying}
+      ended={ended}
       currentTime={currentTime}
       duration={duration}
       volume={volume}
