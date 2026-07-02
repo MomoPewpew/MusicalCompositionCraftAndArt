@@ -1,0 +1,21 @@
+Piano samples for in-browser MIDI playback
+==========================================
+
+Instrument: acoustic_grand_piano from FluidR3_GM
+
+Fluid (R3) SoundFont
+Copyright (c) 2000-2002, 2008 Frank Wen <getfrank@gmail.com>
+
+Released under the MIT License. See:
+https://github.com/pianobooster/fluid-soundfont
+
+The instrument data used here is derived from FluidR3_GM and packaged
+in the format maintained by the midi-js-soundfonts project:
+https://github.com/gleitz/midi-js-soundfonts
+
+That redistribution documents the FluidR3_GM bank under Creative Commons
+Attribution 3.0 (https://creativecommons.org/licenses/by/3.0/).
+
+Attribution for this site:
+- Fluid R3 / FluidR3_GM by Frank Wen (MIT)
+- Soundfont packaging: midi-js-soundfonts (CC BY 3.0)

@@ -20,6 +20,7 @@ web/.next/
 out/
 web/out/
 web/public/assets/
+web/public/soundfonts/FluidR3_GM/*.js
 web/src/generated/
 
 # Environment and secrets

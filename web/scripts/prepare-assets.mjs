@@ -21,7 +21,28 @@ function toPublicPath(relativePath) {
   return `/assets/${relativePath.replace(/\\/g, "/")}`;
 }
 
-function main() {
+const SOUNDFONT_URL =
+  "https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/acoustic_grand_piano-ogg.js";
+const soundfontDir = join(webRoot, "public", "soundfonts", "FluidR3_GM");
+const soundfontFile = join(soundfontDir, "acoustic_grand_piano-ogg.js");
+
+async function ensureSoundfont() {
+  mkdirSync(soundfontDir, { recursive: true });
+  if (existsSync(soundfontFile)) {
+    console.log("Soundfont already present:", relative(webRoot, soundfontFile));
+    return;
+  }
+  console.log("Downloading piano soundfont...");
+  const response = await fetch(SOUNDFONT_URL);
+  if (!response.ok) {
+    throw new Error(`Failed to download soundfont: HTTP ${response.status}`);
+  }
+  const buffer = Buffer.from(await response.arrayBuffer());
+  writeFileSync(soundfontFile, buffer);
+  console.log(`Wrote ${relative(webRoot, soundfontFile)} (${buffer.length} bytes)`);
+}
+
+async function main() {
   if (!existsSync(manifestPath)) {
     console.error(`Manifest not found: ${manifestPath}`);
     console.error("Run: python3 scripts/build_examples_manifest.py");
@@ -100,8 +121,12 @@ function main() {
   };
 
   writeFileSync(generatedManifestPath, `${JSON.stringify(generated, null, 2)}\n`, "utf8");
+  await ensureSoundfont();
   console.log(`Prepared assets: ${copied} copied, ${missing} missing`);
   console.log(`Wrote ${relative(webRoot, generatedManifestPath)}`);
 }
 
-main();
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

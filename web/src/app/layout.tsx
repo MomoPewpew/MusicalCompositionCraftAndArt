@@ -9,6 +9,8 @@ import { getManifest } from "@/lib/examples";
 
 const manifest = getManifest();
 const SOURCE_REPO_URL = "https://github.com/MomoPewpew/MusicalCompositionCraftAndArt";
+const REALMUSIC_EXAMPLES_URL =
+  "https://textbook.realmusictheory.com/?book=Musical+Composition+Craft+And+Art";
 
 export const metadata: Metadata = {
   metadataBase: process.env.NEXT_PUBLIC_SITE_URL
@@ -63,6 +65,19 @@ export default function RootLayout({
                 , <em>Musical Composition: Craft and Art</em> (Yale University Press).
               </div>
               <div>
+                Sheet music and MIDI compiled by{" "}
+                <span className="font-medium text-zinc-800 dark:text-zinc-200">e7mac</span> at{" "}
+                <a
+                  href={REALMUSIC_EXAMPLES_URL}
+                  className="underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Real Music Theory
+                </a>
+                .
+              </div>
+              <div>
                 Made by <span className="font-medium text-zinc-800 dark:text-zinc-200">Marijn Tepas</span>.{" "}
                 <a
                   href={SOURCE_REPO_URL}
@@ -73,6 +88,27 @@ export default function RootLayout({
                   Source code
                 </a>
                 .
+              </div>
+              <div>
+                MIDI piano:{" "}
+                <a
+                  href="https://github.com/pianobooster/fluid-soundfont"
+                  className="underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  FluidR3_GM
+                </a>{" "}
+                by <span className="font-medium text-zinc-800 dark:text-zinc-200">Frank Wen</span> (MIT);{" "}
+                <a
+                  href="https://github.com/gleitz/midi-js-soundfonts"
+                  className="underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  web samples
+                </a>{" "}
+                by <span className="font-medium text-zinc-800 dark:text-zinc-200">Benjamin Gleitzman</span> (CC BY 3.0).
               </div>
             </footer>
           </div>

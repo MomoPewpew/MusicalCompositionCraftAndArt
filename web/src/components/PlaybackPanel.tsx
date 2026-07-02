@@ -4,6 +4,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Midi } from "@tonejs/midi";
 import * as Tone from "tone";
 
+import { loadPianoSoundfont, resetPianoSoundfont } from "@/lib/pianoSoundfont";
+
+const MIDI_GAIN_BOOST = 2;
+
 function formatTime(seconds: number): string {
   if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
   const whole = Math.floor(seconds);
@@ -201,22 +205,38 @@ export function AudioPlayback({ src }: { src: string }) {
 
 export function MidiPlayback({ src }: { src: string }) {
   const midiRef = useRef<Midi | null>(null);
-  const synthRef = useRef<Tone.PolySynth | null>(null);
+  const pianoRef = useRef<Awaited<ReturnType<typeof loadPianoSoundfont>> | null>(null);
   const partRef = useRef<Tone.Part | null>(null);
   const baseBpmRef = useRef(120);
   const [ready, setReady] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(0.8);
+  const [volume, setVolume] = useState(1);
   const [tempo, setTempo] = useState(100);
   const [ended, setEnded] = useState(false);
+  const [loadError, setLoadError] = useState<string | null>(null);
+
+  const applyVolume = useCallback((piano: Awaited<ReturnType<typeof loadPianoSoundfont>>, level: number) => {
+    piano.masterGain.gain.value = level * MIDI_GAIN_BOOST;
+  }, []);
+
+  const ensurePiano = useCallback(async () => {
+    if (pianoRef.current) return pianoRef.current;
+    try {
+      pianoRef.current = await loadPianoSoundfont();
+    } catch {
+      resetPianoSoundfont();
+      pianoRef.current = await loadPianoSoundfont();
+    }
+    return pianoRef.current;
+  }, []);
 
   const rebuildPart = useCallback(
     (midi: Midi, tempoPercent: number) => {
       partRef.current?.dispose();
-      const synth = synthRef.current;
-      if (!synth) return;
+      const piano = pianoRef.current;
+      if (!piano) return;
 
       const events: Array<{ time: number; note: string; duration: number; velocity: number }> = [];
       for (const track of midi.tracks) {
@@ -231,12 +251,10 @@ export function MidiPlayback({ src }: { src: string }) {
       }
 
       const part = new Tone.Part((time, value: { note: string; duration: number; velocity: number }) => {
-        synth.triggerAttackRelease(
-          value.note,
-          value.duration,
-          time,
-          Math.max(0.05, value.velocity)
-        );
+        piano.instrument.play(value.note, time, {
+          duration: value.duration,
+          gain: Math.max(0.05, value.velocity)
+        });
       }, events).start(0);
 
       part.loop = false;
@@ -257,27 +275,47 @@ export function MidiPlayback({ src }: { src: string }) {
 
     async function load() {
       setReady(false);
+      setLoadError(null);
       partRef.current?.dispose();
       partRef.current = null;
-      synthRef.current?.dispose();
-      synthRef.current = null;
+      pianoRef.current?.instrument.stop();
+      pianoRef.current = null;
+      midiRef.current = null;
 
-      const response = await fetch(src);
-      const buffer = await response.arrayBuffer();
-      const midi = new Midi(buffer);
-      if (cancelled) return;
+      try {
+        const midiResponse = await fetch(src);
+        if (!midiResponse.ok) {
+          throw new Error(`MIDI fetch failed (${midiResponse.status})`);
+        }
 
-      const synth = new Tone.PolySynth(Tone.Synth, {
-        envelope: { attack: 0.005, decay: 0.2, sustain: 0.3, release: 0.8 }
-      }).toDestination();
+        const buffer = await midiResponse.arrayBuffer();
+        const midi = new Midi(buffer);
+        if (cancelled) return;
 
-      midiRef.current = midi;
-      synthRef.current = synth;
-      baseBpmRef.current = midi.header.tempos[0]?.bpm ?? 120;
-      rebuildPart(midi, tempoRef.current);
-      setCurrentTime(0);
-      setEnded(false);
-      setReady(true);
+        midiRef.current = midi;
+        baseBpmRef.current = midi.header.tempos[0]?.bpm ?? 120;
+        const factor = tempoRef.current / 100;
+        setDuration(midi.duration / factor);
+        setCurrentTime(0);
+        setEnded(false);
+        setReady(true);
+
+        void ensurePiano()
+          .then((piano) => {
+            if (cancelled || midiRef.current !== midi) return;
+            applyVolume(piano, volume);
+            rebuildPart(midi, tempoRef.current);
+          })
+          .catch((error) => {
+            if (cancelled) return;
+            resetPianoSoundfont();
+            console.error("Piano soundfont failed to preload:", error);
+          });
+      } catch (error) {
+        if (cancelled) return;
+        console.error("MIDI playback failed to load:", error);
+        setLoadError("Playback failed to load. Refresh the page to try again.");
+      }
     }
 
     void load();
@@ -287,12 +325,13 @@ export function MidiPlayback({ src }: { src: string }) {
       Tone.Transport.stop();
       Tone.Transport.cancel();
       partRef.current?.dispose();
-      synthRef.current?.dispose();
+      pianoRef.current?.instrument.stop();
       partRef.current = null;
-      synthRef.current = null;
+      pianoRef.current = null;
       midiRef.current = null;
     };
-  }, [rebuildPart, src]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- volume applied via separate effect
+  }, [applyVolume, ensurePiano, rebuildPart, src]);
 
   useEffect(() => {
     const midi = midiRef.current;
@@ -325,14 +364,34 @@ export function MidiPlayback({ src }: { src: string }) {
   }, [duration, isPlaying]);
 
   useEffect(() => {
-    if (synthRef.current) {
-      synthRef.current.volume.value = Tone.gainToDb(volume);
+    if (pianoRef.current) {
+      applyVolume(pianoRef.current, volume);
     }
-  }, [volume]);
+  }, [applyVolume, volume]);
 
   const onPlayPause = useCallback(async () => {
     if (!ready) return;
     await Tone.start();
+    const audioContext = Tone.getContext().rawContext as AudioContext;
+    if (audioContext.state === "suspended") {
+      await audioContext.resume();
+    }
+
+    const midi = midiRef.current;
+    if (!midi) return;
+
+    try {
+      const piano = await ensurePiano();
+      applyVolume(piano, volume);
+      if (!partRef.current) {
+        rebuildPart(midi, tempo);
+      }
+    } catch (error) {
+      resetPianoSoundfont();
+      console.error("Piano soundfont failed to load:", error);
+      setLoadError("Piano sound failed to load. Try again.");
+      return;
+    }
     if (isPlaying) {
       Tone.Transport.pause();
       setIsPlaying(false);
@@ -343,6 +402,7 @@ export function MidiPlayback({ src }: { src: string }) {
       if (midi) {
         Tone.Transport.stop();
         Tone.Transport.cancel();
+        pianoRef.current?.instrument.stop();
         rebuildPart(midi, tempo);
       }
       Tone.Transport.seconds = 0;
@@ -351,7 +411,7 @@ export function MidiPlayback({ src }: { src: string }) {
     }
     Tone.Transport.start();
     setIsPlaying(true);
-  }, [currentTime, duration, ended, isPlaying, ready, rebuildPart, tempo]);
+  }, [applyVolume, currentTime, duration, ended, ensurePiano, isPlaying, ready, rebuildPart, tempo, volume]);
 
   const onSeek = useCallback(
     (value: number) => {
@@ -386,20 +446,31 @@ export function MidiPlayback({ src }: { src: string }) {
   );
 
   return (
-    <PlaybackShell
-      label="MIDI"
-      badge="mid"
-      isPlaying={isPlaying}
-      ended={ended}
-      currentTime={currentTime}
-      duration={duration}
-      volume={volume}
-      onPlayPause={onPlayPause}
-      onSeek={onSeek}
-      onVolumeChange={setVolume}
-      footer={tempoFooter}
-      disabled={!ready}
-    />
+    <div>
+      <PlaybackShell
+        label="MIDI"
+        badge="piano"
+        isPlaying={isPlaying}
+        ended={ended}
+        currentTime={currentTime}
+        duration={duration}
+        volume={volume}
+        onPlayPause={onPlayPause}
+        onSeek={onSeek}
+        onVolumeChange={setVolume}
+        footer={tempoFooter}
+        disabled={!ready}
+      />
+      {loadError ? <MidiLoadError message={loadError} /> : null}
+    </div>
+  );
+}
+
+function MidiLoadError({ message }: { message: string }) {
+  return (
+    <p className="mt-2 text-xs text-amber-700 dark:text-amber-300" role="status">
+      {message}
+    </p>
   );
 }
 
@@ -409,7 +480,7 @@ export function MockupUnavailableBlurb() {
       <div className="mb-2 text-sm font-medium text-zinc-950 dark:text-zinc-100">Mockup</div>
       <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
         No mockup is available for this example yet. Use the MIDI playback below to hear
-        the example with a basic synthesized sound.
+        the example with a sampled piano soundfont.
       </p>
     </div>
   );
