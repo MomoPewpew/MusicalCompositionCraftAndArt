@@ -12,6 +12,9 @@ const SOURCE_REPO_URL = "https://github.com/MomoPewpew/MusicalCompositionCraftAn
 const REALMUSIC_EXAMPLES_URL =
   "https://textbook.realmusictheory.com/?book=Musical+Composition+Craft+And+Art";
 
+const footerLinkClass =
+  "underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40";
+
 export const metadata: Metadata = {
   metadataBase: process.env.NEXT_PUBLIC_SITE_URL
     ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
@@ -59,56 +62,57 @@ export default function RootLayout({
               <main className="min-w-0 flex-1 py-10">{children}</main>
             </div>
 
-            <footer className="mx-auto max-w-7xl space-y-1 px-6 pb-12 pt-6 text-xs text-zinc-600 dark:text-zinc-500">
-              <div>
-                Examples from <span className="font-medium text-zinc-800 dark:text-zinc-200">Alan Belkin</span>
-                , <em>Musical Composition: Craft and Art</em> (Yale University Press).
+            <footer className="mx-auto max-w-7xl space-y-2 px-6 pb-12 pt-6 text-xs text-zinc-600 dark:text-zinc-500">
+              <div className="grid gap-2 sm:grid-cols-2">
+                <div>
+                  Examples from{" "}
+                  <span className="font-medium text-zinc-800 dark:text-zinc-200">Alan Belkin</span>,{" "}
+                  <em>Musical Composition: Craft and Art</em> (Yale University Press)
+                </div>
+                <div>
+                  Sheet music and MIDI by{" "}
+                  <span className="font-medium text-zinc-800 dark:text-zinc-200">e7mac</span> at{" "}
+                  <a
+                    href={REALMUSIC_EXAMPLES_URL}
+                    className={footerLinkClass}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Real Music Theory
+                  </a>
+                </div>
               </div>
-              <div>
-                Sheet music and MIDI compiled by{" "}
-                <span className="font-medium text-zinc-800 dark:text-zinc-200">e7mac</span> at{" "}
-                <a
-                  href={REALMUSIC_EXAMPLES_URL}
-                  className="underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Real Music Theory
-                </a>
-                .
-              </div>
-              <div>
-                Made by <span className="font-medium text-zinc-800 dark:text-zinc-200">Marijn Tepas</span>.{" "}
-                <a
-                  href={SOURCE_REPO_URL}
-                  className="underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source code
-                </a>
-                .
-              </div>
-              <div>
-                MIDI piano:{" "}
-                <a
-                  href="https://github.com/pianobooster/fluid-soundfont"
-                  className="underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  FluidR3_GM
-                </a>{" "}
-                by <span className="font-medium text-zinc-800 dark:text-zinc-200">Frank Wen</span> (MIT);{" "}
-                <a
-                  href="https://github.com/gleitz/midi-js-soundfonts"
-                  className="underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  web samples
-                </a>{" "}
-                by <span className="font-medium text-zinc-800 dark:text-zinc-200">Benjamin Gleitzman</span> (CC BY 3.0).
+              <div className="grid gap-2 sm:grid-cols-2">
+                <div>
+                  This website made by{" "}
+                  <span className="font-medium text-zinc-800 dark:text-zinc-200">Marijn Tepas</span>.{" "}
+                  <a href={SOURCE_REPO_URL} className={footerLinkClass} target="_blank" rel="noreferrer">
+                    Source code
+                  </a>
+                </div>
+                <div>
+                  MIDI piano:{" "}
+                  <a
+                    href="https://github.com/pianobooster/fluid-soundfont"
+                    className={footerLinkClass}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    FluidR3_GM
+                  </a>{" "}
+                  by <span className="font-medium text-zinc-800 dark:text-zinc-200">Frank Wen</span> (MIT);{" "}
+                  <a
+                    href="https://github.com/gleitz/midi-js-soundfonts"
+                    className={footerLinkClass}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    web samples
+                  </a>{" "}
+                  by{" "}
+                  <span className="font-medium text-zinc-800 dark:text-zinc-200">Benjamin Gleitzman</span>{" "}
+                  (CC BY 3.0)
+                </div>
               </div>
             </footer>
           </div>
