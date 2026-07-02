@@ -1,0 +1,11 @@
+.git
+.github
+.venv
+**/.next
+**/node_modules
+**/out
+web/public/assets
+downloads/**/*.zip
+**/__pycache__
+**/*.pyc
+.cursor

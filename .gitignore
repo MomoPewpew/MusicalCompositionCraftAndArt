@@ -1,0 +1,50 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Next.js (web/)
+node_modules/
+web/node_modules/
+.next/
+web/.next/
+out/
+web/out/
+web/public/assets/
+web/src/generated/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and OS
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Editor / IDE (machine-specific)
+.cursor/
+.vscode/
+*.code-workspace
+
+# Redundant download splits (canonical copy is Musical Composition Craft And Art/)
+downloads/Musical Composition Craft And Art - Odd/
+downloads/Musical Composition Craft And Art - Even/
+downloads/*.zip
+
+# Docker
+# (no local-only docker artifacts currently)

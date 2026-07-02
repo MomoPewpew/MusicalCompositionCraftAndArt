@@ -1,0 +1,4412 @@
+{
+  "book": "Musical Composition Craft And Art",
+  "exampleCount": 149,
+  "chapters": [
+    {
+      "name": "Chapter 1",
+      "number": 1,
+      "slug": "chapter-1",
+      "exampleCount": 17,
+      "examples": [
+        {
+          "id": "Ex1-1-(1)",
+          "slug": "chapter-1/example-1/section-1",
+          "exampleLabel": "Example 1, Section 1",
+          "route": {
+            "chapter": "1",
+            "example": "1",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex1-1-(2)",
+          "slug": "chapter-1/example-1/section-2",
+          "exampleLabel": "Example 1, Section 2",
+          "route": {
+            "chapter": "1",
+            "example": "1",
+            "section": "2"
+          }
+        },
+        {
+          "id": "Ex1-1-(3)",
+          "slug": "chapter-1/example-1/section-3",
+          "exampleLabel": "Example 1, Section 3",
+          "route": {
+            "chapter": "1",
+            "example": "1",
+            "section": "3"
+          }
+        },
+        {
+          "id": "Ex1-1-(4)",
+          "slug": "chapter-1/example-1/section-4",
+          "exampleLabel": "Example 1, Section 4",
+          "route": {
+            "chapter": "1",
+            "example": "1",
+            "section": "4"
+          }
+        },
+        {
+          "id": "Ex1-2",
+          "slug": "chapter-1/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "1",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex1-3",
+          "slug": "chapter-1/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "1",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex1-4",
+          "slug": "chapter-1/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "1",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex1-5",
+          "slug": "chapter-1/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "1",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex1-6",
+          "slug": "chapter-1/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "1",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex1-7",
+          "slug": "chapter-1/example-7",
+          "exampleLabel": "Example 7",
+          "route": {
+            "chapter": "1",
+            "example": "7"
+          }
+        },
+        {
+          "id": "Ex1-8",
+          "slug": "chapter-1/example-8",
+          "exampleLabel": "Example 8",
+          "route": {
+            "chapter": "1",
+            "example": "8"
+          }
+        },
+        {
+          "id": "Ex1-9-(1)",
+          "slug": "chapter-1/example-9/section-1",
+          "exampleLabel": "Example 9, Section 1",
+          "route": {
+            "chapter": "1",
+            "example": "9",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex1-9-(2)",
+          "slug": "chapter-1/example-9/section-2",
+          "exampleLabel": "Example 9, Section 2",
+          "route": {
+            "chapter": "1",
+            "example": "9",
+            "section": "2"
+          }
+        },
+        {
+          "id": "Ex1-9-(3)",
+          "slug": "chapter-1/example-9/section-3",
+          "exampleLabel": "Example 9, Section 3",
+          "route": {
+            "chapter": "1",
+            "example": "9",
+            "section": "3"
+          }
+        },
+        {
+          "id": "Ex1-10-(1)",
+          "slug": "chapter-1/example-10/section-1",
+          "exampleLabel": "Example 10, Section 1",
+          "route": {
+            "chapter": "1",
+            "example": "10",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex1-10-(2)",
+          "slug": "chapter-1/example-10/section-2",
+          "exampleLabel": "Example 10, Section 2",
+          "route": {
+            "chapter": "1",
+            "example": "10",
+            "section": "2"
+          }
+        },
+        {
+          "id": "Ex1-10-(3)",
+          "slug": "chapter-1/example-10/section-3",
+          "exampleLabel": "Example 10, Section 3",
+          "route": {
+            "chapter": "1",
+            "example": "10",
+            "section": "3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 2",
+      "number": 2,
+      "slug": "chapter-2",
+      "exampleCount": 9,
+      "examples": [
+        {
+          "id": "Ex2-1",
+          "slug": "chapter-2/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "2",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex2-2",
+          "slug": "chapter-2/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "2",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex2-3",
+          "slug": "chapter-2/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "2",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex2-4",
+          "slug": "chapter-2/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "2",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex2-5",
+          "slug": "chapter-2/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "2",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex2-6",
+          "slug": "chapter-2/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "2",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex2-7-1",
+          "slug": "chapter-2/example-7/section-1",
+          "exampleLabel": "Example 7, Section 1",
+          "route": {
+            "chapter": "2",
+            "example": "7",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex2-7-2",
+          "slug": "chapter-2/example-7/section-2",
+          "exampleLabel": "Example 7, Section 2",
+          "route": {
+            "chapter": "2",
+            "example": "7",
+            "section": "2"
+          }
+        },
+        {
+          "id": "Ex2-7-3",
+          "slug": "chapter-2/example-7/section-3",
+          "exampleLabel": "Example 7, Section 3",
+          "route": {
+            "chapter": "2",
+            "example": "7",
+            "section": "3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 3",
+      "number": 3,
+      "slug": "chapter-3",
+      "exampleCount": 4,
+      "examples": [
+        {
+          "id": "Ex3-1",
+          "slug": "chapter-3/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "3",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex3-2",
+          "slug": "chapter-3/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "3",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex3-3",
+          "slug": "chapter-3/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "3",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex3-4",
+          "slug": "chapter-3/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "3",
+            "example": "4"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 4",
+      "number": 4,
+      "slug": "chapter-4",
+      "exampleCount": 4,
+      "examples": [
+        {
+          "id": "Ex4-1",
+          "slug": "chapter-4/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "4",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex4-2",
+          "slug": "chapter-4/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "4",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex4-3-1",
+          "slug": "chapter-4/example-3/section-1",
+          "exampleLabel": "Example 3, Section 1",
+          "route": {
+            "chapter": "4",
+            "example": "3",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex4-3-2",
+          "slug": "chapter-4/example-3/section-2",
+          "exampleLabel": "Example 3, Section 2",
+          "route": {
+            "chapter": "4",
+            "example": "3",
+            "section": "2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 5",
+      "number": 5,
+      "slug": "chapter-5",
+      "exampleCount": 12,
+      "examples": [
+        {
+          "id": "Ex5-1",
+          "slug": "chapter-5/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "5",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex5-2",
+          "slug": "chapter-5/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "5",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex5-3",
+          "slug": "chapter-5/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "5",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex5-4",
+          "slug": "chapter-5/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "5",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex5-5",
+          "slug": "chapter-5/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "5",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex5-6",
+          "slug": "chapter-5/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "5",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex5-7",
+          "slug": "chapter-5/example-7",
+          "exampleLabel": "Example 7",
+          "route": {
+            "chapter": "5",
+            "example": "7"
+          }
+        },
+        {
+          "id": "Ex5-8",
+          "slug": "chapter-5/example-8",
+          "exampleLabel": "Example 8",
+          "route": {
+            "chapter": "5",
+            "example": "8"
+          }
+        },
+        {
+          "id": "Ex5-9",
+          "slug": "chapter-5/example-9",
+          "exampleLabel": "Example 9",
+          "route": {
+            "chapter": "5",
+            "example": "9"
+          }
+        },
+        {
+          "id": "Ex5-10",
+          "slug": "chapter-5/example-10",
+          "exampleLabel": "Example 10",
+          "route": {
+            "chapter": "5",
+            "example": "10"
+          }
+        },
+        {
+          "id": "Ex5-11",
+          "slug": "chapter-5/example-11",
+          "exampleLabel": "Example 11",
+          "route": {
+            "chapter": "5",
+            "example": "11"
+          }
+        },
+        {
+          "id": "Ex5-12",
+          "slug": "chapter-5/example-12",
+          "exampleLabel": "Example 12",
+          "route": {
+            "chapter": "5",
+            "example": "12"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 6",
+      "number": 6,
+      "slug": "chapter-6",
+      "exampleCount": 14,
+      "examples": [
+        {
+          "id": "Ex6-1",
+          "slug": "chapter-6/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "6",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex6-2",
+          "slug": "chapter-6/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "6",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex6-3",
+          "slug": "chapter-6/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "6",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex6-4",
+          "slug": "chapter-6/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "6",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex6-5",
+          "slug": "chapter-6/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "6",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex6-6",
+          "slug": "chapter-6/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "6",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex6-7-(1)",
+          "slug": "chapter-6/example-7/section-1",
+          "exampleLabel": "Example 7, Section 1",
+          "route": {
+            "chapter": "6",
+            "example": "7",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex6-7-(2)",
+          "slug": "chapter-6/example-7/section-2",
+          "exampleLabel": "Example 7, Section 2",
+          "route": {
+            "chapter": "6",
+            "example": "7",
+            "section": "2"
+          }
+        },
+        {
+          "id": "Ex6-7-(3)",
+          "slug": "chapter-6/example-7/section-3",
+          "exampleLabel": "Example 7, Section 3",
+          "route": {
+            "chapter": "6",
+            "example": "7",
+            "section": "3"
+          }
+        },
+        {
+          "id": "Ex6-8-(1)",
+          "slug": "chapter-6/example-8/section-1",
+          "exampleLabel": "Example 8, Section 1",
+          "route": {
+            "chapter": "6",
+            "example": "8",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex6-8-(2)",
+          "slug": "chapter-6/example-8/section-2",
+          "exampleLabel": "Example 8, Section 2",
+          "route": {
+            "chapter": "6",
+            "example": "8",
+            "section": "2"
+          }
+        },
+        {
+          "id": "Ex6-9-(1)",
+          "slug": "chapter-6/example-9/section-1",
+          "exampleLabel": "Example 9, Section 1",
+          "route": {
+            "chapter": "6",
+            "example": "9",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex6-9-(2)",
+          "slug": "chapter-6/example-9/section-2",
+          "exampleLabel": "Example 9, Section 2",
+          "route": {
+            "chapter": "6",
+            "example": "9",
+            "section": "2"
+          }
+        },
+        {
+          "id": "Ex6-10",
+          "slug": "chapter-6/example-10",
+          "exampleLabel": "Example 10",
+          "route": {
+            "chapter": "6",
+            "example": "10"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 7",
+      "number": 7,
+      "slug": "chapter-7",
+      "exampleCount": 2,
+      "examples": [
+        {
+          "id": "Ex7-1",
+          "slug": "chapter-7/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "7",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex7-2",
+          "slug": "chapter-7/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "7",
+            "example": "2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 8",
+      "number": 8,
+      "slug": "chapter-8",
+      "exampleCount": 1,
+      "examples": [
+        {
+          "id": "Ex8-1",
+          "slug": "chapter-8/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "8",
+            "example": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 9",
+      "number": 9,
+      "slug": "chapter-9",
+      "exampleCount": 3,
+      "examples": [
+        {
+          "id": "Ex9-1",
+          "slug": "chapter-9/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "9",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex9-2",
+          "slug": "chapter-9/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "9",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex9-3",
+          "slug": "chapter-9/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "9",
+            "example": "3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 10",
+      "number": 10,
+      "slug": "chapter-10",
+      "exampleCount": 8,
+      "examples": [
+        {
+          "id": "Ex10-1",
+          "slug": "chapter-10/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "10",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex10-2",
+          "slug": "chapter-10/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "10",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex10-3",
+          "slug": "chapter-10/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "10",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex10-4",
+          "slug": "chapter-10/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "10",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex10-5",
+          "slug": "chapter-10/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "10",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex10-6",
+          "slug": "chapter-10/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "10",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex10-7",
+          "slug": "chapter-10/example-7",
+          "exampleLabel": "Example 7",
+          "route": {
+            "chapter": "10",
+            "example": "7"
+          }
+        },
+        {
+          "id": "Ex10-8",
+          "slug": "chapter-10/example-8",
+          "exampleLabel": "Example 8",
+          "route": {
+            "chapter": "10",
+            "example": "8"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 11",
+      "number": 11,
+      "slug": "chapter-11",
+      "exampleCount": 14,
+      "examples": [
+        {
+          "id": "Ex11-1",
+          "slug": "chapter-11/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "11",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex11-2",
+          "slug": "chapter-11/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "11",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex11-3",
+          "slug": "chapter-11/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "11",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex11-4-(1)",
+          "slug": "chapter-11/example-4/section-1",
+          "exampleLabel": "Example 4, Section 1",
+          "route": {
+            "chapter": "11",
+            "example": "4",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex11-4-(2)",
+          "slug": "chapter-11/example-4/section-2",
+          "exampleLabel": "Example 4, Section 2",
+          "route": {
+            "chapter": "11",
+            "example": "4",
+            "section": "2"
+          }
+        },
+        {
+          "id": "Ex11-4-(3)",
+          "slug": "chapter-11/example-4/section-3",
+          "exampleLabel": "Example 4, Section 3",
+          "route": {
+            "chapter": "11",
+            "example": "4",
+            "section": "3"
+          }
+        },
+        {
+          "id": "Ex11-5",
+          "slug": "chapter-11/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "11",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex11-6",
+          "slug": "chapter-11/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "11",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex11-7",
+          "slug": "chapter-11/example-7",
+          "exampleLabel": "Example 7",
+          "route": {
+            "chapter": "11",
+            "example": "7"
+          }
+        },
+        {
+          "id": "Ex11-8",
+          "slug": "chapter-11/example-8",
+          "exampleLabel": "Example 8",
+          "route": {
+            "chapter": "11",
+            "example": "8"
+          }
+        },
+        {
+          "id": "Ex11-9",
+          "slug": "chapter-11/example-9",
+          "exampleLabel": "Example 9",
+          "route": {
+            "chapter": "11",
+            "example": "9"
+          }
+        },
+        {
+          "id": "Ex11-10",
+          "slug": "chapter-11/example-10",
+          "exampleLabel": "Example 10",
+          "route": {
+            "chapter": "11",
+            "example": "10"
+          }
+        },
+        {
+          "id": "Ex11-11",
+          "slug": "chapter-11/example-11",
+          "exampleLabel": "Example 11",
+          "route": {
+            "chapter": "11",
+            "example": "11"
+          }
+        },
+        {
+          "id": "Ex11-12",
+          "slug": "chapter-11/example-12",
+          "exampleLabel": "Example 12",
+          "route": {
+            "chapter": "11",
+            "example": "12"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 12",
+      "number": 12,
+      "slug": "chapter-12",
+      "exampleCount": 17,
+      "examples": [
+        {
+          "id": "Ex12-1",
+          "slug": "chapter-12/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "12",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex12-2",
+          "slug": "chapter-12/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "12",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex12-3",
+          "slug": "chapter-12/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "12",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex12-4",
+          "slug": "chapter-12/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "12",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex12-5",
+          "slug": "chapter-12/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "12",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex12-6",
+          "slug": "chapter-12/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "12",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex12-7-(1)",
+          "slug": "chapter-12/example-7/section-1",
+          "exampleLabel": "Example 7, Section 1",
+          "route": {
+            "chapter": "12",
+            "example": "7",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex12-7-(2)",
+          "slug": "chapter-12/example-7/section-2",
+          "exampleLabel": "Example 7, Section 2",
+          "route": {
+            "chapter": "12",
+            "example": "7",
+            "section": "2"
+          }
+        },
+        {
+          "id": "Ex12-7-(3)",
+          "slug": "chapter-12/example-7/section-3",
+          "exampleLabel": "Example 7, Section 3",
+          "route": {
+            "chapter": "12",
+            "example": "7",
+            "section": "3"
+          }
+        },
+        {
+          "id": "Ex12-7-(4)",
+          "slug": "chapter-12/example-7/section-4",
+          "exampleLabel": "Example 7, Section 4",
+          "route": {
+            "chapter": "12",
+            "example": "7",
+            "section": "4"
+          }
+        },
+        {
+          "id": "Ex12-7-(5)",
+          "slug": "chapter-12/example-7/section-5",
+          "exampleLabel": "Example 7, Section 5",
+          "route": {
+            "chapter": "12",
+            "example": "7",
+            "section": "5"
+          }
+        },
+        {
+          "id": "Ex12-7-(6)",
+          "slug": "chapter-12/example-7/section-6",
+          "exampleLabel": "Example 7, Section 6",
+          "route": {
+            "chapter": "12",
+            "example": "7",
+            "section": "6"
+          }
+        },
+        {
+          "id": "Ex12-8",
+          "slug": "chapter-12/example-8",
+          "exampleLabel": "Example 8",
+          "route": {
+            "chapter": "12",
+            "example": "8"
+          }
+        },
+        {
+          "id": "Ex12-9",
+          "slug": "chapter-12/example-9",
+          "exampleLabel": "Example 9",
+          "route": {
+            "chapter": "12",
+            "example": "9"
+          }
+        },
+        {
+          "id": "Ex12-10-(1)",
+          "slug": "chapter-12/example-10/section-1",
+          "exampleLabel": "Example 10, Section 1",
+          "route": {
+            "chapter": "12",
+            "example": "10",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex12-10-(2)",
+          "slug": "chapter-12/example-10/section-2",
+          "exampleLabel": "Example 10, Section 2",
+          "route": {
+            "chapter": "12",
+            "example": "10",
+            "section": "2"
+          }
+        },
+        {
+          "id": "Ex12-10-(3)",
+          "slug": "chapter-12/example-10/section-3",
+          "exampleLabel": "Example 10, Section 3",
+          "route": {
+            "chapter": "12",
+            "example": "10",
+            "section": "3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 13",
+      "number": 13,
+      "slug": "chapter-13",
+      "exampleCount": 1,
+      "examples": [
+        {
+          "id": "Ex13-1",
+          "slug": "chapter-13/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "13",
+            "example": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 14",
+      "number": 14,
+      "slug": "chapter-14",
+      "exampleCount": 9,
+      "examples": [
+        {
+          "id": "Ex14-1",
+          "slug": "chapter-14/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "14",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex14-2",
+          "slug": "chapter-14/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "14",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex14-3",
+          "slug": "chapter-14/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "14",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex14-4",
+          "slug": "chapter-14/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "14",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex14-5",
+          "slug": "chapter-14/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "14",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex14-6",
+          "slug": "chapter-14/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "14",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex14-7",
+          "slug": "chapter-14/example-7",
+          "exampleLabel": "Example 7",
+          "route": {
+            "chapter": "14",
+            "example": "7"
+          }
+        },
+        {
+          "id": "Ex14-8",
+          "slug": "chapter-14/example-8",
+          "exampleLabel": "Example 8",
+          "route": {
+            "chapter": "14",
+            "example": "8"
+          }
+        },
+        {
+          "id": "Ex14-9",
+          "slug": "chapter-14/example-9",
+          "exampleLabel": "Example 9",
+          "route": {
+            "chapter": "14",
+            "example": "9"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 15",
+      "number": 15,
+      "slug": "chapter-15",
+      "exampleCount": 7,
+      "examples": [
+        {
+          "id": "Ex15-1",
+          "slug": "chapter-15/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "15",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex15-2",
+          "slug": "chapter-15/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "15",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex15-3",
+          "slug": "chapter-15/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "15",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex15-4",
+          "slug": "chapter-15/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "15",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex15-5",
+          "slug": "chapter-15/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "15",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex15-6",
+          "slug": "chapter-15/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "15",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex15-7",
+          "slug": "chapter-15/example-7",
+          "exampleLabel": "Example 7",
+          "route": {
+            "chapter": "15",
+            "example": "7"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 16",
+      "number": 16,
+      "slug": "chapter-16",
+      "exampleCount": 8,
+      "examples": [
+        {
+          "id": "Ex16-1",
+          "slug": "chapter-16/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "16",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex16-2",
+          "slug": "chapter-16/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "16",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex16-3",
+          "slug": "chapter-16/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "16",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex16-4",
+          "slug": "chapter-16/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "16",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex16-5",
+          "slug": "chapter-16/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "16",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex16-6",
+          "slug": "chapter-16/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "16",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex16-7",
+          "slug": "chapter-16/example-7",
+          "exampleLabel": "Example 7",
+          "route": {
+            "chapter": "16",
+            "example": "7"
+          }
+        },
+        {
+          "id": "Ex16-8",
+          "slug": "chapter-16/example-8",
+          "exampleLabel": "Example 8",
+          "route": {
+            "chapter": "16",
+            "example": "8"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 18",
+      "number": 18,
+      "slug": "chapter-18",
+      "exampleCount": 1,
+      "examples": [
+        {
+          "id": "Ex18-1",
+          "slug": "chapter-18/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "18",
+            "example": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 19",
+      "number": 19,
+      "slug": "chapter-19",
+      "exampleCount": 5,
+      "examples": [
+        {
+          "id": "Ex19-1",
+          "slug": "chapter-19/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "19",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex19-2",
+          "slug": "chapter-19/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "19",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex19-3",
+          "slug": "chapter-19/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "19",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex19-4",
+          "slug": "chapter-19/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "19",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex19-5",
+          "slug": "chapter-19/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "19",
+            "example": "5"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Chapter 20",
+      "number": 20,
+      "slug": "chapter-20",
+      "exampleCount": 11,
+      "examples": [
+        {
+          "id": "Ex20-1",
+          "slug": "chapter-20/example-1",
+          "exampleLabel": "Example 1",
+          "route": {
+            "chapter": "20",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Ex20-2",
+          "slug": "chapter-20/example-2",
+          "exampleLabel": "Example 2",
+          "route": {
+            "chapter": "20",
+            "example": "2"
+          }
+        },
+        {
+          "id": "Ex20-3",
+          "slug": "chapter-20/example-3",
+          "exampleLabel": "Example 3",
+          "route": {
+            "chapter": "20",
+            "example": "3"
+          }
+        },
+        {
+          "id": "Ex20-4",
+          "slug": "chapter-20/example-4",
+          "exampleLabel": "Example 4",
+          "route": {
+            "chapter": "20",
+            "example": "4"
+          }
+        },
+        {
+          "id": "Ex20-5",
+          "slug": "chapter-20/example-5",
+          "exampleLabel": "Example 5",
+          "route": {
+            "chapter": "20",
+            "example": "5"
+          }
+        },
+        {
+          "id": "Ex20-6",
+          "slug": "chapter-20/example-6",
+          "exampleLabel": "Example 6",
+          "route": {
+            "chapter": "20",
+            "example": "6"
+          }
+        },
+        {
+          "id": "Ex20-7",
+          "slug": "chapter-20/example-7",
+          "exampleLabel": "Example 7",
+          "route": {
+            "chapter": "20",
+            "example": "7"
+          }
+        },
+        {
+          "id": "Ex20-8",
+          "slug": "chapter-20/example-8",
+          "exampleLabel": "Example 8",
+          "route": {
+            "chapter": "20",
+            "example": "8"
+          }
+        },
+        {
+          "id": "Ex20-9",
+          "slug": "chapter-20/example-9",
+          "exampleLabel": "Example 9",
+          "route": {
+            "chapter": "20",
+            "example": "9"
+          }
+        },
+        {
+          "id": "Ex20-10-(1)",
+          "slug": "chapter-20/example-10/section-1",
+          "exampleLabel": "Example 10, Section 1",
+          "route": {
+            "chapter": "20",
+            "example": "10",
+            "section": "1"
+          }
+        },
+        {
+          "id": "Ex20-10-(2)",
+          "slug": "chapter-20/example-10/section-2",
+          "exampleLabel": "Example 10, Section 2",
+          "route": {
+            "chapter": "20",
+            "example": "10",
+            "section": "2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Extra",
+      "number": null,
+      "slug": "extra",
+      "exampleCount": 2,
+      "examples": [
+        {
+          "id": "Extra-1",
+          "slug": "extra/example-1",
+          "exampleLabel": "Extra Example 1",
+          "route": {
+            "chapter": "extra",
+            "example": "1"
+          }
+        },
+        {
+          "id": "Extra-2",
+          "slug": "extra/example-2",
+          "exampleLabel": "Extra Example 2",
+          "route": {
+            "chapter": "extra",
+            "example": "2"
+          }
+        }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "id": "Ex1-1-(1)",
+      "slug": "chapter-1/example-1/section-1",
+      "route": {
+        "chapter": "1",
+        "example": "1",
+        "section": "1"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 1, Section 1",
+      "figureRef": "1.1",
+      "citation": "Sibelius, Symphony No. 2, first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 1/Section 1/Ex1-1-(1).png",
+        "midi": "Chapter 1/Example 1/Section 1/Ex1-1-(1).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-1-(2)",
+      "slug": "chapter-1/example-1/section-2",
+      "route": {
+        "chapter": "1",
+        "example": "1",
+        "section": "2"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 1, Section 2",
+      "figureRef": "1.1",
+      "citation": "Brahms, Symphony No. 3, third movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 1/Section 2/Ex1-1-(2).png",
+        "midi": "Chapter 1/Example 1/Section 2/Ex1-1-(2).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-1-(3)",
+      "slug": "chapter-1/example-1/section-3",
+      "route": {
+        "chapter": "1",
+        "example": "1",
+        "section": "3"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 1, Section 3",
+      "figureRef": "1.1",
+      "citation": "Beethoven, String Quartet in F major, Op. 59, No. 1, first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 1/Section 3/Ex1-1-(3).png",
+        "midi": "Chapter 1/Example 1/Section 3/Ex1-1-(3).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-1-(4)",
+      "slug": "chapter-1/example-1/section-4",
+      "route": {
+        "chapter": "1",
+        "example": "1",
+        "section": "4"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 1, Section 4",
+      "figureRef": "1.1",
+      "citation": "Bach, Well-Tempered Clavier, Book 1, Fugue in E minor",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 1/Section 4/Ex1-1-(4).png",
+        "midi": "Chapter 1/Example 1/Section 4/Ex1-1-(4).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-2",
+      "slug": "chapter-1/example-2",
+      "route": {
+        "chapter": "1",
+        "example": "2"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 2",
+      "figureRef": "1.2",
+      "citation": "This would normally be a somewhat more remote variant, but since the staccato version arrives as part of an acceleration, in the same phrase as the legato version that starts it, and on the same exact pitches, the listener has no problem making the association",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 2/Ex1-2.png",
+        "midi": "Chapter 1/Example 2/Ex1-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-3",
+      "slug": "chapter-1/example-3",
+      "route": {
+        "chapter": "1",
+        "example": "3"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 3",
+      "figureRef": "1.3",
+      "citation": "However, they can sometimes be used to generate contrasting material, far away in the form, but with a subtle resemblance to a previous idea",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 3/Ex1-3.png",
+        "midi": "Chapter 1/Example 3/Ex1-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-4",
+      "slug": "chapter-1/example-4",
+      "route": {
+        "chapter": "1",
+        "example": "4"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 4",
+      "figureRef": "1.4",
+      "citation": "Bach, French Suite No.6 in E major, BWV 817, Allemande",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 4/Ex1-4.png",
+        "midi": "Chapter 1/Example 4/Ex1-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-5",
+      "slug": "chapter-1/example-5",
+      "route": {
+        "chapter": "1",
+        "example": "5"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 5",
+      "figureRef": "1.5",
+      "citation": "In such cases, the composer makes an entire variation from each ornamented version of the motive",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 5/Ex1-5.png",
+        "midi": "Chapter 1/Example 5/Ex1-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-6",
+      "slug": "chapter-1/example-6",
+      "route": {
+        "chapter": "1",
+        "example": "6"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 6",
+      "figureRef": "1.6",
+      "citation": "In such cases, the composer makes an entire variation from each ornamented version of the motive",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 6/Ex1-6.png",
+        "midi": "Chapter 1/Example 6/Ex1-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-7",
+      "slug": "chapter-1/example-7",
+      "route": {
+        "chapter": "1",
+        "example": "7"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 7",
+      "figureRef": "1.7",
+      "citation": "In such cases, the composer makes an entire variation from each ornamented version of the motive",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 7/Ex1-7.png",
+        "midi": "Chapter 1/Example 7/Ex1-7.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-8",
+      "slug": "chapter-1/example-8",
+      "route": {
+        "chapter": "1",
+        "example": "8"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 8",
+      "figureRef": "1.8",
+      "citation": "In such cases, the composer makes an entire variation from each ornamented version of the motive",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 8/Ex1-8.png",
+        "midi": "Chapter 1/Example 8/Ex1-8.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-9-(1)",
+      "slug": "chapter-1/example-9/section-1",
+      "route": {
+        "chapter": "1",
+        "example": "9",
+        "section": "1"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 9, Section 1",
+      "figureRef": "1.9",
+      "citation": "In such cases, the composer makes an entire variation from each ornamented version of the motive",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 9/Section 1/Ex1-9-(1).png",
+        "midi": "Chapter 1/Example 9/Section 1/Ex1-9-(1).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-9-(2)",
+      "slug": "chapter-1/example-9/section-2",
+      "route": {
+        "chapter": "1",
+        "example": "9",
+        "section": "2"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 9, Section 2",
+      "figureRef": "1.9",
+      "citation": "In such cases, the composer makes an entire variation from each ornamented version of the motive",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 9/Section 2/Ex1-9-(2).png",
+        "midi": "Chapter 1/Example 9/Section 2/Ex1-9-(2).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-9-(3)",
+      "slug": "chapter-1/example-9/section-3",
+      "route": {
+        "chapter": "1",
+        "example": "9",
+        "section": "3"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 9, Section 3",
+      "figureRef": "1.9",
+      "citation": "In such cases, the composer makes an entire variation from each ornamented version of the motive",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 9/Section 3/Ex1-9-(3).png",
+        "midi": "Chapter 1/Example 9/Section 3/Ex1-9-(3).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-10-(1)",
+      "slug": "chapter-1/example-10/section-1",
+      "route": {
+        "chapter": "1",
+        "example": "10",
+        "section": "1"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 10, Section 1",
+      "figureRef": "1.10",
+      "citation": "In such cases, the composer makes an entire variation from each ornamented version of the motive",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 10/Section 1/Ex1-10-(1).png",
+        "midi": "Chapter 1/Example 10/Section 1/Ex1-10-(1).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-10-(2)",
+      "slug": "chapter-1/example-10/section-2",
+      "route": {
+        "chapter": "1",
+        "example": "10",
+        "section": "2"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 10, Section 2",
+      "figureRef": "1.10",
+      "citation": "In such cases, the composer makes an entire variation from each ornamented version of the motive",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 10/Section 2/Ex1-10-(2).png",
+        "midi": "Chapter 1/Example 10/Section 2/Ex1-10-(2).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex1-10-(3)",
+      "slug": "chapter-1/example-10/section-3",
+      "route": {
+        "chapter": "1",
+        "example": "10",
+        "section": "3"
+      },
+      "chapter": "Chapter 1",
+      "chapterNumber": 1,
+      "exampleLabel": "Example 10, Section 3",
+      "figureRef": "1.10",
+      "citation": "In such cases, the composer makes an entire variation from each ornamented version of the motive",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 1/Example 10/Section 3/Ex1-10-(3).png",
+        "midi": "Chapter 1/Example 10/Section 3/Ex1-10-(3).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex2-1",
+      "slug": "chapter-2/example-1",
+      "route": {
+        "chapter": "2",
+        "example": "1"
+      },
+      "chapter": "Chapter 2",
+      "chapterNumber": 2,
+      "exampleLabel": "Example 1",
+      "figureRef": "2.1",
+      "citation": "Mahler, Symphony No. 3, last movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 2/Example 1/Ex2-1.png",
+        "midi": "Chapter 2/Example 1/Ex2-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex2-2",
+      "slug": "chapter-2/example-2",
+      "route": {
+        "chapter": "2",
+        "example": "2"
+      },
+      "chapter": "Chapter 2",
+      "chapterNumber": 2,
+      "exampleLabel": "Example 2",
+      "figureRef": "2.2",
+      "citation": "Beethoven, String Quartet in C major, Op. 59, No. 3, second movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 2/Example 2/Ex2-2.png",
+        "midi": "Chapter 2/Example 2/Ex2-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex2-3",
+      "slug": "chapter-2/example-3",
+      "route": {
+        "chapter": "2",
+        "example": "3"
+      },
+      "chapter": "Chapter 2",
+      "chapterNumber": 2,
+      "exampleLabel": "Example 3",
+      "figureRef": "2.3",
+      "citation": "Bartók, String Quartet No. 3, Sz. 85, second part. © Copyright 1948 by Hawkes & Son (London) Ltd. U.S. copyright renewed. Reprinted by Permission of Boosey & Hawkes, Inc. © Copyright 1929 by Universal Edition A.G., Wien/UE 34310 for world except for territory of USA.",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 2/Example 3/Ex2-3.png",
+        "midi": "Chapter 2/Example 3/Ex2-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex2-4",
+      "slug": "chapter-2/example-4",
+      "route": {
+        "chapter": "2",
+        "example": "4"
+      },
+      "chapter": "Chapter 2",
+      "chapterNumber": 2,
+      "exampleLabel": "Example 4",
+      "figureRef": "2.4",
+      "citation": "Domenico Scarlatti, Sonata in D major, K. 336",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 2/Example 4/Ex2-4.png",
+        "midi": "Chapter 2/Example 4/Ex2-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex2-5",
+      "slug": "chapter-2/example-5",
+      "route": {
+        "chapter": "2",
+        "example": "5"
+      },
+      "chapter": "Chapter 2",
+      "chapterNumber": 2,
+      "exampleLabel": "Example 5",
+      "figureRef": "2.5",
+      "citation": "György Ligeti, Sonata for Violoncello Solo, beginning. © Copyright 1990 Schott Music GmbH & Co KG, Mainz, Germany. All Rights Reserved. Used by permission of European American Music Distributors Company, sole U.S. and Canadian agent for Schott Music GmbH & Co KG, Mainz, Germany.",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 2/Example 5/Ex2-5.png",
+        "midi": "Chapter 2/Example 5/Ex2-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex2-6",
+      "slug": "chapter-2/example-6",
+      "route": {
+        "chapter": "2",
+        "example": "6"
+      },
+      "chapter": "Chapter 2",
+      "chapterNumber": 2,
+      "exampleLabel": "Example 6",
+      "figureRef": "2.6",
+      "citation": "Debussy, “La soirée dans Grenade,” from Estampes",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 2/Example 6/Ex2-6.png",
+        "midi": "Chapter 2/Example 6/Ex2-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex2-7-1",
+      "slug": "chapter-2/example-7/section-1",
+      "route": {
+        "chapter": "2",
+        "example": "7",
+        "section": "1"
+      },
+      "chapter": "Chapter 2",
+      "chapterNumber": 2,
+      "exampleLabel": "Example 7, Section 1",
+      "figureRef": "2.7",
+      "citation": "This new section is somewhat more elaborately worked out, and seems like the culmination of all the fragments heard up to this point",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 2/Example 7/Section 1/Ex2-7-1.png",
+        "midi": "Chapter 2/Example 7/Section 1/Ex2-7-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex2-7-2",
+      "slug": "chapter-2/example-7/section-2",
+      "route": {
+        "chapter": "2",
+        "example": "7",
+        "section": "2"
+      },
+      "chapter": "Chapter 2",
+      "chapterNumber": 2,
+      "exampleLabel": "Example 7, Section 2",
+      "figureRef": "2.7",
+      "citation": "This new section is somewhat more elaborately worked out, and seems like the culmination of all the fragments heard up to this point",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 2/Example 7/Section 2/Ex2-7-2.png",
+        "midi": "Chapter 2/Example 7/Section 2/Ex2-7-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex2-7-3",
+      "slug": "chapter-2/example-7/section-3",
+      "route": {
+        "chapter": "2",
+        "example": "7",
+        "section": "3"
+      },
+      "chapter": "Chapter 2",
+      "chapterNumber": 2,
+      "exampleLabel": "Example 7, Section 3",
+      "figureRef": "2.7",
+      "citation": "This new section is somewhat more elaborately worked out, and seems like the culmination of all the fragments heard up to this point",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 2/Example 7/Section 3/Ex2-7-3.png",
+        "midi": "Chapter 2/Example 7/Section 3/Ex2-7-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex3-1",
+      "slug": "chapter-3/example-1",
+      "route": {
+        "chapter": "3",
+        "example": "1"
+      },
+      "chapter": "Chapter 3",
+      "chapterNumber": 3,
+      "exampleLabel": "Example 1",
+      "figureRef": "3.1",
+      "citation": "This kind of awkward setting distracts the attentive listener from the sense and the feeling behind the words",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 3/Example 1/Ex3-1.png",
+        "midi": "Chapter 3/Example 1/Ex3-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex3-2",
+      "slug": "chapter-3/example-2",
+      "route": {
+        "chapter": "3",
+        "example": "2"
+      },
+      "chapter": "Chapter 3",
+      "chapterNumber": 3,
+      "exampleLabel": "Example 2",
+      "figureRef": "3.2",
+      "citation": "This kind of awkward setting distracts the attentive listener from the sense and the feeling behind the words",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 3/Example 2/Ex3-2.png",
+        "midi": "Chapter 3/Example 2/Ex3-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex3-3",
+      "slug": "chapter-3/example-3",
+      "route": {
+        "chapter": "3",
+        "example": "3"
+      },
+      "chapter": "Chapter 3",
+      "chapterNumber": 3,
+      "exampleLabel": "Example 3",
+      "figureRef": "3.3",
+      "citation": "Puccini, Tosca , act 1, seven bars before rehearsal 22",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 3/Example 3/Ex3-3.png",
+        "midi": "Chapter 3/Example 3/Ex3-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex3-4",
+      "slug": "chapter-3/example-4",
+      "route": {
+        "chapter": "3",
+        "example": "4"
+      },
+      "chapter": "Chapter 3",
+      "chapterNumber": 3,
+      "exampleLabel": "Example 4",
+      "figureRef": "3.4",
+      "citation": "Wagner, Die Meistersinger von Nürnberg , Walther’s Prize Song",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 3/Example 4/Ex3-4.png",
+        "midi": "Chapter 3/Example 4/Ex3-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex4-1",
+      "slug": "chapter-4/example-1",
+      "route": {
+        "chapter": "4",
+        "example": "1"
+      },
+      "chapter": "Chapter 4",
+      "chapterNumber": 4,
+      "exampleLabel": "Example 1",
+      "figureRef": "4.1",
+      "citation": "Debussy, “Les sons et les parfums tournent dans l’air du soir”",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 4/Example 1/Ex4-1.png",
+        "midi": "Chapter 4/Example 1/Ex4-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex4-2",
+      "slug": "chapter-4/example-2",
+      "route": {
+        "chapter": "4",
+        "example": "2"
+      },
+      "chapter": "Chapter 4",
+      "chapterNumber": 4,
+      "exampleLabel": "Example 2",
+      "figureRef": "4.2",
+      "citation": "Mozart, String Quartet in C major, K. 465, Menuetto",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 4/Example 2/Ex4-2.png",
+        "midi": "Chapter 4/Example 2/Ex4-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex4-3-1",
+      "slug": "chapter-4/example-3/section-1",
+      "route": {
+        "chapter": "4",
+        "example": "3",
+        "section": "1"
+      },
+      "chapter": "Chapter 4",
+      "chapterNumber": 4,
+      "exampleLabel": "Example 3, Section 1",
+      "figureRef": "4.3",
+      "citation": "In particular, do not double every repeated note, since synchronizing many small notes perfectly is very hard: the result often ends up just sounding sloppy",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 4/Example 3/Section 1/Ex4-3-1.png",
+        "midi": "Chapter 4/Example 3/Section 1/Ex4-3-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex4-3-2",
+      "slug": "chapter-4/example-3/section-2",
+      "route": {
+        "chapter": "4",
+        "example": "3",
+        "section": "2"
+      },
+      "chapter": "Chapter 4",
+      "chapterNumber": 4,
+      "exampleLabel": "Example 3, Section 2",
+      "figureRef": "4.3",
+      "citation": "In particular, do not double every repeated note, since synchronizing many small notes perfectly is very hard: the result often ends up just sounding sloppy",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 4/Example 3/Section 2/Ex4-3-2.png",
+        "midi": "Chapter 4/Example 3/Section 2/Ex4-3-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-1",
+      "slug": "chapter-5/example-1",
+      "route": {
+        "chapter": "5",
+        "example": "1"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 1",
+      "figureRef": "5.1",
+      "citation": "Mahler, Symphony No. 10, first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 5/Example 1/Ex5-1.png",
+        "midi": "Chapter 5/Example 1/Ex5-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-2",
+      "slug": "chapter-5/example-2",
+      "route": {
+        "chapter": "5",
+        "example": "2"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 2",
+      "figureRef": "5.2",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 5/Example 2/Ex5-2.png",
+        "midi": "Chapter 5/Example 2/Ex5-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-3",
+      "slug": "chapter-5/example-3",
+      "route": {
+        "chapter": "5",
+        "example": "3"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 3",
+      "figureRef": "5.3",
+      "citation": "Bach, French Suite No. 6 in E major, BWV 817, Allemande",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 5/Example 3/Ex5-3.png",
+        "midi": "Chapter 5/Example 3/Ex5-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-4",
+      "slug": "chapter-5/example-4",
+      "route": {
+        "chapter": "5",
+        "example": "4"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 4",
+      "figureRef": "5.4",
+      "citation": "Tchaikovsky, Symphony No. 4, second movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 5/Example 4/Ex5-4.png",
+        "midi": "Chapter 5/Example 4/Ex5-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-5",
+      "slug": "chapter-5/example-5",
+      "route": {
+        "chapter": "5",
+        "example": "5"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 5",
+      "figureRef": "5.5",
+      "citation": "Schubert, String Quartet in A minor, D. 804 ( Rosamunde ), first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 5/Example 5/Ex5-5.png",
+        "midi": "Chapter 5/Example 5/Ex5-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-6",
+      "slug": "chapter-5/example-6",
+      "route": {
+        "chapter": "5",
+        "example": "6"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 6",
+      "figureRef": "5.6",
+      "citation": "Brahms, Violin Concerto, first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 5/Example 6/Ex5-6.png",
+        "midi": "Chapter 5/Example 6/Ex5-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-7",
+      "slug": "chapter-5/example-7",
+      "route": {
+        "chapter": "5",
+        "example": "7"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 7",
+      "figureRef": "5.7",
+      "citation": "Stravinsky, The Firebird , Rondo. THE FIREBIRD Ballet Suite for Orchestra (1945), © Copyright 1945 Schott Music GmbH & Co KG, Mainz, Germany. All Rights Reserved. Used by permission of European American Music Distributors Company, sole U.S. and Canadian agent for Schott Music GmbH & Co KG, Mainz, Germany.",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 5/Example 7/Ex5-7.png",
+        "midi": "Chapter 5/Example 7/Ex5-7.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-8",
+      "slug": "chapter-5/example-8",
+      "route": {
+        "chapter": "5",
+        "example": "8"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 8",
+      "figureRef": "5.8",
+      "citation": "Ravel, Valses nobles et sentimentales , second movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 5/Example 8/Ex5-8.png",
+        "midi": "Chapter 5/Example 8/Ex5-8.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-9",
+      "slug": "chapter-5/example-9",
+      "route": {
+        "chapter": "5",
+        "example": "9"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 9",
+      "figureRef": "5.9",
+      "citation": "Beethoven, Piano Sonata in F minor, Op. 57 ( Appassionata ), first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 5/Example 9/Ex5-9.png",
+        "midi": "Chapter 5/Example 9/Ex5-9.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-10",
+      "slug": "chapter-5/example-10",
+      "route": {
+        "chapter": "5",
+        "example": "10"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 10",
+      "figureRef": "5.10",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 5/Example 10/Ex5-10.png",
+        "midi": "Chapter 5/Example 10/Ex5-10.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-11",
+      "slug": "chapter-5/example-11",
+      "route": {
+        "chapter": "5",
+        "example": "11"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 11",
+      "figureRef": "5.11",
+      "citation": "Exercise 2",
+      "citationKind": "exercise",
+      "assets": {
+        "image": "Chapter 5/Example 11/Ex5-11.png",
+        "midi": "Chapter 5/Example 11/Ex5-11.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex5-12",
+      "slug": "chapter-5/example-12",
+      "route": {
+        "chapter": "5",
+        "example": "12"
+      },
+      "chapter": "Chapter 5",
+      "chapterNumber": 5,
+      "exampleLabel": "Example 12",
+      "figureRef": "5.12",
+      "citation": "Exercise 3",
+      "citationKind": "exercise",
+      "assets": {
+        "image": "Chapter 5/Example 12/Ex5-12.png",
+        "midi": "Chapter 5/Example 12/Ex5-12.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-1",
+      "slug": "chapter-6/example-1",
+      "route": {
+        "chapter": "6",
+        "example": "1"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 1",
+      "figureRef": "6.1",
+      "citation": "Schubert, Ländler, Op. 171, No. 3",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 1/Ex6-1.png",
+        "midi": "Chapter 6/Example 1/Ex6-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-2",
+      "slug": "chapter-6/example-2",
+      "route": {
+        "chapter": "6",
+        "example": "2"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 2",
+      "figureRef": "6.2",
+      "citation": "Mozart, Piano Sonata in C major, K. 309, Rondo",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 2/Ex6-2.png",
+        "midi": "Chapter 6/Example 2/Ex6-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-3",
+      "slug": "chapter-6/example-3",
+      "route": {
+        "chapter": "6",
+        "example": "3"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 3",
+      "figureRef": "6.3",
+      "citation": "Beethoven, Piano Sonata in G major, Op. 49, No. 2, second movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 3/Ex6-3.png",
+        "midi": "Chapter 6/Example 3/Ex6-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-4",
+      "slug": "chapter-6/example-4",
+      "route": {
+        "chapter": "6",
+        "example": "4"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 4",
+      "figureRef": "6.4",
+      "citation": "Schubert, String Quartet in G minor, D. 173, Menuetto",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 4/Ex6-4.png",
+        "midi": "Chapter 6/Example 4/Ex6-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-5",
+      "slug": "chapter-6/example-5",
+      "route": {
+        "chapter": "6",
+        "example": "5"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 5",
+      "figureRef": "6.5",
+      "citation": "Beethoven, Piano Sonata in A-flat major, Op. 26, first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 5/Ex6-5.png",
+        "midi": "Chapter 6/Example 5/Ex6-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-6",
+      "slug": "chapter-6/example-6",
+      "route": {
+        "chapter": "6",
+        "example": "6"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 6",
+      "figureRef": "6.6",
+      "citation": "This kind of very predictable, regular, hierarchical structure is typical of a double period",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 6/Ex6-6.png",
+        "midi": "Chapter 6/Example 6/Ex6-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-7-(1)",
+      "slug": "chapter-6/example-7/section-1",
+      "route": {
+        "chapter": "6",
+        "example": "7",
+        "section": "1"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 7, Section 1",
+      "figureRef": "6.7",
+      "citation": "This kind of very predictable, regular, hierarchical structure is typical of a double period",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 7/Section 1/Ex6-7-(1).png",
+        "midi": "Chapter 6/Example 7/Section 1/Ex6-7-(1).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-7-(2)",
+      "slug": "chapter-6/example-7/section-2",
+      "route": {
+        "chapter": "6",
+        "example": "7",
+        "section": "2"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 7, Section 2",
+      "figureRef": "6.7",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 6/Example 7/Section 2/Ex6-7-(2).png",
+        "midi": "Chapter 6/Example 7/Section 2/Ex6-7-(2).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-7-(3)",
+      "slug": "chapter-6/example-7/section-3",
+      "route": {
+        "chapter": "6",
+        "example": "7",
+        "section": "3"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 7, Section 3",
+      "figureRef": "6.7",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 6/Example 7/Section 3/Ex6-7-(3).png",
+        "midi": "Chapter 6/Example 7/Section 3/Ex6-7-(3).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-8-(1)",
+      "slug": "chapter-6/example-8/section-1",
+      "route": {
+        "chapter": "6",
+        "example": "8",
+        "section": "1"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 8, Section 1",
+      "figureRef": "6.8",
+      "citation": "This kind of very predictable, regular, hierarchical structure is typical of a double period",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 8/Section 1/Ex6-8-(1).png",
+        "midi": "Chapter 6/Example 8/Section 1/Ex6-8-(1).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-8-(2)",
+      "slug": "chapter-6/example-8/section-2",
+      "route": {
+        "chapter": "6",
+        "example": "8",
+        "section": "2"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 8, Section 2",
+      "figureRef": "6.8",
+      "citation": "This kind of very predictable, regular, hierarchical structure is typical of a double period",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 8/Section 2/Ex6-8-(2).png",
+        "midi": "Chapter 6/Example 8/Section 2/Ex6-8-(2).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-9-(1)",
+      "slug": "chapter-6/example-9/section-1",
+      "route": {
+        "chapter": "6",
+        "example": "9",
+        "section": "1"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 9, Section 1",
+      "figureRef": "6.9",
+      "citation": "This kind of very predictable, regular, hierarchical structure is typical of a double period",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 9/Section 1/Ex6-9-(1).png",
+        "midi": "Chapter 6/Example 9/Section 1/Ex6-9-(1).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-9-(2)",
+      "slug": "chapter-6/example-9/section-2",
+      "route": {
+        "chapter": "6",
+        "example": "9",
+        "section": "2"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 9, Section 2",
+      "figureRef": "6.9",
+      "citation": "This kind of very predictable, regular, hierarchical structure is typical of a double period",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 9/Section 2/Ex6-9-(2).png",
+        "midi": "Chapter 6/Example 9/Section 2/Ex6-9-(2).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex6-10",
+      "slug": "chapter-6/example-10",
+      "route": {
+        "chapter": "6",
+        "example": "10"
+      },
+      "chapter": "Chapter 6",
+      "chapterNumber": 6,
+      "exampleLabel": "Example 10",
+      "figureRef": "6.10",
+      "citation": "This kind of very predictable, regular, hierarchical structure is typical of a double period",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 6/Example 10/Ex6-10.png",
+        "midi": "Chapter 6/Example 10/Ex6-10.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex7-1",
+      "slug": "chapter-7/example-1",
+      "route": {
+        "chapter": "7",
+        "example": "1"
+      },
+      "chapter": "Chapter 7",
+      "chapterNumber": 7,
+      "exampleLabel": "Example 1",
+      "figureRef": "7.1",
+      "citation": "Chopin, Prelude, Op. 28, No. 1",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 7/Example 1/Ex7-1.png",
+        "midi": "Chapter 7/Example 1/Ex7-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex7-2",
+      "slug": "chapter-7/example-2",
+      "route": {
+        "chapter": "7",
+        "example": "2"
+      },
+      "chapter": "Chapter 7",
+      "chapterNumber": 7,
+      "exampleLabel": "Example 2",
+      "figureRef": "7.2",
+      "citation": "Chopin, Prelude, Op. 28, No. 2",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 7/Example 2/Ex7-2.png",
+        "midi": "Chapter 7/Example 2/Ex7-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex8-1",
+      "slug": "chapter-8/example-1",
+      "route": {
+        "chapter": "8",
+        "example": "1"
+      },
+      "chapter": "Chapter 8",
+      "chapterNumber": 8,
+      "exampleLabel": "Example 1",
+      "figureRef": "8.1",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 8/Example 1/Ex8-1.png",
+        "midi": "Chapter 8/Example 1/Ex8-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex9-1",
+      "slug": "chapter-9/example-1",
+      "route": {
+        "chapter": "9",
+        "example": "1"
+      },
+      "chapter": "Chapter 9",
+      "chapterNumber": 9,
+      "exampleLabel": "Example 1",
+      "figureRef": "9.1",
+      "citation": "Bach, Partita No. 1 in B-flat major, BWV 825, Minuet II",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 9/Example 1/Ex9-1.png",
+        "midi": "Chapter 9/Example 1/Ex9-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex9-2",
+      "slug": "chapter-9/example-2",
+      "route": {
+        "chapter": "9",
+        "example": "2"
+      },
+      "chapter": "Chapter 9",
+      "chapterNumber": 9,
+      "exampleLabel": "Example 2",
+      "figureRef": "9.2",
+      "citation": "Mozart, Minuet, K. 568, No.2, Trio",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 9/Example 2/Ex9-2.png",
+        "midi": "Chapter 9/Example 2/Ex9-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex9-3",
+      "slug": "chapter-9/example-3",
+      "route": {
+        "chapter": "9",
+        "example": "3"
+      },
+      "chapter": "Chapter 9",
+      "chapterNumber": 9,
+      "exampleLabel": "Example 3",
+      "figureRef": "9.3",
+      "citation": "Schumann, “Träumerei,” from Kinderszenen , Op. 15",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 9/Example 3/Ex9-3.png",
+        "midi": "Chapter 9/Example 3/Ex9-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex10-1",
+      "slug": "chapter-10/example-1",
+      "route": {
+        "chapter": "10",
+        "example": "1"
+      },
+      "chapter": "Chapter 10",
+      "chapterNumber": 10,
+      "exampleLabel": "Example 1",
+      "figureRef": "10.1",
+      "citation": "Fauré, Variations in C-sharp minor, Op. 73, first bars of the theme and of variation 2",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 10/Example 1/Ex10-1.png",
+        "midi": "Chapter 10/Example 1/Ex10-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex10-2",
+      "slug": "chapter-10/example-2",
+      "route": {
+        "chapter": "10",
+        "example": "2"
+      },
+      "chapter": "Chapter 10",
+      "chapterNumber": 10,
+      "exampleLabel": "Example 2",
+      "figureRef": "10.2",
+      "citation": "Beethoven, String Quartet in F major, Op. 135, third movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 10/Example 2/Ex10-2.png",
+        "midi": "Chapter 10/Example 2/Ex10-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex10-3",
+      "slug": "chapter-10/example-3",
+      "route": {
+        "chapter": "10",
+        "example": "3"
+      },
+      "chapter": "Chapter 10",
+      "chapterNumber": 10,
+      "exampleLabel": "Example 3",
+      "figureRef": "10.3",
+      "citation": "Brahms, Variations and Fugue on a Theme by Handel, theme",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 10/Example 3/Ex10-3.png",
+        "midi": "Chapter 10/Example 3/Ex10-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex10-4",
+      "slug": "chapter-10/example-4",
+      "route": {
+        "chapter": "10",
+        "example": "4"
+      },
+      "chapter": "Chapter 10",
+      "chapterNumber": 10,
+      "exampleLabel": "Example 4",
+      "figureRef": "10.4",
+      "citation": "Brahms, Variations and Fugue on a Theme by Handel, variation 1",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 10/Example 4/Ex10-4.png",
+        "midi": "Chapter 10/Example 4/Ex10-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex10-5",
+      "slug": "chapter-10/example-5",
+      "route": {
+        "chapter": "10",
+        "example": "5"
+      },
+      "chapter": "Chapter 10",
+      "chapterNumber": 10,
+      "exampleLabel": "Example 5",
+      "figureRef": "10.5",
+      "citation": "Brahms, Variations and Fugue on a Theme by Handel, variations 7 and 8",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 10/Example 5/Ex10-5.png",
+        "midi": "Chapter 10/Example 5/Ex10-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex10-6",
+      "slug": "chapter-10/example-6",
+      "route": {
+        "chapter": "10",
+        "example": "6"
+      },
+      "chapter": "Chapter 10",
+      "chapterNumber": 10,
+      "exampleLabel": "Example 6",
+      "figureRef": "10.6",
+      "citation": "Brahms, Variations and Fugue on a Theme by Handel, variation 19",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 10/Example 6/Ex10-6.png",
+        "midi": "Chapter 10/Example 6/Ex10-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex10-7",
+      "slug": "chapter-10/example-7",
+      "route": {
+        "chapter": "10",
+        "example": "7"
+      },
+      "chapter": "Chapter 10",
+      "chapterNumber": 10,
+      "exampleLabel": "Example 7",
+      "figureRef": "10.7",
+      "citation": "Brahms, Variations and Fugue on a Theme by Handel, fugue theme",
+      "citationKind": "attributed",
+      "assets": {
+        "image": null,
+        "midi": "Chapter 10/Example 7/Ex10-7.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex10-8",
+      "slug": "chapter-10/example-8",
+      "route": {
+        "chapter": "10",
+        "example": "8"
+      },
+      "chapter": "Chapter 10",
+      "chapterNumber": 10,
+      "exampleLabel": "Example 8",
+      "figureRef": "10.8",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 10/Example 8/Ex10-8.png",
+        "midi": "Chapter 10/Example 8/Ex10-8.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-1",
+      "slug": "chapter-11/example-1",
+      "route": {
+        "chapter": "11",
+        "example": "1"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 1",
+      "figureRef": "11.1",
+      "citation": "Beethoven, String Quartet in F major, Op. 18, No. 1, first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 11/Example 1/Ex11-1.png",
+        "midi": "Chapter 11/Example 1/Ex11-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-2",
+      "slug": "chapter-11/example-2",
+      "route": {
+        "chapter": "11",
+        "example": "2"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 2",
+      "figureRef": "11.2",
+      "citation": "Mendelssohn, Rondo capriccioso , Op. 14, introduction",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 11/Example 2/Ex11-2.png",
+        "midi": "Chapter 11/Example 2/Ex11-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-3",
+      "slug": "chapter-11/example-3",
+      "route": {
+        "chapter": "11",
+        "example": "3"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 3",
+      "figureRef": "11.3",
+      "citation": "Mendelssohn, Rondo capriccioso , Op. 14, mm. 27–31",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 11/Example 3/Ex11-3.png",
+        "midi": "Chapter 11/Example 3/Ex11-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-4-(1)",
+      "slug": "chapter-11/example-4/section-1",
+      "route": {
+        "chapter": "11",
+        "example": "4",
+        "section": "1"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 4, Section 1",
+      "figureRef": "11.4",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 11/Example 4/Section 1/Ex11-4-(1).png",
+        "midi": "Chapter 11/Example 4/Section 1/Ex11-4-(1).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-4-(2)",
+      "slug": "chapter-11/example-4/section-2",
+      "route": {
+        "chapter": "11",
+        "example": "4",
+        "section": "2"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 4, Section 2",
+      "figureRef": "11.4",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 11/Example 4/Section 2/Ex11-4-(2).png",
+        "midi": "Chapter 11/Example 4/Section 2/Ex11-4-(2).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-4-(3)",
+      "slug": "chapter-11/example-4/section-3",
+      "route": {
+        "chapter": "11",
+        "example": "4",
+        "section": "3"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 4, Section 3",
+      "figureRef": "11.4",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 11/Example 4/Section 3/Ex11-4-(3).png",
+        "midi": "Chapter 11/Example 4/Section 3/Ex11-4-(3).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-5",
+      "slug": "chapter-11/example-5",
+      "route": {
+        "chapter": "11",
+        "example": "5"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 5",
+      "figureRef": "11.5",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 11/Example 5/Ex11-5.png",
+        "midi": "Chapter 11/Example 5/Ex11-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-6",
+      "slug": "chapter-11/example-6",
+      "route": {
+        "chapter": "11",
+        "example": "6"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 6",
+      "figureRef": "11.6",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 11/Example 6/Ex11-6.png",
+        "midi": "Chapter 11/Example 6/Ex11-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-7",
+      "slug": "chapter-11/example-7",
+      "route": {
+        "chapter": "11",
+        "example": "7"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 7",
+      "figureRef": "11.7",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 11/Example 7/Ex11-7.png",
+        "midi": "Chapter 11/Example 7/Ex11-7.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-8",
+      "slug": "chapter-11/example-8",
+      "route": {
+        "chapter": "11",
+        "example": "8"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 8",
+      "figureRef": "11.8",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 11/Example 8/Ex11-8.png",
+        "midi": "Chapter 11/Example 8/Ex11-8.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-9",
+      "slug": "chapter-11/example-9",
+      "route": {
+        "chapter": "11",
+        "example": "9"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 9",
+      "figureRef": "11.9",
+      "citation": "Aaron Copland, Appalachian Spring , Ballet Suite for 13 Instruments. © Copyright 1945 The Aaron Copland Fund for Music, Inc. Copyright Renewed. Boosey & Hawkes, Inc., Sole Licensee. Reprinted by permission.",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 11/Example 9/Ex11-9.png",
+        "midi": "Chapter 11/Example 9/Ex11-9.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-10",
+      "slug": "chapter-11/example-10",
+      "route": {
+        "chapter": "11",
+        "example": "10"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 10",
+      "figureRef": "11.10",
+      "citation": "Aaron Copland, Appalachian Spring , Ballet Suite for 13 Instruments. © Copyright 1945 The Aaron Copland Fund for Music, Inc. Copyright Renewed. Boosey & Hawkes, Inc., Sole Licensee. Reprinted by permission.",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 11/Example 10/Ex11-10.png",
+        "midi": "Chapter 11/Example 10/Ex11-10.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-11",
+      "slug": "chapter-11/example-11",
+      "route": {
+        "chapter": "11",
+        "example": "11"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 11",
+      "figureRef": "11.11",
+      "citation": "On our scale of contrasts, this ranks quite high, perhaps 7 or 8 out of 10",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 11/Example 11/Ex11-11.png",
+        "midi": "Chapter 11/Example 11/Ex11-11.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex11-12",
+      "slug": "chapter-11/example-12",
+      "route": {
+        "chapter": "11",
+        "example": "12"
+      },
+      "chapter": "Chapter 11",
+      "chapterNumber": 11,
+      "exampleLabel": "Example 12",
+      "figureRef": "11.12",
+      "citation": "On our scale of contrasts, this ranks quite high, perhaps 7 or 8 out of 10",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 11/Example 12/Ex11-12.png",
+        "midi": "Chapter 11/Example 12/Ex11-12.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-1",
+      "slug": "chapter-12/example-1",
+      "route": {
+        "chapter": "12",
+        "example": "1"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 1",
+      "figureRef": "12.1",
+      "citation": "Haydn, Piano Sonata in F major, Hob. XVI: 23, opening",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 1/Ex12-1.png",
+        "midi": "Chapter 12/Example 1/Ex12-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-2",
+      "slug": "chapter-12/example-2",
+      "route": {
+        "chapter": "12",
+        "example": "2"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 2",
+      "figureRef": "12.2",
+      "citation": "Haydn, Piano Sonata in F major, Hob. XVI: 23, opening modified",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 2/Ex12-2.png",
+        "midi": "Chapter 12/Example 2/Ex12-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-3",
+      "slug": "chapter-12/example-3",
+      "route": {
+        "chapter": "12",
+        "example": "3"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 3",
+      "figureRef": "12.3",
+      "citation": "Henri Dutilleux, Tout un monde lointain , harmony from the end of the first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 3/Ex12-3.png",
+        "midi": "Chapter 12/Example 3/Ex12-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-4",
+      "slug": "chapter-12/example-4",
+      "route": {
+        "chapter": "12",
+        "example": "4"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 4",
+      "figureRef": "12.4",
+      "citation": "Beethoven, String Quartet in E-flat major, Op. 74 ( Harp ), introduction",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 4/Ex12-4.png",
+        "midi": "Chapter 12/Example 4/Ex12-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-5",
+      "slug": "chapter-12/example-5",
+      "route": {
+        "chapter": "12",
+        "example": "5"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 5",
+      "figureRef": "12.5",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 12/Example 5/Ex12-5.png",
+        "midi": "Chapter 12/Example 5/Ex12-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-6",
+      "slug": "chapter-12/example-6",
+      "route": {
+        "chapter": "12",
+        "example": "6"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 6",
+      "figureRef": "12.6",
+      "citation": "Stravinsky, Symphony of Psalms , opening. © Copyright 1931 by Hawkes & Son (London) Ltd. Revised version: © Copyright 1948 by Hawkes & Son (London) Ltd. U.S. copyright renewed. Reprinted by Permission of Boosey & Hawkes, Inc.",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 6/Ex12-6.png",
+        "midi": "Chapter 12/Example 6/Ex12-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-7-(1)",
+      "slug": "chapter-12/example-7/section-1",
+      "route": {
+        "chapter": "12",
+        "example": "7",
+        "section": "1"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 7, Section 1",
+      "figureRef": "12.7",
+      "citation": "Thematic material in the first movement of Brahms, Symphony No. 2",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 7/Section 1/Ex12-7-(1).png",
+        "midi": "Chapter 12/Example 7/Section 1/Ex12-7-(1).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-7-(2)",
+      "slug": "chapter-12/example-7/section-2",
+      "route": {
+        "chapter": "12",
+        "example": "7",
+        "section": "2"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 7, Section 2",
+      "figureRef": "12.7",
+      "citation": "Thematic material in the first movement of Brahms, Symphony No. 2",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 7/Section 2/Ex12-7-(2).png",
+        "midi": "Chapter 12/Example 7/Section 2/Ex12-7-(2).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-7-(3)",
+      "slug": "chapter-12/example-7/section-3",
+      "route": {
+        "chapter": "12",
+        "example": "7",
+        "section": "3"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 7, Section 3",
+      "figureRef": "12.7",
+      "citation": "Thematic material in the first movement of Brahms, Symphony No. 2",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 7/Section 3/Ex12-7-(3).png",
+        "midi": "Chapter 12/Example 7/Section 3/Ex12-7-(3).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-7-(4)",
+      "slug": "chapter-12/example-7/section-4",
+      "route": {
+        "chapter": "12",
+        "example": "7",
+        "section": "4"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 7, Section 4",
+      "figureRef": "12.7",
+      "citation": "Thematic material in the first movement of Brahms, Symphony No. 2",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 7/Section 4/Ex12-7-(4).png",
+        "midi": "Chapter 12/Example 7/Section 4/Ex12-7-(4).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-7-(5)",
+      "slug": "chapter-12/example-7/section-5",
+      "route": {
+        "chapter": "12",
+        "example": "7",
+        "section": "5"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 7, Section 5",
+      "figureRef": "12.7",
+      "citation": "Thematic material in the first movement of Brahms, Symphony No. 2",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 7/Section 5/Ex12-7-(5).png",
+        "midi": "Chapter 12/Example 7/Section 5/Ex12-7-(5).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-7-(6)",
+      "slug": "chapter-12/example-7/section-6",
+      "route": {
+        "chapter": "12",
+        "example": "7",
+        "section": "6"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 7, Section 6",
+      "figureRef": "12.7",
+      "citation": "Thematic material in the first movement of Brahms, Symphony No. 2",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 7/Section 6/Ex12-7-(6).png",
+        "midi": "Chapter 12/Example 7/Section 6/Ex12-7-(6).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-8",
+      "slug": "chapter-12/example-8",
+      "route": {
+        "chapter": "12",
+        "example": "8"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 8",
+      "figureRef": "12.8",
+      "citation": "Again we see our fundamental principle at work: change is always associated with at least one element that stays the same or that recalls something already in the listener’s memory",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 12/Example 8/Ex12-8.png",
+        "midi": "Chapter 12/Example 8/Ex12-8.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-9",
+      "slug": "chapter-12/example-9",
+      "route": {
+        "chapter": "12",
+        "example": "9"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 9",
+      "figureRef": "12.9",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 12/Example 9/Ex12-9.png",
+        "midi": "Chapter 12/Example 9/Ex12-9.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-10-(1)",
+      "slug": "chapter-12/example-10/section-1",
+      "route": {
+        "chapter": "12",
+        "example": "10",
+        "section": "1"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 10, Section 1",
+      "figureRef": "12.10",
+      "citation": "Exercise 2: pairs of ideas for transitions",
+      "citationKind": "exercise",
+      "assets": {
+        "image": "Chapter 12/Example 10/Section 1/Ex12-10-(1).png",
+        "midi": "Chapter 12/Example 10/Section 1/Ex12-10-(1).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-10-(2)",
+      "slug": "chapter-12/example-10/section-2",
+      "route": {
+        "chapter": "12",
+        "example": "10",
+        "section": "2"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 10, Section 2",
+      "figureRef": "12.10",
+      "citation": "Exercise 2: pairs of ideas for transitions",
+      "citationKind": "exercise",
+      "assets": {
+        "image": "Chapter 12/Example 10/Section 2/Ex12-10-(2).png",
+        "midi": "Chapter 12/Example 10/Section 2/Ex12-10-(2).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex12-10-(3)",
+      "slug": "chapter-12/example-10/section-3",
+      "route": {
+        "chapter": "12",
+        "example": "10",
+        "section": "3"
+      },
+      "chapter": "Chapter 12",
+      "chapterNumber": 12,
+      "exampleLabel": "Example 10, Section 3",
+      "figureRef": "12.10",
+      "citation": "Exercise 2: pairs of ideas for transitions",
+      "citationKind": "exercise",
+      "assets": {
+        "image": "Chapter 12/Example 10/Section 3/Ex12-10-(3).png",
+        "midi": "Chapter 12/Example 10/Section 3/Ex12-10-(3).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex13-1",
+      "slug": "chapter-13/example-1",
+      "route": {
+        "chapter": "13",
+        "example": "1"
+      },
+      "chapter": "Chapter 13",
+      "chapterNumber": 13,
+      "exampleLabel": "Example 1",
+      "figureRef": "13.1",
+      "citation": "Once we have discerned the overall pattern, we are ready to move on",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 13/Example 1/Ex13-1.png",
+        "midi": "Chapter 13/Example 1/Ex13-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex14-1",
+      "slug": "chapter-14/example-1",
+      "route": {
+        "chapter": "14",
+        "example": "1"
+      },
+      "chapter": "Chapter 14",
+      "chapterNumber": 14,
+      "exampleLabel": "Example 1",
+      "figureRef": "14.1",
+      "citation": "Haydn, Piano Sonata in G major, Hob. XVI: 39, opening motives",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 14/Example 1/Ex14-1.png",
+        "midi": "Chapter 14/Example 1/Ex14-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex14-2",
+      "slug": "chapter-14/example-2",
+      "route": {
+        "chapter": "14",
+        "example": "2"
+      },
+      "chapter": "Chapter 14",
+      "chapterNumber": 14,
+      "exampleLabel": "Example 2",
+      "figureRef": "14.2",
+      "citation": "Haydn, Piano Sonata in G major, Hob. XVI: 39, first contrasting episode",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 14/Example 2/Ex14-2.png",
+        "midi": "Chapter 14/Example 2/Ex14-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex14-3",
+      "slug": "chapter-14/example-3",
+      "route": {
+        "chapter": "14",
+        "example": "3"
+      },
+      "chapter": "Chapter 14",
+      "chapterNumber": 14,
+      "exampleLabel": "Example 3",
+      "figureRef": "14.3",
+      "citation": "Haydn, Piano Sonata in G major, Hob. XVI: 39, first reprise",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 14/Example 3/Ex14-3.png",
+        "midi": "Chapter 14/Example 3/Ex14-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex14-4",
+      "slug": "chapter-14/example-4",
+      "route": {
+        "chapter": "14",
+        "example": "4"
+      },
+      "chapter": "Chapter 14",
+      "chapterNumber": 14,
+      "exampleLabel": "Example 4",
+      "figureRef": "14.4",
+      "citation": "Haydn, Piano Sonata in G major, Hob. XVI: 39, second contrasting episode",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 14/Example 4/Ex14-4.png",
+        "midi": "Chapter 14/Example 4/Ex14-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex14-5",
+      "slug": "chapter-14/example-5",
+      "route": {
+        "chapter": "14",
+        "example": "5"
+      },
+      "chapter": "Chapter 14",
+      "chapterNumber": 14,
+      "exampleLabel": "Example 5",
+      "figureRef": "14.5",
+      "citation": "Ravel, Pavane pour une infante défunte , opening",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 14/Example 5/Ex14-5.png",
+        "midi": "Chapter 14/Example 5/Ex14-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex14-6",
+      "slug": "chapter-14/example-6",
+      "route": {
+        "chapter": "14",
+        "example": "6"
+      },
+      "chapter": "Chapter 14",
+      "chapterNumber": 14,
+      "exampleLabel": "Example 6",
+      "figureRef": "14.6",
+      "citation": "Ravel, Pavane pour une infante défunte , first contrasting episode",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 14/Example 6/Ex14-6.png",
+        "midi": "Chapter 14/Example 6/Ex14-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex14-7",
+      "slug": "chapter-14/example-7",
+      "route": {
+        "chapter": "14",
+        "example": "7"
+      },
+      "chapter": "Chapter 14",
+      "chapterNumber": 14,
+      "exampleLabel": "Example 7",
+      "figureRef": "14.7",
+      "citation": "Ravel, Pavane pour une infante défunte , first reprise",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 14/Example 7/Ex14-7.png",
+        "midi": "Chapter 14/Example 7/Ex14-7.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex14-8",
+      "slug": "chapter-14/example-8",
+      "route": {
+        "chapter": "14",
+        "example": "8"
+      },
+      "chapter": "Chapter 14",
+      "chapterNumber": 14,
+      "exampleLabel": "Example 8",
+      "figureRef": "14.8",
+      "citation": "Ravel, Pavane pour une infante défunte , second contrasting episode",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 14/Example 8/Ex14-8.png",
+        "midi": "Chapter 14/Example 8/Ex14-8.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex14-9",
+      "slug": "chapter-14/example-9",
+      "route": {
+        "chapter": "14",
+        "example": "9"
+      },
+      "chapter": "Chapter 14",
+      "chapterNumber": 14,
+      "exampleLabel": "Example 9",
+      "figureRef": "14.9",
+      "citation": "Ravel, Pavane pour une infante défunte , final reprise",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 14/Example 9/Ex14-9.png",
+        "midi": "Chapter 14/Example 9/Ex14-9.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex15-1",
+      "slug": "chapter-15/example-1",
+      "route": {
+        "chapter": "15",
+        "example": "1"
+      },
+      "chapter": "Chapter 15",
+      "chapterNumber": 15,
+      "exampleLabel": "Example 1",
+      "figureRef": "15.1",
+      "citation": "Beethoven, Piano Sonata in B-flat major, Op. 106, fugue",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 15/Example 1/Ex15-1.png",
+        "midi": "Chapter 15/Example 1/Ex15-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex15-2",
+      "slug": "chapter-15/example-2",
+      "route": {
+        "chapter": "15",
+        "example": "2"
+      },
+      "chapter": "Chapter 15",
+      "chapterNumber": 15,
+      "exampleLabel": "Example 2",
+      "figureRef": "15.2",
+      "citation": "Mozart, Symphony No. 41 in C major, K. 551 ( Jupiter ), beginning of the first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 15/Example 2/Ex15-2.png",
+        "midi": "Chapter 15/Example 2/Ex15-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex15-3",
+      "slug": "chapter-15/example-3",
+      "route": {
+        "chapter": "15",
+        "example": "3"
+      },
+      "chapter": "Chapter 15",
+      "chapterNumber": 15,
+      "exampleLabel": "Example 3",
+      "figureRef": "15.3",
+      "citation": "Prokofiev, Violin Concerto No. 1 in D, Op. 19, beginning of the third movement. © Copyright 1921 by Hawkes & Son (London) Ltd. Reprinted by permission of Boosey & Hawkes, Inc.",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 15/Example 3/Ex15-3.png",
+        "midi": "Chapter 15/Example 3/Ex15-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex15-4",
+      "slug": "chapter-15/example-4",
+      "route": {
+        "chapter": "15",
+        "example": "4"
+      },
+      "chapter": "Chapter 15",
+      "chapterNumber": 15,
+      "exampleLabel": "Example 4",
+      "figureRef": "15.4",
+      "citation": "Bach, St. John Passion , BWV 245, beginning of the first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 15/Example 4/Ex15-4.png",
+        "midi": "Chapter 15/Example 4/Ex15-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex15-5",
+      "slug": "chapter-15/example-5",
+      "route": {
+        "chapter": "15",
+        "example": "5"
+      },
+      "chapter": "Chapter 15",
+      "chapterNumber": 15,
+      "exampleLabel": "Example 5",
+      "figureRef": "15.5",
+      "citation": "Wagner, Tristan und Isolde , opening",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 15/Example 5/Ex15-5.png",
+        "midi": "Chapter 15/Example 5/Ex15-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex15-6",
+      "slug": "chapter-15/example-6",
+      "route": {
+        "chapter": "15",
+        "example": "6"
+      },
+      "chapter": "Chapter 15",
+      "chapterNumber": 15,
+      "exampleLabel": "Example 6",
+      "figureRef": "15.6",
+      "citation": "Beethoven, Symphony No. 1, opening of the first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 15/Example 6/Ex15-6.png",
+        "midi": "Chapter 15/Example 6/Ex15-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex15-7",
+      "slug": "chapter-15/example-7",
+      "route": {
+        "chapter": "15",
+        "example": "7"
+      },
+      "chapter": "Chapter 15",
+      "chapterNumber": 15,
+      "exampleLabel": "Example 7",
+      "figureRef": "15.7",
+      "citation": "Bartók, Concerto for Orchestra, Sz. 116, first movement. © Copyright 1946 by Hawkes & Son (London) Ltd. International Copyright Secured. All Rights Reserved. Reprinted by Permission of Boosey & Hawkes, Inc.",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 15/Example 7/Ex15-7.png",
+        "midi": "Chapter 15/Example 7/Ex15-7.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex16-1",
+      "slug": "chapter-16/example-1",
+      "route": {
+        "chapter": "16",
+        "example": "1"
+      },
+      "chapter": "Chapter 16",
+      "chapterNumber": 16,
+      "exampleLabel": "Example 1",
+      "figureRef": "16.1",
+      "citation": "Beethoven, Symphony No. 7, Op. 91, ideas from the introduction",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 16/Example 1/Ex16-1.png",
+        "midi": "Chapter 16/Example 1/Ex16-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex16-2",
+      "slug": "chapter-16/example-2",
+      "route": {
+        "chapter": "16",
+        "example": "2"
+      },
+      "chapter": "Chapter 16",
+      "chapterNumber": 16,
+      "exampleLabel": "Example 2",
+      "figureRef": "16.2",
+      "citation": "Sibelius, Symphony No. 4, third movement, m. 1",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 16/Example 2/Ex16-2.png",
+        "midi": "Chapter 16/Example 2/Ex16-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex16-3",
+      "slug": "chapter-16/example-3",
+      "route": {
+        "chapter": "16",
+        "example": "3"
+      },
+      "chapter": "Chapter 16",
+      "chapterNumber": 16,
+      "exampleLabel": "Example 3",
+      "figureRef": "16.3",
+      "citation": "Sibelius, Symphony No. 4, third movement, m. 9",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 16/Example 3/Ex16-3.png",
+        "midi": "Chapter 16/Example 3/Ex16-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex16-4",
+      "slug": "chapter-16/example-4",
+      "route": {
+        "chapter": "16",
+        "example": "4"
+      },
+      "chapter": "Chapter 16",
+      "chapterNumber": 16,
+      "exampleLabel": "Example 4",
+      "figureRef": "16.4",
+      "citation": "Beethoven, Symphony No. 9, Op. 125, first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 16/Example 4/Ex16-4.png",
+        "midi": "Chapter 16/Example 4/Ex16-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex16-5",
+      "slug": "chapter-16/example-5",
+      "route": {
+        "chapter": "16",
+        "example": "5"
+      },
+      "chapter": "Chapter 16",
+      "chapterNumber": 16,
+      "exampleLabel": "Example 5",
+      "figureRef": "16.5",
+      "citation": "Beethoven, Symphony No. 9, Op. 125, second movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 16/Example 5/Ex16-5.png",
+        "midi": "Chapter 16/Example 5/Ex16-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex16-6",
+      "slug": "chapter-16/example-6",
+      "route": {
+        "chapter": "16",
+        "example": "6"
+      },
+      "chapter": "Chapter 16",
+      "chapterNumber": 16,
+      "exampleLabel": "Example 6",
+      "figureRef": "16.6",
+      "citation": "It would be like a novel where many chapters begin “And then something really strange happened.” The effect would soon lose its force, and the overall form would simply fall apart",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 16/Example 6/Ex16-6.png",
+        "midi": "Chapter 16/Example 6/Ex16-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex16-7",
+      "slug": "chapter-16/example-7",
+      "route": {
+        "chapter": "16",
+        "example": "7"
+      },
+      "chapter": "Chapter 16",
+      "chapterNumber": 16,
+      "exampleLabel": "Example 7",
+      "figureRef": "16.7",
+      "citation": "It would be like a novel where many chapters begin “And then something really strange happened.” The effect would soon lose its force, and the overall form would simply fall apart",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 16/Example 7/Ex16-7.png",
+        "midi": "Chapter 16/Example 7/Ex16-7.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex16-8",
+      "slug": "chapter-16/example-8",
+      "route": {
+        "chapter": "16",
+        "example": "8"
+      },
+      "chapter": "Chapter 16",
+      "chapterNumber": 16,
+      "exampleLabel": "Example 8",
+      "figureRef": "16.8",
+      "citation": "It would be like a novel where many chapters begin “And then something really strange happened.” The effect would soon lose its force, and the overall form would simply fall apart",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 16/Example 8/Ex16-8.png",
+        "midi": "Chapter 16/Example 8/Ex16-8.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex18-1",
+      "slug": "chapter-18/example-1",
+      "route": {
+        "chapter": "18",
+        "example": "1"
+      },
+      "chapter": "Chapter 18",
+      "chapterNumber": 18,
+      "exampleLabel": "Example 1",
+      "figureRef": "18.1",
+      "citation": "Bach, French Suite No. 6 in E major, BWV 817, Allemande",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 18/Example 1/Ex18-1.png",
+        "midi": "Chapter 18/Example 1/Ex18-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex19-1",
+      "slug": "chapter-19/example-1",
+      "route": {
+        "chapter": "19",
+        "example": "1"
+      },
+      "chapter": "Chapter 19",
+      "chapterNumber": 19,
+      "exampleLabel": "Example 1",
+      "figureRef": "19.1",
+      "citation": "Mozart, Piano Sonata in A minor, K. 310, opening of the first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 19/Example 1/Ex19-1.png",
+        "midi": "Chapter 19/Example 1/Ex19-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex19-2",
+      "slug": "chapter-19/example-2",
+      "route": {
+        "chapter": "19",
+        "example": "2"
+      },
+      "chapter": "Chapter 19",
+      "chapterNumber": 19,
+      "exampleLabel": "Example 2",
+      "figureRef": "19.2",
+      "citation": "Mozart, Piano Sonata in A minor, K. 310, first movement, C-major theme",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 19/Example 2/Ex19-2.png",
+        "midi": "Chapter 19/Example 2/Ex19-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex19-3",
+      "slug": "chapter-19/example-3",
+      "route": {
+        "chapter": "19",
+        "example": "3"
+      },
+      "chapter": "Chapter 19",
+      "chapterNumber": 19,
+      "exampleLabel": "Example 3",
+      "figureRef": "19.3",
+      "citation": "Beethoven, String Quartet in E minor, Op. 59, No. 2, first movement, mm. 1–4",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 19/Example 3/Ex19-3.png",
+        "midi": "Chapter 19/Example 3/Ex19-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex19-4",
+      "slug": "chapter-19/example-4",
+      "route": {
+        "chapter": "19",
+        "example": "4"
+      },
+      "chapter": "Chapter 19",
+      "chapterNumber": 19,
+      "exampleLabel": "Example 4",
+      "figureRef": "19.4",
+      "citation": "Beethoven, String Quartet in E minor, Op. 59, No. 2, first movement, mm. 13–14",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 19/Example 4/Ex19-4.png",
+        "midi": "Chapter 19/Example 4/Ex19-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex19-5",
+      "slug": "chapter-19/example-5",
+      "route": {
+        "chapter": "19",
+        "example": "5"
+      },
+      "chapter": "Chapter 19",
+      "chapterNumber": 19,
+      "exampleLabel": "Example 5",
+      "figureRef": "19.5",
+      "citation": "Beethoven, String Quartet in E minor, Op. 59, No. 2, first movement, mm. 38–40",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 19/Example 5/Ex19-5.png",
+        "midi": "Chapter 19/Example 5/Ex19-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-1",
+      "slug": "chapter-20/example-1",
+      "route": {
+        "chapter": "20",
+        "example": "1"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 1",
+      "figureRef": "20.1",
+      "citation": "Bach, Fantasia and Fugue in G minor, BWV 542, beginning of the fugue",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 20/Example 1/Ex20-1.png",
+        "midi": "Chapter 20/Example 1/Ex20-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-2",
+      "slug": "chapter-20/example-2",
+      "route": {
+        "chapter": "20",
+        "example": "2"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 2",
+      "figureRef": "20.2",
+      "citation": "Brahms, Violin Concerto, first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 20/Example 2/Ex20-2.png",
+        "midi": "Chapter 20/Example 2/Ex20-2.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-3",
+      "slug": "chapter-20/example-3",
+      "route": {
+        "chapter": "20",
+        "example": "3"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 3",
+      "figureRef": "20.3",
+      "citation": "Chopin, Mazurka in C-sharp minor, Op. 63, No. 3",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 20/Example 3/Ex20-3.png",
+        "midi": "Chapter 20/Example 3/Ex20-3.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-4",
+      "slug": "chapter-20/example-4",
+      "route": {
+        "chapter": "20",
+        "example": "4"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 4",
+      "figureRef": "20.4",
+      "citation": "Debussy, Sonata for Flute, Viola, and Harp, first movement",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 20/Example 4/Ex20-4.png",
+        "midi": "Chapter 20/Example 4/Ex20-4.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-5",
+      "slug": "chapter-20/example-5",
+      "route": {
+        "chapter": "20",
+        "example": "5"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 5",
+      "figureRef": "20.5",
+      "citation": "Mendelssohn, Rondo capriccioso",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 20/Example 5/Ex20-5.png",
+        "midi": "Chapter 20/Example 5/Ex20-5.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-6",
+      "slug": "chapter-20/example-6",
+      "route": {
+        "chapter": "20",
+        "example": "6"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 6",
+      "figureRef": "20.6",
+      "citation": "Wagner, Die Walküre , act 3, mm. 12–13",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 20/Example 6/Ex20-6.png",
+        "midi": "Chapter 20/Example 6/Ex20-6.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-7",
+      "slug": "chapter-20/example-7",
+      "route": {
+        "chapter": "20",
+        "example": "7"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 7",
+      "figureRef": "20.7",
+      "citation": "Ravel, Daphnis et Chloé , “Lever du jour”",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 20/Example 7/Ex20-7.png",
+        "midi": "Chapter 20/Example 7/Ex20-7.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-8",
+      "slug": "chapter-20/example-8",
+      "route": {
+        "chapter": "20",
+        "example": "8"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 8",
+      "figureRef": "20.8",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 20/Example 8/Ex20-8.png",
+        "midi": "Chapter 20/Example 8/Ex20-8.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-9",
+      "slug": "chapter-20/example-9",
+      "route": {
+        "chapter": "20",
+        "example": "9"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 9",
+      "figureRef": "20.9",
+      "citation": "Original composition by Alan Belkin (uncited in the textbook).",
+      "citationKind": "original",
+      "assets": {
+        "image": "Chapter 20/Example 9/Ex20-9.png",
+        "midi": "Chapter 20/Example 9/Ex20-9.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-10-(1)",
+      "slug": "chapter-20/example-10/section-1",
+      "route": {
+        "chapter": "20",
+        "example": "10",
+        "section": "1"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 10, Section 1",
+      "figureRef": "20.10",
+      "citation": "As it is, the figures in the winds and in the harp emerge as if from a mist",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 20/Example 10/Section 1/Ex20-10-(1).png",
+        "midi": "Chapter 20/Example 10/Section 1/Ex20-10-(1).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Ex20-10-(2)",
+      "slug": "chapter-20/example-10/section-2",
+      "route": {
+        "chapter": "20",
+        "example": "10",
+        "section": "2"
+      },
+      "chapter": "Chapter 20",
+      "chapterNumber": 20,
+      "exampleLabel": "Example 10, Section 2",
+      "figureRef": "20.10",
+      "citation": "As it is, the figures in the winds and in the harp emerge as if from a mist",
+      "citationKind": "attributed",
+      "assets": {
+        "image": "Chapter 20/Example 10/Section 2/Ex20-10-(2).png",
+        "midi": "Chapter 20/Example 10/Section 2/Ex20-10-(2).mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Extra-1",
+      "slug": "extra/example-1",
+      "route": {
+        "chapter": "extra",
+        "example": "1"
+      },
+      "chapter": "Extra",
+      "chapterNumber": null,
+      "exampleLabel": "Extra Example 1",
+      "figureRef": null,
+      "citation": "Source not identified in the textbook.",
+      "citationKind": "unknown",
+      "assets": {
+        "image": "Extra/Example 1/Extra-1.png",
+        "midi": "Extra/Example 1/Extra-1.mid",
+        "mockupAudio": null
+      }
+    },
+    {
+      "id": "Extra-2",
+      "slug": "extra/example-2",
+      "route": {
+        "chapter": "extra",
+        "example": "2"
+      },
+      "chapter": "Extra",
+      "chapterNumber": null,
+      "exampleLabel": "Extra Example 2",
+      "figureRef": null,
+      "citation": "Source not identified in the textbook.",
+      "citationKind": "unknown",
+      "assets": {
+        "image": "Extra/Example 2/Extra-2.png",
+        "midi": "Extra/Example 2/Extra-2.mid",
+        "mockupAudio": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+* text=auto eol=lf
+
+*.mid binary
+*.png binary
+*.wav binary
+*.mp3 binary
+*.m4a binary
+*.ogg binary
+*.zip binary
+*.epub binary
+
+*.musicxml text diff

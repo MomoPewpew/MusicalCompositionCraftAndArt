@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      NODE_ENV: development
+    volumes:
+      - .:/app
+      - web_node_modules:/app/web/node_modules
+
+volumes:
+  web_node_modules:

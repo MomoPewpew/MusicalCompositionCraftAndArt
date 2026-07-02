@@ -1,0 +1,851 @@
+{
+  "name": "Musical Composition Craft And Art",
+  "baseUrl": "https://music-ed.s3.us-east-2.amazonaws.com/MusicalCompositionCraftAndArt/",
+  "chapters": [
+    {
+      "name": "Chapter 1",
+      "examples": [
+        {
+          "name": "Ex1-1-(1)",
+          "midi": "Ex1-1-(1).mid",
+          "image": "Ex1-1-(1).png"
+        },
+        {
+          "name": "Ex1-1-(2)",
+          "midi": "Ex1-1-(2).mid",
+          "image": "Ex1-1-(2).png"
+        },
+        {
+          "name": "Ex1-1-(3)",
+          "midi": "Ex1-1-(3).mid",
+          "image": "Ex1-1-(3).png"
+        },
+        {
+          "name": "Ex1-1-(4)",
+          "midi": "Ex1-1-(4).mid",
+          "image": "Ex1-1-(4).png"
+        },
+        {
+          "name": "Ex1-2",
+          "midi": "Ex1-2.mid",
+          "image": "Ex1-2.png"
+        },
+        {
+          "name": "Ex1-3",
+          "midi": "Ex1-3.mid",
+          "image": "Ex1-3.png"
+        },
+        {
+          "name": "Ex1-4",
+          "midi": "Ex1-4.mid",
+          "image": "Ex1-4.png"
+        },
+        {
+          "name": "Ex1-5",
+          "midi": "Ex1-5.mid",
+          "image": "Ex1-5.png"
+        },
+        {
+          "name": "Ex1-6",
+          "midi": "Ex1-6.mid",
+          "image": "Ex1-6.png"
+        },
+        {
+          "name": "Ex1-7",
+          "midi": "Ex1-7.mid",
+          "image": "Ex1-7.png"
+        },
+        {
+          "name": "Ex1-8",
+          "midi": "Ex1-8.mid",
+          "image": "Ex1-8.png"
+        },
+        {
+          "name": "Ex1-9-(1)",
+          "midi": "Ex1-9-(1).mid",
+          "image": "Ex1-9-(1).png"
+        },
+        {
+          "name": "Ex1-9-(2)",
+          "midi": "Ex1-9-(2).mid",
+          "image": "Ex1-9-(2).png"
+        },
+        {
+          "name": "Ex1-9-(3)",
+          "midi": "Ex1-9-(3).mid",
+          "image": "Ex1-9-(3).png"
+        },
+        {
+          "name": "Ex1-10-(1)",
+          "midi": "Ex1-10-(1).mid",
+          "image": "Ex1-10-(1).png"
+        },
+        {
+          "name": "Ex1-10-(2)",
+          "midi": "Ex1-10-(2).mid",
+          "image": "Ex1-10-(2).png"
+        },
+        {
+          "name": "Ex1-10-(3)",
+          "midi": "Ex1-10-(3).mid",
+          "image": "Ex1-10-(3).png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 2",
+      "examples": [
+        {
+          "name": "Ex2-1",
+          "midi": "Ex2-1.mid",
+          "image": "Ex2-1.png"
+        },
+        {
+          "name": "Ex2-2",
+          "midi": "Ex2-2.mid",
+          "image": "Ex2-2.png"
+        },
+        {
+          "name": "Ex2-3",
+          "midi": "Ex2-3.mid",
+          "image": "Ex2-3.png"
+        },
+        {
+          "name": "Ex2-4",
+          "midi": "Ex2-4.mid",
+          "image": "Ex2-4.png"
+        },
+        {
+          "name": "Ex2-5",
+          "midi": "Ex2-5.mid",
+          "image": "Ex2-5.png"
+        },
+        {
+          "name": "Ex2-6",
+          "midi": "Ex2-6.mid",
+          "image": "Ex2-6.png"
+        },
+        {
+          "name": "Ex2-7-1",
+          "midi": "Ex2-7-1.mid",
+          "image": "Ex2-7-1.png"
+        },
+        {
+          "name": "Ex2-7-2",
+          "midi": "Ex2-7-2.mid",
+          "image": "Ex2-7-2.png"
+        },
+        {
+          "name": "Ex2-7-3",
+          "midi": "Ex2-7-3.mid",
+          "image": "Ex2-7-3.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 3",
+      "examples": [
+        {
+          "name": "Ex3-1",
+          "midi": "Ex3-1.mid",
+          "image": "Ex3-1.png"
+        },
+        {
+          "name": "Ex3-2",
+          "midi": "Ex3-2.mid",
+          "image": "Ex3-2.png"
+        },
+        {
+          "name": "Ex3-3",
+          "midi": "Ex3-3.mid",
+          "image": "Ex3-3.png"
+        },
+        {
+          "name": "Ex3-4",
+          "midi": "Ex3-4.mid",
+          "image": "Ex3-4.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 4",
+      "examples": [
+        {
+          "name": "Ex4-1",
+          "midi": "Ex4-1.mid",
+          "image": "Ex4-1.png"
+        },
+        {
+          "name": "Ex4-2",
+          "midi": "Ex4-2.mid",
+          "image": "Ex4-2.png"
+        },
+        {
+          "name": "Ex4-3-1",
+          "midi": "Ex4-3-1.mid",
+          "image": "Ex4-3-1.png"
+        },
+        {
+          "name": "Ex4-3-2",
+          "midi": "Ex4-3-2.mid",
+          "image": "Ex4-3-2.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 5",
+      "examples": [
+        {
+          "name": "Ex5-1",
+          "midi": "Ex5-1.mid",
+          "image": "Ex5-1.png"
+        },
+        {
+          "name": "Ex5-2",
+          "midi": "Ex5-2.mid",
+          "image": "Ex5-2.png"
+        },
+        {
+          "name": "Ex5-3",
+          "midi": "Ex5-3.mid",
+          "image": "Ex5-3.png"
+        },
+        {
+          "name": "Ex5-4",
+          "midi": "Ex5-4.mid",
+          "image": "Ex5-4.png"
+        },
+        {
+          "name": "Ex5-5",
+          "midi": "Ex5-5.mid",
+          "image": "Ex5-5.png"
+        },
+        {
+          "name": "Ex5-6",
+          "midi": "Ex5-6.mid",
+          "image": "Ex5-6.png"
+        },
+        {
+          "name": "Ex5-7",
+          "midi": "Ex5-7.mid",
+          "image": "Ex5-7.png"
+        },
+        {
+          "name": "Ex5-8",
+          "midi": "Ex5-8.mid",
+          "image": "Ex5-8.png"
+        },
+        {
+          "name": "Ex5-9",
+          "midi": "Ex5-9.mid",
+          "image": "Ex5-9.png"
+        },
+        {
+          "name": "Ex5-10",
+          "midi": "Ex5-10.mid",
+          "image": "Ex5-10.png"
+        },
+        {
+          "name": "Ex5-11",
+          "midi": "Ex5-11.mid",
+          "image": "Ex5-11.png"
+        },
+        {
+          "name": "Ex5-12",
+          "midi": "Ex5-12.mid",
+          "image": "Ex5-12.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 6",
+      "examples": [
+        {
+          "name": "Ex6-1",
+          "midi": "Ex6-1.mid",
+          "image": "Ex6-1.png"
+        },
+        {
+          "name": "Ex6-2",
+          "midi": "Ex6-2.mid",
+          "image": "Ex6-2.png"
+        },
+        {
+          "name": "Ex6-3",
+          "midi": "Ex6-3.mid",
+          "image": "Ex6-3.png"
+        },
+        {
+          "name": "Ex6-4",
+          "midi": "Ex6-4.mid",
+          "image": "Ex6-4.png"
+        },
+        {
+          "name": "Ex6-5",
+          "midi": "Ex6-5.mid",
+          "image": "Ex6-5.png"
+        },
+        {
+          "name": "Ex6-6",
+          "midi": "Ex6-6.mid",
+          "image": "Ex6-6.png"
+        },
+        {
+          "name": "Ex6-7-(1)",
+          "midi": "Ex6-7-(1).mid",
+          "image": "Ex6-7-(1).png"
+        },
+        {
+          "name": "Ex6-7-(2)",
+          "midi": "Ex6-7-(2).mid",
+          "image": "Ex6-7-(2).png"
+        },
+        {
+          "name": "Ex6-7-(3)",
+          "midi": "Ex6-7-(3).mid",
+          "image": "Ex6-7-(3).png"
+        },
+        {
+          "name": "Ex6-8-(1)",
+          "midi": "Ex6-8-(1).mid",
+          "image": "Ex6-8-(1).png"
+        },
+        {
+          "name": "Ex6-8-(2)",
+          "midi": "Ex6-8-(2).mid",
+          "image": "Ex6-8-(2).png"
+        },
+        {
+          "name": "Ex6-9-(1)",
+          "midi": "Ex6-9-(1).mid",
+          "image": "Ex6-9-(1).png"
+        },
+        {
+          "name": "Ex6-9-(2)",
+          "midi": "Ex6-9-(2).mid",
+          "image": "Ex6-9-(2).png"
+        },
+        {
+          "name": "Ex6-10",
+          "midi": "Ex6-10.mid",
+          "image": "Ex6-10.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 7",
+      "examples": [
+        {
+          "name": "Ex7-1",
+          "midi": "Ex7-1.mid",
+          "image": "Ex7-1.png"
+        },
+        {
+          "name": "Ex7-2",
+          "midi": "Ex7-2.mid",
+          "image": "Ex7-2.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 8",
+      "examples": [
+        {
+          "name": "Ex8-1",
+          "midi": "Ex8-1.mid",
+          "image": "Ex8-1.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 9",
+      "examples": [
+        {
+          "name": "Ex9-1",
+          "midi": "Ex9-1.mid",
+          "image": "Ex9-1.png"
+        },
+        {
+          "name": "Ex9-2",
+          "midi": "Ex9-2.mid",
+          "image": "Ex9-2.png"
+        },
+        {
+          "name": "Ex9-3",
+          "midi": "Ex9-3.mid",
+          "image": "Ex9-3.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 10",
+      "examples": [
+        {
+          "name": "Ex10-1",
+          "midi": "Ex10-1.mid",
+          "image": "Ex10-1.png"
+        },
+        {
+          "name": "Ex10-2",
+          "midi": "Ex10-2.mid",
+          "image": "Ex10-2.png"
+        },
+        {
+          "name": "Ex10-3",
+          "midi": "Ex10-3.mid",
+          "image": "Ex10-3.png"
+        },
+        {
+          "name": "Ex10-4",
+          "midi": "Ex10-4.mid",
+          "image": "Ex10-4.png"
+        },
+        {
+          "name": "Ex10-5",
+          "midi": "Ex10-5.mid",
+          "image": "Ex10-5.png"
+        },
+        {
+          "name": "Ex10-6",
+          "midi": "Ex10-6.mid",
+          "image": "Ex10-6.png"
+        },
+        {
+          "name": "Ex10-7",
+          "midi": "Ex10-7.mid",
+          "image": "Ex10-7.png"
+        },
+        {
+          "name": "Ex10-8",
+          "midi": "Ex10-8.mid",
+          "image": "Ex10-8.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 11",
+      "examples": [
+        {
+          "name": "Ex11-1",
+          "midi": "Ex11-1.mid",
+          "image": "Ex11-1.png"
+        },
+        {
+          "name": "Ex11-2",
+          "midi": "Ex11-2.mid",
+          "image": "Ex11-2.png"
+        },
+        {
+          "name": "Ex11-3",
+          "midi": "Ex11-3.mid",
+          "image": "Ex11-3.png"
+        },
+        {
+          "name": "Ex11-4-(1)",
+          "midi": "Ex11-4-(1).mid",
+          "image": "Ex11-4-(1).png"
+        },
+        {
+          "name": "Ex11-4-(2)",
+          "midi": "Ex11-4-(2).mid",
+          "image": "Ex11-4-(2).png"
+        },
+        {
+          "name": "Ex11-4-(3)",
+          "midi": "Ex11-4-(3).mid",
+          "image": "Ex11-4-(3).png"
+        },
+        {
+          "name": "Ex11-5",
+          "midi": "Ex11-5.mid",
+          "image": "Ex11-5.png"
+        },
+        {
+          "name": "Ex11-6",
+          "midi": "Ex11-6.mid",
+          "image": "Ex11-6.png"
+        },
+        {
+          "name": "Ex11-7",
+          "midi": "Ex11-7.mid",
+          "image": "Ex11-7.png"
+        },
+        {
+          "name": "Ex11-8",
+          "midi": "Ex11-8.mid",
+          "image": "Ex11-8.png"
+        },
+        {
+          "name": "Ex11-9",
+          "midi": "Ex11-9.mid",
+          "image": "Ex11-9.png"
+        },
+        {
+          "name": "Ex11-10",
+          "midi": "Ex11-10.mid",
+          "image": "Ex11-10.png"
+        },
+        {
+          "name": "Ex11-11",
+          "midi": "Ex11-11.mid",
+          "image": "Ex11-11.png"
+        },
+        {
+          "name": "Ex11-12",
+          "midi": "Ex11-12.mid",
+          "image": "Ex11-12.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 12",
+      "examples": [
+        {
+          "name": "Ex12-1",
+          "midi": "Ex12-1.mid",
+          "image": "Ex12-1.png"
+        },
+        {
+          "name": "Ex12-2",
+          "midi": "Ex12-2.mid",
+          "image": "Ex12-2.png"
+        },
+        {
+          "name": "Ex12-3",
+          "midi": "Ex12-3.mid",
+          "image": "Ex12-3.png"
+        },
+        {
+          "name": "Ex12-4",
+          "midi": "Ex12-4.mid",
+          "image": "Ex12-4.png"
+        },
+        {
+          "name": "Ex12-5",
+          "midi": "Ex12-5.mid",
+          "image": "Ex12-5.png"
+        },
+        {
+          "name": "Ex12-6",
+          "midi": "Ex12-6.mid",
+          "image": "Ex12-6.png"
+        },
+        {
+          "name": "Ex12-7-(1)",
+          "midi": "Ex12-7-(1).mid",
+          "image": "Ex12-7-(1).png"
+        },
+        {
+          "name": "Ex12-7-(2)",
+          "midi": "Ex12-7-(2).mid",
+          "image": "Ex12-7-(2).png"
+        },
+        {
+          "name": "Ex12-7-(3)",
+          "midi": "Ex12-7-(3).mid",
+          "image": "Ex12-7-(3).png"
+        },
+        {
+          "name": "Ex12-7-(4)",
+          "midi": "Ex12-7-(4).mid",
+          "image": "Ex12-7-(4).png"
+        },
+        {
+          "name": "Ex12-7-(5)",
+          "midi": "Ex12-7-(5).mid",
+          "image": "Ex12-7-(5).png"
+        },
+        {
+          "name": "Ex12-7-(6)",
+          "midi": "Ex12-7-(6).mid",
+          "image": "Ex12-7-(6).png"
+        },
+        {
+          "name": "Ex12-8",
+          "midi": "Ex12-8.mid",
+          "image": "Ex12-8.png"
+        },
+        {
+          "name": "Ex12-9",
+          "midi": "Ex12-9.mid",
+          "image": "Ex12-9.png"
+        },
+        {
+          "name": "Ex12-10-(1)",
+          "midi": "Ex12-10-(1).mid",
+          "image": "Ex12-10-(1).png"
+        },
+        {
+          "name": "Ex12-10-(2)",
+          "midi": "Ex12-10-(2).mid",
+          "image": "Ex12-10-(2).png"
+        },
+        {
+          "name": "Ex12-10-(3)",
+          "midi": "Ex12-10-(3).mid",
+          "image": "Ex12-10-(3).png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 13",
+      "examples": [
+        {
+          "name": "Ex13-1",
+          "midi": "Ex13-1.mid",
+          "image": "Ex13-1.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 14",
+      "examples": [
+        {
+          "name": "Ex14-1",
+          "midi": "Ex14-1.mid",
+          "image": "Ex14-1.png"
+        },
+        {
+          "name": "Ex14-2",
+          "midi": "Ex14-2.mid",
+          "image": "Ex14-2.png"
+        },
+        {
+          "name": "Ex14-3",
+          "midi": "Ex14-3.mid",
+          "image": "Ex14-3.png"
+        },
+        {
+          "name": "Ex14-4",
+          "midi": "Ex14-4.mid",
+          "image": "Ex14-4.png"
+        },
+        {
+          "name": "Ex14-5",
+          "midi": "Ex14-5.mid",
+          "image": "Ex14-5.png"
+        },
+        {
+          "name": "Ex14-6",
+          "midi": "Ex14-6.mid",
+          "image": "Ex14-6.png"
+        },
+        {
+          "name": "Ex14-7",
+          "midi": "Ex14-7.mid",
+          "image": "Ex14-7.png"
+        },
+        {
+          "name": "Ex14-8",
+          "midi": "Ex14-8.mid",
+          "image": "Ex14-8.png"
+        },
+        {
+          "name": "Ex14-9",
+          "midi": "Ex14-9.mid",
+          "image": "Ex14-9.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 15",
+      "examples": [
+        {
+          "name": "Ex15-1",
+          "midi": "Ex15-1.mid",
+          "image": "Ex15-1.png"
+        },
+        {
+          "name": "Ex15-2",
+          "midi": "Ex15-2.mid",
+          "image": "Ex15-2.png"
+        },
+        {
+          "name": "Ex15-3",
+          "midi": "Ex15-3.mid",
+          "image": "Ex15-3.png"
+        },
+        {
+          "name": "Ex15-4",
+          "midi": "Ex15-4.mid",
+          "image": "Ex15-4.png"
+        },
+        {
+          "name": "Ex15-5",
+          "midi": "Ex15-5.mid",
+          "image": "Ex15-5.png"
+        },
+        {
+          "name": "Ex15-6",
+          "midi": "Ex15-6.mid",
+          "image": "Ex15-6.png"
+        },
+        {
+          "name": "Ex15-7",
+          "midi": "Ex15-7.mid",
+          "image": "Ex15-7.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 16",
+      "examples": [
+        {
+          "name": "Ex16-1",
+          "midi": "Ex16-1.mid",
+          "image": "Ex16-1.png"
+        },
+        {
+          "name": "Ex16-2",
+          "midi": "Ex16-2.mid",
+          "image": "Ex16-2.png"
+        },
+        {
+          "name": "Ex16-3",
+          "midi": "Ex16-3.mid",
+          "image": "Ex16-3.png"
+        },
+        {
+          "name": "Ex16-4",
+          "midi": "Ex16-4.mid",
+          "image": "Ex16-4.png"
+        },
+        {
+          "name": "Ex16-5",
+          "midi": "Ex16-5.mid",
+          "image": "Ex16-5.png"
+        },
+        {
+          "name": "Ex16-6",
+          "midi": "Ex16-6.mid",
+          "image": "Ex16-6.png"
+        },
+        {
+          "name": "Ex16-7",
+          "midi": "Ex16-7.mid",
+          "image": "Ex16-7.png"
+        },
+        {
+          "name": "Ex16-8",
+          "midi": "Ex16-8.mid",
+          "image": "Ex16-8.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 18",
+      "examples": [
+        {
+          "name": "Ex18-1",
+          "midi": "Ex18-1.mid",
+          "image": "Ex18-1.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 19",
+      "examples": [
+        {
+          "name": "Ex19-1",
+          "midi": "Ex19-1.mid",
+          "image": "Ex19-1.png"
+        },
+        {
+          "name": "Ex19-2",
+          "midi": "Ex19-2.mid",
+          "image": "Ex19-2.png"
+        },
+        {
+          "name": "Ex19-3",
+          "midi": "Ex19-3.mid",
+          "image": "Ex19-3.png"
+        },
+        {
+          "name": "Ex19-4",
+          "midi": "Ex19-4.mid",
+          "image": "Ex19-4.png"
+        },
+        {
+          "name": "Ex19-5",
+          "midi": "Ex19-5.mid",
+          "image": "Ex19-5.png"
+        }
+      ]
+    },
+    {
+      "name": "Chapter 20",
+      "examples": [
+        {
+          "name": "Ex20-1",
+          "midi": "Ex20-1.mid",
+          "image": "Ex20-1.png"
+        },
+        {
+          "name": "Ex20-2",
+          "midi": "Ex20-2.mid",
+          "image": "Ex20-2.png"
+        },
+        {
+          "name": "Ex20-3",
+          "midi": "Ex20-3.mid",
+          "image": "Ex20-3.png"
+        },
+        {
+          "name": "Ex20-4",
+          "midi": "Ex20-4.mid",
+          "image": "Ex20-4.png"
+        },
+        {
+          "name": "Ex20-5",
+          "midi": "Ex20-5.mid",
+          "image": "Ex20-5.png"
+        },
+        {
+          "name": "Ex20-6",
+          "midi": "Ex20-6.mid",
+          "image": "Ex20-6.png"
+        },
+        {
+          "name": "Ex20-7",
+          "midi": "Ex20-7.mid",
+          "image": "Ex20-7.png"
+        },
+        {
+          "name": "Ex20-8",
+          "midi": "Ex20-8.mid",
+          "image": "Ex20-8.png"
+        },
+        {
+          "name": "Ex20-9",
+          "midi": "Ex20-9.mid",
+          "image": "Ex20-9.png"
+        },
+        {
+          "name": "Ex20-10-(1)",
+          "midi": "Ex20-10-(1).mid",
+          "image": "Ex20-10-(1).png"
+        },
+        {
+          "name": "Ex20-10-(2)",
+          "midi": "Ex20-10-(2).mid",
+          "image": "Ex20-10-(2).png"
+        }
+      ]
+    },
+    {
+      "name": "Extra",
+      "examples": [
+        {
+          "name": "Extra-1",
+          "midi": "Extra-1.mid",
+          "image": "Extra-1.png"
+        },
+        {
+          "name": "Extra-2",
+          "midi": "Extra-2.mid",
+          "image": "Extra-2.png"
+        }
+      ]
+    }
+  ]
+}
