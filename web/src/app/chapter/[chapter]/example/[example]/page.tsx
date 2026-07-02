@@ -1,13 +1,23 @@
 import { notFound } from "next/navigation";
 
-import { ExamplePageView } from "@/components/ExamplePageView";
-import { getManifest } from "@/lib/examples";
+import { GroupedExamplePageView } from "@/components/ExamplePageView";
+import { MobileChapterNav } from "@/components/MobileChapterNav";
+import { getExampleParts, getManifest } from "@/lib/examples";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
+  const seen = new Set<string>();
   return getManifest().examples
-    .filter((example) => example.route.chapter !== "extra" && !example.route.section)
+    .filter((example) => example.route.chapter !== "extra")
+    .filter((example) => {
+      const key = `${example.route.chapter}-${example.route.example}`;
+      if (seen.has(key)) {
+        return false;
+      }
+      seen.add(key);
+      return true;
+    })
     .map((example) => ({
       chapter: example.route.chapter,
       example: example.route.example
@@ -20,13 +30,17 @@ export default async function ExamplePage({
   params: Promise<{ chapter: string; example: string }>;
 }) {
   const { chapter, example } = await params;
-  const entry = getManifest().examples.find(
-    (item) =>
-      item.route.chapter === chapter &&
-      item.route.example === example &&
-      !item.route.section
-  );
-  if (!entry) notFound();
+  const parts = getExampleParts(chapter, example);
+  if (!parts.length) notFound();
 
-  return <ExamplePageView example={entry} />;
+  return (
+    <>
+      <MobileChapterNav />
+      <GroupedExamplePageView
+        chapter={parts[0].chapter}
+        exampleNum={example}
+        parts={parts}
+      />
+    </>
+  );
 }

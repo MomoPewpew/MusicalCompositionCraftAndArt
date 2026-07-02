@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { ExampleCard } from "@/components/ExamplePageView";
-import { getChapter, getChapters } from "@/lib/examples";
+import { MobileChapterNav } from "@/components/MobileChapterNav";
+import { getChapter, getChapters, getGroupedExamplesForChapter } from "@/lib/examples";
 
 export const dynamicParams = false;
 
@@ -21,27 +21,32 @@ export default async function ChapterPage({
   const chapter = getChapter(`chapter-${chapterParam}`);
   if (!chapter) notFound();
 
+  const grouped = getGroupedExamplesForChapter(chapter);
+
   return (
     <div className="space-y-8">
+      <MobileChapterNav />
+
       <div className="space-y-3">
-        <Link href="/" className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100">
-          ← All chapters
-        </Link>
-        <div>
-          <h1 className="text-3xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
-            {chapter.name}
-          </h1>
-          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            {chapter.exampleCount} example{chapter.exampleCount === 1 ? "" : "s"}
-          </p>
-        </div>
+        <h1 className="text-3xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
+          {chapter.name}
+        </h1>
+        <p className="text-sm text-zinc-600 dark:text-zinc-400">
+          {grouped.length} example{grouped.length === 1 ? "" : "s"} in this chapter.
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        {chapter.examples.map((example) => (
-          <ExampleCard key={example.id} chapter={chapter} example={example} />
+      <ul className="space-y-2">
+        {grouped.map((example) => (
+          <li key={example.exampleNum}>
+            <ExampleCard
+              chapter={chapter}
+              exampleNum={example.exampleNum}
+              label={example.label}
+            />
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

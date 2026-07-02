@@ -38,6 +38,13 @@ export type ChapterEntry = {
   }>;
 };
 
+export type GroupedExampleNav = {
+  exampleNum: string;
+  label: string;
+  href: string;
+  hasSections: boolean;
+};
+
 export type ExamplesManifest = {
   book: string;
   exampleCount: number;
@@ -59,19 +66,70 @@ export function getChapter(slug: string): ChapterEntry | undefined {
   return manifest.chapters.find((chapter) => chapter.slug === slug);
 }
 
+export function getChapterByNumber(number: number): ChapterEntry | undefined {
+  return manifest.chapters.find((chapter) => chapter.number === number);
+}
+
 export function getExampleBySlug(slug: string): ExampleEntry | undefined {
   return manifest.examples.find((example) => example.slug === slug);
 }
 
-export function getExampleHref(example: Pick<ExampleEntry, "route">): string {
-  const { route } = example;
+export function chapterHref(chapter: ChapterEntry): string {
+  return chapter.slug === "extra" ? "/extra/" : `/chapter/${chapter.number}/`;
+}
+
+export function exampleHref(route: ExampleRoute): string {
   if (route.chapter === "extra") {
     return `/extra/example/${route.example}/`;
   }
-  if (route.section) {
-    return `/chapter/${route.chapter}/example/${route.example}/section/${route.section}/`;
-  }
   return `/chapter/${route.chapter}/example/${route.example}/`;
+}
+
+/** @deprecated Use exampleHref */
+export function getExampleHref(example: Pick<ExampleEntry, "route">): string {
+  return exampleHref(example.route);
+}
+
+export function getGroupedExamplesForChapter(chapter: ChapterEntry): GroupedExampleNav[] {
+  const groups = new Map<string, GroupedExampleNav>();
+
+  for (const entry of chapter.examples) {
+    const exampleNum = entry.route.example;
+    if (!groups.has(exampleNum)) {
+      groups.set(exampleNum, {
+        exampleNum,
+        label: `Example ${exampleNum}`,
+        href: exampleHref(entry.route),
+        hasSections: false
+      });
+    }
+    if (entry.route.section) {
+      groups.get(exampleNum)!.hasSections = true;
+    }
+  }
+
+  return [...groups.values()].sort((a, b) => Number(a.exampleNum) - Number(b.exampleNum));
+}
+
+export function getExampleParts(chapterKey: string, exampleNum: string): ExampleEntry[] {
+  return manifest.examples
+    .filter(
+      (entry) => entry.route.chapter === chapterKey && entry.route.example === exampleNum
+    )
+    .sort((a, b) => {
+      const sectionA = a.route.section ? Number(a.route.section) : 0;
+      const sectionB = b.route.section ? Number(b.route.section) : 0;
+      return sectionA - sectionB;
+    });
+}
+
+export function groupedExamplePageTitle(chapter: string, exampleNum: string): string {
+  if (chapter === "Extra") {
+    return `Extra — Example ${exampleNum}`;
+  }
+  const chapterEntry = getChapters().find((item) => item.name === chapter);
+  const chapterName = chapterEntry?.name ?? chapter;
+  return `${chapterName} — Example ${exampleNum}`;
 }
 
 export function examplePageTitle(example: ExampleEntry): string {
@@ -79,4 +137,21 @@ export function examplePageTitle(example: ExampleEntry): string {
     return `Extra — ${example.exampleLabel}`;
   }
   return `${example.chapter} — ${example.exampleLabel}`;
+}
+
+export function parseActiveChapterFromPath(pathname: string): string | null {
+  if (pathname === "/extra" || pathname.startsWith("/extra/")) {
+    return "extra";
+  }
+  const match = pathname.match(/^\/chapter\/(\d+)(?:\/|$)/);
+  if (match) {
+    return `chapter-${match[1]}`;
+  }
+  return null;
+}
+
+export function isExamplePathActive(pathname: string, href: string): boolean {
+  const normalized = pathname.endsWith("/") ? pathname : `${pathname}/`;
+  const target = href.endsWith("/") ? href : `${href}/`;
+  return normalized === target;
 }

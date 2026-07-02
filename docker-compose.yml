@@ -8,6 +8,8 @@ services:
     volumes:
       - .:/app
       - web_node_modules:/app/web/node_modules
+      - web_next_cache:/app/web/.next
 
 volumes:
   web_node_modules:
+  web_next_cache:

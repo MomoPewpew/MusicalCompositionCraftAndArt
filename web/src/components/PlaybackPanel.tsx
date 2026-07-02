@@ -364,7 +364,7 @@ export function MockupUnavailableBlurb() {
     <div className={cardClass}>
       <div className="mb-2 text-sm font-medium text-zinc-950 dark:text-zinc-100">Mockup</div>
       <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
-        No orchestral mockup is available for this example yet. Use the MIDI playback below to hear
+        No mockup is available for this example yet. Use the MIDI playback below to hear
         the example with a basic synthesized sound.
       </p>
     </div>

@@ -1,14 +1,16 @@
 import { notFound } from "next/navigation";
 
-import { ExamplePageView } from "@/components/ExamplePageView";
-import { getManifest } from "@/lib/examples";
+import { GroupedExamplePageView } from "@/components/ExamplePageView";
+import { MobileChapterNav } from "@/components/MobileChapterNav";
+import { getExampleParts } from "@/lib/examples";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getManifest().examples
-    .filter((example) => example.route.chapter === "extra")
-    .map((example) => ({ example: example.route.example }));
+  return [
+    { example: "1" },
+    { example: "2" }
+  ];
 }
 
 export default async function ExtraExamplePage({
@@ -17,10 +19,13 @@ export default async function ExtraExamplePage({
   params: Promise<{ example: string }>;
 }) {
   const { example } = await params;
-  const entry = getManifest().examples.find(
-    (item) => item.route.chapter === "extra" && item.route.example === example
-  );
-  if (!entry) notFound();
+  const parts = getExampleParts("extra", example);
+  if (!parts.length) notFound();
 
-  return <ExamplePageView example={entry} />;
+  return (
+    <>
+      <MobileChapterNav />
+      <GroupedExamplePageView chapter="Extra" exampleNum={example} parts={parts} />
+    </>
+  );
 }

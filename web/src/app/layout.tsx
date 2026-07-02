@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import "./globals.css";
+import { BookSidebar } from "@/components/BookSidebar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { getManifest } from "@/lib/examples";
 
 const manifest = getManifest();
+const SOURCE_REPO_URL = "https://github.com/MomoPewpew/MusicalCompositionCraftAndArt";
 
 export const metadata: Metadata = {
   metadataBase: process.env.NEXT_PUBLIC_SITE_URL
@@ -32,7 +34,7 @@ export default function RootLayout({
           <div className="min-h-dvh">
             <header className="sticky top-0 z-20 relative">
               <div className="pointer-events-none absolute inset-0 -z-10 border-b border-black/10 bg-white/70 backdrop-blur-sm dark:border-white/10 dark:bg-zinc-950/65" />
-              <div className="relative mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-4">
+              <div className="relative mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
                 <Link
                   href="/"
                   className="flex items-center gap-3 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10 dark:focus-visible:ring-white/20"
@@ -49,11 +51,28 @@ export default function RootLayout({
                 <ThemeToggle />
               </div>
             </header>
-            <main className="mx-auto max-w-5xl px-6 py-10">{children}</main>
-            <footer className="mx-auto max-w-5xl space-y-1 px-6 pb-12 pt-6 text-xs text-zinc-600 dark:text-zinc-500">
+
+            <div className="mx-auto flex max-w-7xl gap-8 px-6">
+              <BookSidebar />
+              <main className="min-w-0 flex-1 py-10">{children}</main>
+            </div>
+
+            <footer className="mx-auto max-w-7xl space-y-1 px-6 pb-12 pt-6 text-xs text-zinc-600 dark:text-zinc-500">
               <div>
                 Examples from <span className="font-medium text-zinc-800 dark:text-zinc-200">Alan Belkin</span>
                 , <em>Musical Composition: Craft and Art</em> (Yale University Press).
+              </div>
+              <div>
+                Made by <span className="font-medium text-zinc-800 dark:text-zinc-200">Marijn Tepas</span>.{" "}
+                <a
+                  href={SOURCE_REPO_URL}
+                  className="underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Source code
+                </a>
+                .
               </div>
             </footer>
           </div>
