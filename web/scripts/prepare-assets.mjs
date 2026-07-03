@@ -8,6 +8,7 @@ const webRoot = resolve(__dirname, "..");
 const repoRoot = resolve(webRoot, "..");
 const manifestPath = join(repoRoot, "data", "examples.json");
 const downloadsDir = join(repoRoot, "downloads", "Musical Composition Craft And Art");
+const humanizedDir = join(repoRoot, "downloads", "Musical Composition Craft And Art.humanized");
 const publicAssetsDir = join(webRoot, "public", "assets");
 const generatedDir = join(webRoot, "src", "generated");
 const generatedManifestPath = join(generatedDir, "examples.json");
@@ -19,6 +20,13 @@ function copyFile(source, dest) {
 
 function toPublicPath(relativePath) {
   return `/assets/${relativePath.replace(/\\/g, "/")}`;
+}
+
+/** e.g. Chapter 1/Ex1-1.mid → Chapter 1/Ex1-1.humanized.mid */
+function humanizedPublicRel(rel) {
+  const dot = rel.lastIndexOf(".");
+  if (dot === -1) return `${rel}.humanized`;
+  return `${rel.slice(0, dot)}.humanized${rel.slice(dot)}`;
 }
 
 const SOUNDFONT_URL =
@@ -42,6 +50,61 @@ async function ensureSoundfont() {
   console.log(`Wrote ${relative(webRoot, soundfontFile)} (${buffer.length} bytes)`);
 }
 
+function copyExampleAssets(example) {
+  let copied = 0;
+  let missing = 0;
+  const assets = {
+    image: null,
+    midi: null,
+    midiHumanized: null,
+    mockupAudio: null
+  };
+
+  for (const key of ["image", "midi"]) {
+    const rel = example.assets[key];
+    if (!rel) continue;
+    const source = join(downloadsDir, rel);
+    const dest = join(publicAssetsDir, rel);
+    if (existsSync(source)) {
+      copyFile(source, dest);
+      assets[key] = toPublicPath(rel);
+      copied += 1;
+    } else {
+      missing += 1;
+      console.warn(`Missing ${key} for ${example.id}: ${rel}`);
+    }
+  }
+
+  const midiRel = example.assets.midi;
+  if (midiRel) {
+    const humanizedSource = join(humanizedDir, midiRel);
+    const humanizedPublic = humanizedPublicRel(midiRel);
+    const humanizedDest = join(publicAssetsDir, humanizedPublic);
+    if (existsSync(humanizedSource)) {
+      copyFile(humanizedSource, humanizedDest);
+      assets.midiHumanized = toPublicPath(humanizedPublic);
+      copied += 1;
+    }
+  }
+
+  const mockup = example.assets.mockupAudio;
+  if (mockup) {
+    const source = join(repoRoot, mockup);
+    const basename = mockup.split("/").pop();
+    const dest = join(publicAssetsDir, "mockups", basename);
+    if (existsSync(source)) {
+      copyFile(source, dest);
+      assets.mockupAudio = toPublicPath(`mockups/${basename}`);
+      copied += 1;
+    } else {
+      missing += 1;
+      console.warn(`Missing mockup for ${example.id}: ${mockup}`);
+    }
+  }
+
+  return { assets, copied, missing };
+}
+
 async function main() {
   if (!existsSync(manifestPath)) {
     console.error(`Manifest not found: ${manifestPath}`);
@@ -56,73 +119,29 @@ async function main() {
 
   let copied = 0;
   let missing = 0;
+  let humanizedMidi = 0;
 
-  for (const example of manifest.examples) {
-    const rewritten = {
-      ...example,
-      assets: { ...example.assets }
-    };
-
-    for (const key of ["image", "midi"]) {
-      const rel = example.assets[key];
-      if (!rel) {
-        rewritten.assets[key] = null;
-        continue;
-      }
-      const source = join(downloadsDir, rel);
-      const dest = join(publicAssetsDir, rel);
-      if (existsSync(source)) {
-        copyFile(source, dest);
-        rewritten.assets[key] = toPublicPath(rel);
-        copied += 1;
-      } else {
-        rewritten.assets[key] = null;
-        missing += 1;
-        console.warn(`Missing ${key} for ${example.id}: ${rel}`);
-      }
-    }
-
-    const mockup = example.assets.mockupAudio;
-    if (mockup) {
-      const source = join(repoRoot, mockup);
-      const basename = mockup.split("/").pop();
-      const dest = join(publicAssetsDir, "mockups", basename);
-      if (existsSync(source)) {
-        copyFile(source, dest);
-        rewritten.assets.mockupAudio = toPublicPath(`mockups/${basename}`);
-        copied += 1;
-      } else {
-        rewritten.assets.mockupAudio = null;
-        missing += 1;
-        console.warn(`Missing mockup for ${example.id}: ${mockup}`);
-      }
-    }
-  }
+  const generatedExamples = manifest.examples.map((example) => {
+    const { assets, copied: c, missing: m } = copyExampleAssets(example);
+    copied += c;
+    missing += m;
+    if (assets.midiHumanized) humanizedMidi += 1;
+    return { ...example, assets };
+  });
 
   const generated = {
     ...manifest,
-    examples: manifest.examples.map((example) => {
-      const rewritten = { ...example, assets: { ...example.assets } };
-      for (const key of ["image", "midi"]) {
-        const rel = example.assets[key];
-        rewritten.assets[key] = rel ? toPublicPath(rel) : null;
-      }
-      if (example.assets.mockupAudio) {
-        const basename = example.assets.mockupAudio.split("/").pop();
-        const source = join(repoRoot, example.assets.mockupAudio);
-        rewritten.assets.mockupAudio = existsSync(source)
-          ? toPublicPath(`mockups/${basename}`)
-          : null;
-      } else {
-        rewritten.assets.mockupAudio = null;
-      }
-      return rewritten;
-    })
+    examples: generatedExamples
   };
 
   writeFileSync(generatedManifestPath, `${JSON.stringify(generated, null, 2)}\n`, "utf8");
   await ensureSoundfont();
   console.log(`Prepared assets: ${copied} copied, ${missing} missing`);
+  if (humanizedMidi > 0) {
+    console.log(`MIDI: ${humanizedMidi} with humanized variant (toggle in player)`);
+  } else {
+    console.log("MIDI: no humanized variants (run scripts/humanize_midi_assets.py to generate)");
+  }
   console.log(`Wrote ${relative(webRoot, generatedManifestPath)}`);
 }
 

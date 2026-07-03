@@ -8,9 +8,12 @@ import { registerMidiPlayer, resetOtherMidiPlayers } from "@/lib/midiPlaybackCoo
 import { loadPianoSoundfont, resetPianoSoundfont } from "@/lib/pianoSoundfont";
 import {
   readGlobalVolume,
+  readMidiHumanize,
   readMidiTempo,
   subscribeGlobalVolume,
+  subscribeMidiHumanize,
   writeGlobalVolume,
+  writeMidiHumanize,
   writeMidiTempo
 } from "@/lib/playbackPreferences";
 
@@ -248,7 +251,16 @@ export function AudioPlayback({ src }: { src: string }) {
   );
 }
 
-export function MidiPlayback({ src }: { src: string }) {
+export function MidiPlayback({
+  src,
+  humanizedSrc = null
+}: {
+  src: string;
+  humanizedSrc?: string | null;
+}) {
+  const canHumanize = Boolean(humanizedSrc);
+  const [humanize, setHumanizeState] = useState(() => readMidiHumanize());
+  const activeSrc = humanize && humanizedSrc ? humanizedSrc : src;
   const midiRef = useRef<Midi | null>(null);
   const pianoRef = useRef<Awaited<ReturnType<typeof loadPianoSoundfont>> | null>(null);
   const eventsRef = useRef<MidiNoteEvent[]>([]);
@@ -329,10 +341,22 @@ export function MidiPlayback({ src }: { src: string }) {
   }, []);
 
   useEffect(() => {
+    setHumanizeState(readMidiHumanize());
+    return subscribeMidiHumanize((enabled) => {
+      setHumanizeState(enabled);
+    });
+  }, []);
+
+  useEffect(() => {
     const savedTempo = readMidiTempo(src);
     setTempoState(savedTempo);
     tempoRef.current = savedTempo;
   }, [src]);
+
+  const setHumanize = useCallback((enabled: boolean) => {
+    setHumanizeState(enabled);
+    writeMidiHumanize(enabled);
+  }, []);
 
   const setVolume = useCallback((value: number) => {
     const clamped = Math.min(200, Math.max(0, Math.round(value)));
@@ -405,7 +429,7 @@ export function MidiPlayback({ src }: { src: string }) {
       midiRef.current = null;
 
       try {
-        const midiResponse = await fetch(src);
+        const midiResponse = await fetch(activeSrc);
         if (!midiResponse.ok) {
           throw new Error(`MIDI fetch failed (${midiResponse.status})`);
         }
@@ -448,7 +472,7 @@ export function MidiPlayback({ src }: { src: string }) {
       midiRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps -- volume applied via separate effect
-  }, [applyVolume, buildEvents, ensurePiano, resetSelf, src, stopNotes]);
+  }, [activeSrc, applyVolume, buildEvents, ensurePiano, resetSelf, stopNotes]);
 
   useEffect(() => {
     const midi = midiRef.current;
@@ -560,24 +584,56 @@ export function MidiPlayback({ src }: { src: string }) {
     [duration, scheduleFrom, stopNotes]
   );
 
-  const tempoFooter = (
-    <div className="mt-4 flex items-center gap-3 border-t border-black/5 pt-4 dark:border-white/10">
-      <span className="text-[11px] font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-500">
-        Tempo
-      </span>
-      <input
-        type="range"
-        min={50}
-        max={150}
-        step={1}
-        value={tempo}
-        onChange={(event) => setTempo(Number(event.target.value))}
-        className="flex-1"
-        aria-label="Tempo"
-      />
-      <span className="min-w-[3rem] text-xs tabular-nums text-zinc-600 dark:text-zinc-400">
-        {tempo}%
-      </span>
+  const playbackFooter = (
+    <div className="mt-4 border-t border-black/5 pt-4 dark:border-white/10">
+      <div className="flex items-center gap-2 sm:gap-3">
+        <span className="shrink-0 text-[11px] font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-500">
+          Tempo
+        </span>
+        <input
+          type="range"
+          min={50}
+          max={150}
+          step={1}
+          value={tempo}
+          onChange={(event) => setTempo(Number(event.target.value))}
+          className={canHumanize ? "w-20 min-w-0 sm:w-28" : "min-w-0 flex-1"}
+          aria-label="Tempo"
+        />
+        <span className="shrink-0 min-w-[2.5rem] text-xs tabular-nums text-zinc-600 dark:text-zinc-400">
+          {tempo}%
+        </span>
+        {canHumanize ? (
+          <div className="ml-auto flex shrink-0 items-center gap-2 pl-1 sm:gap-2.5 sm:pl-2">
+            <span className="text-[11px] font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-500">
+              Humanize
+            </span>
+            <button
+              type="button"
+              role="switch"
+              aria-checked={humanize}
+              aria-label="Humanize dynamics"
+              onClick={() => setHumanize(!humanize)}
+              className={[
+                "relative h-5 w-9 shrink-0 rounded-full border transition-colors",
+                humanize
+                  ? "border-fuchsia-400/35 bg-fuchsia-500/15 dark:border-fuchsia-400/25 dark:bg-fuchsia-500/10"
+                  : "border-black/10 bg-black/[0.04] dark:border-white/10 dark:bg-white/[0.06]",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10 dark:focus-visible:ring-white/20"
+              ].join(" ")}
+            >
+              <span
+                className={[
+                  "absolute top-0.5 left-0.5 h-3.5 w-3.5 rounded-full shadow-sm transition-transform",
+                  humanize
+                    ? "translate-x-4 bg-fuchsia-500/90 dark:bg-fuchsia-400/90"
+                    : "translate-x-0 bg-zinc-400/90 dark:bg-zinc-500"
+                ].join(" ")}
+              />
+            </button>
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 
@@ -595,7 +651,7 @@ export function MidiPlayback({ src }: { src: string }) {
         onPlayPause={onPlayPause}
         onSeek={onSeek}
         onVolumeChange={setVolume}
-        footer={tempoFooter}
+        footer={playbackFooter}
         disabled={!ready}
       />
       {loadError ? <MidiLoadError message={loadError} /> : null}

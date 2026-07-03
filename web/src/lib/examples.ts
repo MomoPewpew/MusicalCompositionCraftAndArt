@@ -9,6 +9,7 @@ export type ExampleRoute = {
 export type ExampleAssets = {
   image: string | null;
   midi: string | null;
+  midiHumanized: string | null;
   mockupAudio: string | null;
 };
 

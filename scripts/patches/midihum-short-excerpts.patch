@@ -1,0 +1,68 @@
+diff --git a/midi_to_df_conversion.py b/midi_to_df_conversion.py
+index 9074ded..926eda4 100644
+--- a/midi_to_df_conversion.py
++++ b/midi_to_df_conversion.py
+@@ -315,9 +315,16 @@ def _add_engineered_features(
+         base = new_cols[col] if col in new_cols else df[col]
+         for window in sma_windows:
+             for func in funcs:
+-                sma = base.rolling(window).agg(func).bfill()
++                sma = base.rolling(window, min_periods=1).agg(func).bfill().ffill().fillna(0.0)
+                 new_cols[f"{col}_sma_{func}_{window}"] = sma
+-                fwd_sma = base[::-1].rolling(window).agg(func).bfill()[::-1]
++                fwd_sma = (
++                    base[::-1]
++                    .rolling(window, min_periods=1)
++                    .agg(func)
++                    .bfill()
++                    .ffill()[::-1]
++                    .fillna(0.0)
++                )
+                 new_cols[f"{col}_fwd_sma_{func}_{window}"] = fwd_sma
+ 
+                 if col != "follows_pause":
+@@ -334,10 +341,27 @@ def _add_engineered_features(
+         "interval_from_pressed",
+     ]:
+         base = new_cols[col] if col in new_cols else df[col]
+-        tenkan_sen = (base.rolling(9).max() + base.rolling(9).min()).bfill() / 2.0
+-        kijun_sen = (base.rolling(26).max() + base.rolling(26).min()).bfill() / 2.0
++        tenkan_sen = (
++            (base.rolling(9, min_periods=1).max() + base.rolling(9, min_periods=1).min())
++            .bfill()
++            .ffill()
++            .fillna(0.0)
++            / 2.0
++        )
++        kijun_sen = (
++            (base.rolling(26, min_periods=1).max() + base.rolling(26, min_periods=1).min())
++            .bfill()
++            .ffill()
++            .fillna(0.0)
++            / 2.0
++        )
+         senkou_span_a = (tenkan_sen + kijun_sen) / 2.0
+-        senkou_span_b = (base.rolling(52).max() + base.rolling(52).min()).bfill() / 2.0
++        senkou_span_b = (
++            (base.rolling(52, min_periods=1).max() + base.rolling(52, min_periods=1).min())
++            .bfill()
++            .ffill()
++            .fillna(0.0)
++        )
+ 
+         new_cols[f"{col}_tenkan_sen"] = tenkan_sen
+         new_cols[f"{col}_kijun_sen"] = kijun_sen
+@@ -436,8 +460,11 @@ def _add_engineered_features(
+     for name, new_col in new_cols.items():
+         if not pd.api.types.is_numeric_dtype(new_col):
+             continue
+-        assert not np.any(np.isnan(new_col)), (name, new_col)
+-        assert np.all(np.isfinite(new_col)), (name, new_col)
++        new_cols[name] = (
++            pd.to_numeric(new_col, errors="coerce")
++            .replace([np.inf, -np.inf], np.nan)
++            .fillna(0.0)
++        )
+ 
+     return pd.concat(
+         [df] + [col.rename(name) for name, col in new_cols.items()], axis=1

@@ -75,3 +75,39 @@ export function writeMidiTempo(src: string, tempo: number): void {
     // ignore quota errors and private browsing
   }
 }
+
+const HUMANIZE_KEY = "mcca:midi-humanize";
+const DEFAULT_HUMANIZE = true;
+
+export function readMidiHumanize(): boolean {
+  if (!canUseStorage()) return DEFAULT_HUMANIZE;
+  try {
+    const raw = localStorage.getItem(HUMANIZE_KEY);
+    if (raw === null) return DEFAULT_HUMANIZE;
+    return raw === "1" || raw === "true";
+  } catch {
+    return DEFAULT_HUMANIZE;
+  }
+}
+
+type HumanizeListener = (enabled: boolean) => void;
+const humanizeListeners = new Set<HumanizeListener>();
+
+export function writeMidiHumanize(enabled: boolean): void {
+  if (!canUseStorage()) return;
+  try {
+    localStorage.setItem(HUMANIZE_KEY, enabled ? "1" : "0");
+  } catch {
+    // ignore quota errors and private browsing
+  }
+  for (const listener of humanizeListeners) {
+    listener(enabled);
+  }
+}
+
+export function subscribeMidiHumanize(listener: HumanizeListener): () => void {
+  humanizeListeners.add(listener);
+  return () => {
+    humanizeListeners.delete(listener);
+  };
+}

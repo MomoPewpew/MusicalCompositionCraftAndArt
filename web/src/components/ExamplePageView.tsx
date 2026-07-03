@@ -89,7 +89,12 @@ function ExampleSectionView({ example }: { example: ExampleEntry }) {
         ) : (
           <MockupUnavailableBlurb />
         )}
-        {example.assets.midi ? <MidiPlayback src={example.assets.midi} /> : null}
+        {example.assets.midi ? (
+          <MidiPlayback
+            src={example.assets.midi}
+            humanizedSrc={example.assets.midiHumanized}
+          />
+        ) : null}
       </section>
     </div>
   );
