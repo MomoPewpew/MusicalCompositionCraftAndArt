@@ -4,15 +4,32 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Midi } from "@tonejs/midi";
 import * as Tone from "tone";
 
+import { registerMidiPlayer, resetOtherMidiPlayers } from "@/lib/midiPlaybackCoordinator";
 import { loadPianoSoundfont, resetPianoSoundfont } from "@/lib/pianoSoundfont";
 import {
   readGlobalVolume,
   readMidiTempo,
+  subscribeGlobalVolume,
   writeGlobalVolume,
   writeMidiTempo
 } from "@/lib/playbackPreferences";
 
 const MIDI_GAIN_BOOST = 2;
+
+type MidiNoteEvent = {
+  time: number;
+  note: string;
+  duration: number;
+  velocity: number;
+};
+
+function tempoFactor(tempoPercent: number): number {
+  return tempoPercent / 100;
+}
+
+function scoreDuration(midiDuration: number, tempoPercent: number): number {
+  return midiDuration / tempoFactor(tempoPercent);
+}
 
 function formatTime(seconds: number): string {
   if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
@@ -143,6 +160,9 @@ export function AudioPlayback({ src }: { src: string }) {
 
   useEffect(() => {
     setVolumeState(Math.min(readGlobalVolume(), 100));
+    return subscribeGlobalVolume((value) => {
+      setVolumeState(Math.min(100, value));
+    });
   }, []);
 
   const setVolume = useCallback((value: number) => {
@@ -231,8 +251,9 @@ export function AudioPlayback({ src }: { src: string }) {
 export function MidiPlayback({ src }: { src: string }) {
   const midiRef = useRef<Midi | null>(null);
   const pianoRef = useRef<Awaited<ReturnType<typeof loadPianoSoundfont>> | null>(null);
-  const partRef = useRef<Tone.Part | null>(null);
-  const baseBpmRef = useRef(120);
+  const eventsRef = useRef<MidiNoteEvent[]>([]);
+  const playAnchorRef = useRef({ contextTime: 0, scoreOffset: 0 });
+  const playingRef = useRef(false);
   const [ready, setReady] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -242,9 +263,69 @@ export function MidiPlayback({ src }: { src: string }) {
   const [ended, setEnded] = useState(false);
   const [loadError, setLoadError] = useState<string | null>(null);
   const tempoRef = useRef(100);
+  const currentTimeRef = useRef(0);
+
+  const getAudioContext = useCallback(() => {
+    return Tone.getContext().rawContext as AudioContext;
+  }, []);
+
+  const scorePosition = useCallback(() => {
+    const factor = tempoFactor(tempoRef.current);
+    const elapsed = Math.max(0, getAudioContext().currentTime - playAnchorRef.current.contextTime);
+    return playAnchorRef.current.scoreOffset + elapsed * factor;
+  }, [getAudioContext]);
+
+  const stopNotes = useCallback(() => {
+    pianoRef.current?.instrument.stop();
+  }, []);
+
+  const buildEvents = useCallback((midi: Midi, tempoPercent: number) => {
+    const events: MidiNoteEvent[] = [];
+    for (const track of midi.tracks) {
+      for (const note of track.notes) {
+        events.push({
+          time: note.time,
+          note: note.name,
+          duration: note.duration,
+          velocity: note.velocity
+        });
+      }
+    }
+    eventsRef.current = events;
+    setDuration(scoreDuration(midi.duration, tempoPercent));
+  }, []);
+
+  const scheduleFrom = useCallback(
+    (offset: number, tempoPercent: number) => {
+      const piano = pianoRef.current;
+      const events = eventsRef.current;
+      if (!piano || events.length === 0) return;
+
+      const factor = tempoFactor(tempoPercent);
+      const context = getAudioContext();
+      const startTime = context.currentTime + 0.05;
+      const safeOffset = Math.max(0, offset);
+
+      playAnchorRef.current = { contextTime: startTime, scoreOffset: safeOffset };
+
+      for (const event of events) {
+        if (event.time < safeOffset - 0.001) continue;
+        const when = startTime + (event.time - safeOffset) / factor;
+        if (when < context.currentTime) continue;
+        piano.instrument.play(event.note, when, {
+          duration: event.duration / factor,
+          gain: Math.max(0.05, event.velocity)
+        });
+      }
+    },
+    [getAudioContext]
+  );
 
   useEffect(() => {
     setVolumeState(readGlobalVolume());
+    return subscribeGlobalVolume((value) => {
+      setVolumeState(value);
+    });
   }, []);
 
   useEffect(() => {
@@ -283,42 +364,30 @@ export function MidiPlayback({ src }: { src: string }) {
     return pianoRef.current;
   }, []);
 
-  const rebuildPart = useCallback(
-    (midi: Midi, tempoPercent: number) => {
-      partRef.current?.dispose();
-      const piano = pianoRef.current;
-      if (!piano) return;
+  const pauseSelf = useCallback(() => {
+    if (playingRef.current) {
+      setCurrentTime(Math.min(scorePosition(), duration));
+      stopNotes();
+      playingRef.current = false;
+      setIsPlaying(false);
+    }
+  }, [duration, scorePosition, stopNotes]);
 
-      const events: Array<{ time: number; note: string; duration: number; velocity: number }> = [];
-      for (const track of midi.tracks) {
-        for (const note of track.notes) {
-          events.push({
-            time: note.time,
-            note: note.name,
-            duration: note.duration,
-            velocity: note.velocity
-          });
-        }
-      }
+  const resetSelf = useCallback(() => {
+    if (playingRef.current) {
+      stopNotes();
+    }
+    playingRef.current = false;
+    setIsPlaying(false);
+    setCurrentTime(0);
+    setEnded(false);
+    playAnchorRef.current = { contextTime: 0, scoreOffset: 0 };
+  }, [stopNotes]);
 
-      const part = new Tone.Part((time, value: { note: string; duration: number; velocity: number }) => {
-        piano.instrument.play(value.note, time, {
-          duration: value.duration,
-          gain: Math.max(0.05, value.velocity)
-        });
-      }, events).start(0);
-
-      part.loop = false;
-      partRef.current = part;
-
-      const factor = tempoPercent / 100;
-      Tone.Transport.bpm.value = baseBpmRef.current * factor;
-      setDuration(midi.duration / factor);
-    },
-    []
-  );
+  useEffect(() => registerMidiPlayer(src, resetSelf), [resetSelf, src]);
 
   tempoRef.current = tempo;
+  currentTimeRef.current = currentTime;
 
   useEffect(() => {
     let cancelled = false;
@@ -326,9 +395,12 @@ export function MidiPlayback({ src }: { src: string }) {
     async function load() {
       setReady(false);
       setLoadError(null);
-      partRef.current?.dispose();
-      partRef.current = null;
-      pianoRef.current?.instrument.stop();
+      if (playingRef.current) {
+        stopNotes();
+        playingRef.current = false;
+        setIsPlaying(false);
+      }
+      eventsRef.current = [];
       pianoRef.current = null;
       midiRef.current = null;
 
@@ -343,9 +415,7 @@ export function MidiPlayback({ src }: { src: string }) {
         if (cancelled) return;
 
         midiRef.current = midi;
-        baseBpmRef.current = midi.header.tempos[0]?.bpm ?? 120;
-        const factor = tempoRef.current / 100;
-        setDuration(midi.duration / factor);
+        buildEvents(midi, tempoRef.current);
         setCurrentTime(0);
         setEnded(false);
         setReady(true);
@@ -353,8 +423,8 @@ export function MidiPlayback({ src }: { src: string }) {
         void ensurePiano()
           .then((piano) => {
             if (cancelled || midiRef.current !== midi) return;
+            pianoRef.current = piano;
             applyVolume(piano, volume);
-            rebuildPart(midi, tempoRef.current);
           })
           .catch((error) => {
             if (cancelled) return;
@@ -372,46 +442,44 @@ export function MidiPlayback({ src }: { src: string }) {
 
     return () => {
       cancelled = true;
-      Tone.Transport.stop();
-      Tone.Transport.cancel();
-      partRef.current?.dispose();
-      pianoRef.current?.instrument.stop();
-      partRef.current = null;
+      resetSelf();
+      eventsRef.current = [];
       pianoRef.current = null;
       midiRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps -- volume applied via separate effect
-  }, [applyVolume, ensurePiano, rebuildPart, src]);
+  }, [applyVolume, buildEvents, ensurePiano, resetSelf, src, stopNotes]);
 
   useEffect(() => {
     const midi = midiRef.current;
     if (!midi || !ready) return;
-    const wasPlaying = isPlaying;
-    const position = Tone.Transport.seconds;
-    rebuildPart(midi, tempo);
-    Tone.Transport.seconds = Math.min(position, duration || midi.duration);
-    setCurrentTime(Tone.Transport.seconds);
+    const wasPlaying = playingRef.current;
+    const position = wasPlaying ? scorePosition() : currentTimeRef.current;
+    buildEvents(midi, tempo);
     if (wasPlaying) {
-      Tone.Transport.start();
+      stopNotes();
+      scheduleFrom(position, tempo);
+      setCurrentTime(position);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- rebuild when user changes tempo
   }, [tempo]);
 
   useEffect(() => {
     const interval = window.setInterval(() => {
-      if (!isPlaying) return;
-      const time = Tone.Transport.seconds;
+      if (!playingRef.current) return;
+      const time = Math.min(scorePosition(), duration);
       setCurrentTime(time);
       if (duration > 0 && time >= duration - 0.05) {
-        Tone.Transport.pause();
-        Tone.Transport.seconds = duration;
-        setCurrentTime(duration);
+        stopNotes();
+        playingRef.current = false;
         setIsPlaying(false);
         setEnded(true);
+        setCurrentTime(duration);
+        playAnchorRef.current = { contextTime: 0, scoreOffset: 0 };
       }
     }, 100);
     return () => window.clearInterval(interval);
-  }, [duration, isPlaying]);
+  }, [duration, scorePosition, stopNotes]);
 
   useEffect(() => {
     if (pianoRef.current) {
@@ -422,7 +490,7 @@ export function MidiPlayback({ src }: { src: string }) {
   const onPlayPause = useCallback(async () => {
     if (!ready) return;
     await Tone.start();
-    const audioContext = Tone.getContext().rawContext as AudioContext;
+    const audioContext = getAudioContext();
     if (audioContext.state === "suspended") {
       await audioContext.resume();
     }
@@ -432,9 +500,10 @@ export function MidiPlayback({ src }: { src: string }) {
 
     try {
       const piano = await ensurePiano();
+      pianoRef.current = piano;
       applyVolume(piano, volume);
-      if (!partRef.current) {
-        rebuildPart(midi, tempo);
+      if (eventsRef.current.length === 0) {
+        buildEvents(midi, tempo);
       }
     } catch (error) {
       resetPianoSoundfont();
@@ -442,36 +511,53 @@ export function MidiPlayback({ src }: { src: string }) {
       setLoadError("Piano sound failed to load. Try again.");
       return;
     }
-    if (isPlaying) {
-      Tone.Transport.pause();
-      setIsPlaying(false);
+
+    if (playingRef.current) {
+      pauseSelf();
       return;
     }
+
+    let startAt = currentTime;
     if (ended || (duration > 0 && currentTime >= duration - 0.05)) {
-      const midi = midiRef.current;
-      if (midi) {
-        Tone.Transport.stop();
-        Tone.Transport.cancel();
-        pianoRef.current?.instrument.stop();
-        rebuildPart(midi, tempo);
-      }
-      Tone.Transport.seconds = 0;
+      startAt = 0;
       setCurrentTime(0);
       setEnded(false);
     }
-    Tone.Transport.start();
+
+    resetOtherMidiPlayers(src);
+    stopNotes();
+    scheduleFrom(startAt, tempo);
+    playingRef.current = true;
     setIsPlaying(true);
-  }, [applyVolume, currentTime, duration, ended, ensurePiano, isPlaying, ready, rebuildPart, tempo, volume]);
+  }, [
+    applyVolume,
+    buildEvents,
+    currentTime,
+    duration,
+    ended,
+    ensurePiano,
+    getAudioContext,
+    pauseSelf,
+    ready,
+    scheduleFrom,
+    src,
+    stopNotes,
+    tempo,
+    volume
+  ]);
 
   const onSeek = useCallback(
     (value: number) => {
-      Tone.Transport.seconds = value;
       setCurrentTime(value);
+      if (playingRef.current) {
+        stopNotes();
+        scheduleFrom(value, tempoRef.current);
+      }
       if (duration > 0 && value < duration - 0.05) {
         setEnded(false);
       }
     },
-    [duration]
+    [duration, scheduleFrom, stopNotes]
   );
 
   const tempoFooter = (

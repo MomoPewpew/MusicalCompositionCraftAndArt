@@ -21,16 +21,27 @@ export function readGlobalVolume(): number {
   }
 }
 
+type VolumeListener = (volume: number) => void;
+const volumeListeners = new Set<VolumeListener>();
+
 export function writeGlobalVolume(volume: number): void {
   if (!canUseStorage()) return;
+  const clamped = Math.min(200, Math.max(0, Math.round(volume)));
   try {
-    localStorage.setItem(
-      VOLUME_KEY,
-      String(Math.min(200, Math.max(0, Math.round(volume))))
-    );
+    localStorage.setItem(VOLUME_KEY, String(clamped));
   } catch {
     // ignore quota errors and private browsing
   }
+  for (const listener of volumeListeners) {
+    listener(clamped);
+  }
+}
+
+export function subscribeGlobalVolume(listener: VolumeListener): () => void {
+  volumeListeners.add(listener);
+  return () => {
+    volumeListeners.delete(listener);
+  };
 }
 
 type TempoMap = Record<string, number>;
