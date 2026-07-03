@@ -95,20 +95,6 @@ def route_parts(chapter_name: str, example_id: str) -> dict:
     return parts
 
 
-def prose_citation(prose: list[str]) -> str | None:
-    for paragraph in reversed(prose):
-        cleaned = re.sub(r"\s+", " ", paragraph).strip()
-        if not cleaned:
-            continue
-        if COMPOSER_HINT_RE.search(cleaned) or " from " in cleaned.lower():
-            sentence = cleaned.split(". ")[-1].strip()
-            sentence = re.sub(r"^Figure\s+\d+\.\d+\s*,?\s*", "", sentence, flags=re.I)
-            sentence = sentence.rstrip(".")
-            if len(sentence) > 20:
-                return sentence
-    return None
-
-
 def resolve_citation(
     example_id: str,
     citations: dict,
@@ -129,15 +115,10 @@ def resolve_citation(
             return caption, "attributed"
         if caption and "," in caption and not caption.lower().startswith("exercise"):
             return caption, "attributed"
+        if caption and "exercise" in caption.lower():
+            return caption, "exercise"
 
-        prose = prose_citation(entry.get("proseAttribution", []))
-        if prose:
-            return prose, "attributed"
-        if caption:
-            kind = "exercise" if "exercise" in caption.lower() else "caption"
-            return caption, kind
-
-    return "Source not identified in the textbook.", "unknown"
+    return ORIGINAL_CITATION, "original"
 
 
 def relative_asset_path(chapter_name: str, example_id: str, filename: str) -> str:
