@@ -70,7 +70,7 @@ export default function RootLayout({
                   <em>Musical Composition: Craft and Art</em> (Yale University Press)
                 </div>
                 <div>
-                  Sheet music and MIDI files compiled by{" "}
+                  MIDI files compiled by{" "}
                   <span className="font-medium text-zinc-800 dark:text-zinc-200">e7mac</span> at{" "}
                   <a
                     href={REALMUSIC_EXAMPLES_URL}

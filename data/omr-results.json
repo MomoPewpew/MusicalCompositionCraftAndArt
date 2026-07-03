@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-03T17:22:56.373080+00:00",
+  "input": "/mnt/files/Workspaces/workspace/MusicalCompositionCraftAndArt/downloads/Musical Composition Craft And Art",
+  "converted": 1,
+  "skipped": 145,
+  "failed": 2,
+  "results": {
+    "ok": [
+      {
+        "file": "Chapter 20/Example 7/Ex20-7.png"
+      }
+    ],
+    "failed": [
+      {
+        "file": "Chapter 12/Example 3/Ex12-3.png",
+        "reason": "Exception on Ex12-3, java.lang.Exception: Error in reaching step PAGE",
+        "log": "data/omr-cache/logs/Ex12-3.log"
+      },
+      {
+        "file": "Chapter 12/Example 7/Section 4/Ex12-7-(4).png",
+        "reason": "Exception on Ex12-7-(4), java.lang.Exception: Error in reaching step PAGE",
+        "log": "data/omr-cache/logs/Ex12-7-(4).log"
+      }
+    ]
+  }
+}

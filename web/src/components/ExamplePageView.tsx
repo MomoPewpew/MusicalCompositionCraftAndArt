@@ -65,7 +65,7 @@ function ExampleSectionView({ example }: { example: ExampleEntry }) {
           Sheet Music
         </h3>
         {example.assets.image ? (
-          <figure className="overflow-hidden rounded-xl border border-black/10 bg-white dark:border-white/10 dark:bg-zinc-950/40">
+          <figure className="score-sheet">
             {/* eslint-disable-next-line @next/next/no-img-element -- static PNG scores from textbook */}
             <img
               src={example.assets.image}

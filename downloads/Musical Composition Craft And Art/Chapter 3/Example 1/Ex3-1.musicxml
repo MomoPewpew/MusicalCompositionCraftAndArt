@@ -1,47 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE score-partwise  PUBLIC "-//Recordare//DTD MusicXML 4.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
-<score-partwise version="4.0">
-  <movement-title>Music21 Fragment</movement-title>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0.3 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="4.0.3">
   <identification>
-    <creator type="composer">Music21</creator>
     <encoding>
-      <encoding-date>2026-07-01</encoding-date>
-      <software>music21 v.10.5.0</software>
-      <supports element="beam" type="yes" />
-      <supports element="stem" type="yes" />
-      <supports element="accidental" type="yes" />
+      <software>Audiveris 5.10.2</software>
+      <supports type="yes" element="print" attribute="new-system" value="yes"></supports>
+      <supports type="yes" element="print" attribute="new-page" value="yes"></supports>
+      <supports type="yes" element="accidental"></supports>
+      <supports type="yes" element="beam"></supports>
+      <supports type="yes" element="stem"></supports>
+      <software>ProxyMusic 4.0.3</software>
+      <encoding-date>2026-07-03</encoding-date>
     </encoding>
+    <source>/tmp/audiveris-elmziv6m/Ex3-1.png</source>
+    <miscellaneous>
+      <miscellaneous-field name="source-file">/tmp/audiveris-elmziv6m/Ex3-1.png</miscellaneous-field>
+      <miscellaneous-field name="source-sheet-1">1</miscellaneous-field>
+    </miscellaneous>
   </identification>
   <defaults>
     <scaling>
-      <millimeters>7</millimeters>
+      <millimeters>20.6587</millimeters>
       <tenths>40</tenths>
     </scaling>
+    <page-layout>
+      <page-height>288</page-height>
+      <page-width>1045</page-width>
+      <page-margins type="both">
+        <left-margin>80</left-margin>
+        <right-margin>80</right-margin>
+        <top-margin>80</top-margin>
+        <bottom-margin>80</bottom-margin>
+      </page-margins>
+    </page-layout>
+    <lyric-font font-family="Sans Serif" font-size="10"></lyric-font>
   </defaults>
   <part-list>
-    <score-part id="P80f98f31ca7e03f28af49095b88c3589">
-      <part-name>SmartMusic SoftSynth</part-name>
-      <part-abbreviation>Ch</part-abbreviation>
-      <score-instrument id="I0d7af5462ac9a2e3c97a2dbc5908db43">
-        <instrument-name>Choir</instrument-name>
-        <instrument-abbreviation>Ch</instrument-abbreviation>
+    <score-part id="P1">
+      <part-name>Voice</part-name>
+      <part-abbreviation>Voice</part-abbreviation>
+      <score-instrument id="P1-I1">
+        <instrument-name>Voice Oohs</instrument-name>
       </score-instrument>
-      <midi-instrument id="I0d7af5462ac9a2e3c97a2dbc5908db43">
+      <midi-instrument id="P1-I1">
         <midi-channel>1</midi-channel>
-        <midi-program>53</midi-program>
+        <midi-program>54</midi-program>
+        <volume>78</volume>
       </midi-instrument>
     </score-part>
   </part-list>
-  <!--=========================== Part 1 ===========================-->
-  <part id="P80f98f31ca7e03f28af49095b88c3589">
-    <!--========================= Measure 1 ==========================-->
-    <measure implicit="no" number="1">
+  <!--= = = = = = = = = = = = = = = = = = = = = = = = = = = = =-->
+  <part id="P1">
+    <!--=======================================================-->
+    <measure number="0" implicit="yes" width="285">
+      <print>
+        <system-layout>
+          <system-margins>
+            <left-margin>0</left-margin>
+            <right-margin>2</right-margin>
+          </system-margins>
+          <top-system-distance>44</top-system-distance>
+        </system-layout>
+        <measure-numbering>system</measure-numbering>
+      </print>
       <attributes>
-        <divisions>10080</divisions>
-        <key>
-          <fifths>0</fifths>
-          <mode>major</mode>
-        </key>
+        <divisions>2</divisions>
         <time>
           <beats>4</beats>
           <beat-type>4</beat-type>
@@ -50,157 +73,215 @@
           <sign>G</sign>
           <line>2</line>
         </clef>
+        <staff-details print-object="yes"></staff-details>
       </attributes>
-      <direction>
-        <direction-type>
-          <metronome parentheses="no">
-            <beat-unit>quarter</beat-unit>
-            <per-minute>108</per-minute>
-          </metronome>
-        </direction-type>
-        <sound tempo="108" />
-      </direction>
-      <direction>
-        <direction-type>
-          <metronome parentheses="no">
-            <beat-unit>quarter</beat-unit>
-            <per-minute>107.99</per-minute>
-          </metronome>
-        </direction-type>
-        <sound tempo="107.99" />
-      </direction>
-      <note dynamics="84.44">
+      <note default-x="79">
         <pitch>
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>15120</duration>
+        <duration>2</duration>
+        <voice>1</voice>
         <type>quarter</type>
-        <dot />
+        <stem default-y="5">up</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>begin</syllabic>
+          <text>Mu</text>
+        </lyric>
       </note>
-      <note dynamics="84.44">
+      <note default-x="142">
         <pitch>
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>5040</duration>
+        <duration>1</duration>
+        <voice>1</voice>
         <type>eighth</type>
+        <stem default-y="5">up</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>end</syllabic>
+          <text>sic</text>
+        </lyric>
       </note>
-      <note dynamics="84.44">
+      <note default-x="188">
         <pitch>
           <step>B</step>
           <octave>4</octave>
         </pitch>
-        <duration>15120</duration>
+        <duration>2</duration>
+        <voice>1</voice>
         <type>quarter</type>
-        <dot />
+        <stem default-y="-55">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>when</text>
+        </lyric>
       </note>
-      <note dynamics="84.44">
+      <note default-x="253">
         <pitch>
           <step>F</step>
           <octave>4</octave>
         </pitch>
-        <duration>5040</duration>
+        <duration>1</duration>
+        <voice>1</voice>
         <type>eighth</type>
+        <stem default-y="1">up</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>soft</text>
+        </lyric>
       </note>
     </measure>
-    <!--========================= Measure 2 ==========================-->
-    <measure implicit="no" number="2">
-      <note dynamics="84.44">
+    <!--=======================================================-->
+    <measure number="1" width="185">
+      <note default-x="18">
         <pitch>
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>5040</duration>
+        <duration>1</duration>
+        <voice>1</voice>
         <type>eighth</type>
-        <stem>up</stem>
+        <stem default-y="3">up</stem>
         <beam number="1">begin</beam>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>begin</syllabic>
+          <text>voic</text>
+        </lyric>
       </note>
-      <note dynamics="84.44">
+      <note default-x="57">
         <pitch>
           <step>A</step>
           <octave>4</octave>
         </pitch>
-        <duration>5040</duration>
+        <duration>1</duration>
+        <voice>1</voice>
         <type>eighth</type>
-        <stem>up</stem>
+        <stem default-y="6">up</stem>
         <beam number="1">end</beam>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>end</syllabic>
+          <text>es</text>
+        </lyric>
       </note>
-      <note dynamics="84.44">
+      <note default-x="94">
         <pitch>
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>30240</duration>
+        <duration>4</duration>
+        <voice>1</voice>
         <type>half</type>
-        <dot />
+        <stem default-y="5">up</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>die,</text>
+        </lyric>
       </note>
     </measure>
-    <!--========================= Measure 3 ==========================-->
-    <measure implicit="no" number="3">
-      <note dynamics="84.44">
+    <!--=======================================================-->
+    <measure number="2" width="211">
+      <note default-x="18">
         <pitch>
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>10080</duration>
+        <duration>2</duration>
+        <voice>1</voice>
         <type>quarter</type>
+        <stem default-y="5">up</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>begin</syllabic>
+          <text>Vi</text>
+        </lyric>
       </note>
-      <note dynamics="84.44">
+      <note default-x="67">
         <pitch>
           <step>B</step>
           <octave>4</octave>
         </pitch>
-        <duration>10080</duration>
+        <duration>2</duration>
+        <voice>1</voice>
         <type>quarter</type>
+        <stem default-y="-56">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>end</syllabic>
+          <text>brates</text>
+        </lyric>
       </note>
-      <note dynamics="84.44">
+      <note default-x="114">
         <pitch>
           <step>D</step>
           <octave>5</octave>
         </pitch>
-        <duration>15120</duration>
+        <duration>2</duration>
+        <voice>1</voice>
         <type>quarter</type>
-        <dot />
+        <stem default-y="-45">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>in</text>
+        </lyric>
       </note>
-      <note dynamics="84.44">
+      <note default-x="178">
         <pitch>
           <step>C</step>
           <octave>5</octave>
         </pitch>
-        <duration>5040</duration>
-        <type>eighth</type>
+        <duration>2</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-50">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>the</text>
+        </lyric>
       </note>
     </measure>
-    <!--========================= Measure 4 ==========================-->
-    <measure implicit="no" number="4">
-      <note dynamics="84.44">
+    <!--=======================================================-->
+    <measure number="3" width="202">
+      <note default-x="18">
         <pitch>
           <step>G</step>
           <octave>4</octave>
         </pitch>
-        <duration>10080</duration>
+        <duration>2</duration>
+        <voice>1</voice>
         <type>quarter</type>
+        <stem default-y="5">up</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>single</syllabic>
+          <text>mem</text>
+        </lyric>
       </note>
-      <note dynamics="84.44">
+      <note default-x="64">
         <pitch>
           <step>A</step>
           <octave>4</octave>
         </pitch>
-        <duration>10080</duration>
+        <duration>2</duration>
+        <voice>1</voice>
         <type>quarter</type>
+        <stem default-y="11">up</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>begin</syllabic>
+          <text>o</text>
+        </lyric>
       </note>
-      <note dynamics="84.44">
+      <note default-x="109">
         <pitch>
           <step>B</step>
           <octave>4</octave>
         </pitch>
-        <duration>20160</duration>
+        <duration>4</duration>
+        <voice>1</voice>
         <type>half</type>
+        <stem default-y="-55">down</stem>
+        <lyric number="1" placement="below" default-y="-80">
+          <syllabic>end</syllabic>
+          <text>ry</text>
+        </lyric>
       </note>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-      </barline>
     </measure>
   </part>
 </score-partwise>

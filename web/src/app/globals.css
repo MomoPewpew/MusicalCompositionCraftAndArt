@@ -46,9 +46,25 @@ body {
   background: rgba(244, 63, 94, 0.35);
 }
 
-:focus-visible {
+::focus-visible {
   outline: 2px solid rgba(244, 244, 245, 0.5);
   outline-offset: 2px;
+}
+
+/* Sheet music: light paper in light mode; inverted notation in dark mode. */
+.score-sheet {
+  @apply overflow-hidden rounded-xl border border-black/10 bg-white p-4 sm:p-6;
+}
+
+.dark .score-sheet {
+  @apply border-white/10 bg-zinc-950;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 10px 40px rgba(0, 0, 0, 0.55);
+}
+
+.dark .score-sheet img {
+  filter: invert(1);
 }
 
 input[type="range"] {

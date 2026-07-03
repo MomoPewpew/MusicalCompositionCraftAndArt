@@ -2,6 +2,11 @@
 """
 Convert downloaded MIDI files to MusicXML using music21.
 
+Legacy fallback — MIDI→XML loses layout and often mis-voices parts. Prefer OMR from
+the textbook PNGs instead:
+
+  python3 scripts/convert_png_to_musicxml.py
+
 Original .mid files are left untouched. Each MusicXML file is written alongside
 its source MIDI with the same stem and a .musicxml extension.
 """

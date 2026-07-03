@@ -184,17 +184,76 @@ downloads/
 
 ---
 
-## MIDI → MusicXML (optional)
+## Score images from EPUB
 
-`convert_midi_to_musicxml.py` converts downloaded `.mid` files to MusicXML using [music21](https://web.mit.edu/music21/). Originals are not modified.
+The PNGs bundled with the Real Music Theory download are fairly small (~650px wide). Higher-resolution versions are embedded in the textbook EPUB.
+
+[`scripts/extract_score_images.py`](scripts/extract_score_images.py) maps each example to its textbook figure (via `figureRef` in `data/examples.json`), extracts the image from the EPUB, and writes it into `downloads/`:
+
+```bash
+# Default EPUB path (override with --epub or EPUB_PATH)
+.venv/bin/python scripts/extract_score_images.py --dry-run
+.venv/bin/python scripts/extract_score_images.py --force
+```
+
+- **1:1 figures** (most examples): full EPUB image copied (typically **900px** wide)
+- **Multi-section figures** (e.g. Figure 1.1 → four motives): composite image cropped into horizontal bands
+- Previous e7mac PNGs backed up as `*.e7mac.png` (gitignored) unless `--no-backup`
+- **Extra** examples are not in the EPUB figure list; they keep the original download PNGs
+
+Default EPUB: `Musical Composition/Belkin, Alan - Musical composition_ craft and art (2018, Yale University Press) - libgen.li.epub`
+
+The PDF contains the same bitmaps; the EPUB is preferred because figure captions and image paths are structured in HTML.
+
+After refreshing PNGs, rebuild web assets: `cd web && npm run build`
+
+---
+
+## Score → MusicXML (optional)
+
+MusicXML files are **not used by the website today** but are generated for possible future use (interactive notation, diffing against MIDI, etc.).
+
+### Recommended: Audiveris OMR (from PNG)
+
+[`scripts/convert_png_to_musicxml.py`](scripts/convert_png_to_musicxml.py) runs [Audiveris](https://github.com/Audiveris/audiveris) on the textbook PNG scores. This follows the printed layout much better than MIDI conversion.
+
+**Install Audiveris** (includes its own JRE):
+
+```bash
+# Linux (Flatpak — tested)
+flatpak install flathub org.audiveris.audiveris
+
+# Or Ubuntu .deb from https://github.com/Audiveris/audiveris/releases
+# sudo apt install ./Audiveris-*-ubuntu24.04-x86_64.deb
+```
+
+The script auto-detects Flatpak, downloads legacy `eng.traineddata` on first run, and upscales PNGs when needed for OMR (2× for EPUB-sized images, 3× for legacy low-res PNGs).
+
+Recommended order:
+
+```bash
+.venv/bin/python scripts/extract_score_images.py --force
+.venv/bin/python scripts/convert_png_to_musicxml.py --limit 5
+```
+
+Optional: `export AUDIVERIS_BIN=/opt/audiveris/bin/Audiveris` to override auto-detection.
+
+Output:
+
+- `Ex7-1.musicxml` next to each PNG (extracted from Audiveris `.mxl`)
+- `data/omr-cache/…/Ex7-1.omr` — Audiveris project files (gitignored; open in GUI to fix recognition)
+
+OMR is slow (~10–60s per image) and dense scores may need manual correction in the Audiveris GUI. Quality still usually beats MIDI import for matching the PNG.
+
+### Legacy: music21 MIDI import
+
+[`convert_midi_to_musicxml.py`](convert_midi_to_musicxml.py) converts MIDI via [music21](https://web.mit.edu/music21/). Fast but lossy — voicing, stems, and layout rarely match the textbook images.
 
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/python3 convert_midi_to_musicxml.py
 ```
-
-MusicXML is written next to each MIDI in the same folder. Automated transcription — useful for analysis or as a starting point in notation software, not a replacement for the PNG scores.
 
 ---
 
@@ -203,7 +262,9 @@ MusicXML is written next to each MIDI in the same folder. Automated transcriptio
 | Task | Requirements |
 |------|----------------|
 | Download, organize, manifest | Python 3.9+, stdlib |
-| Tempo fix, MusicXML | `pip install -r requirements.txt` (music21) |
+| Tempo fix, MIDI→MusicXML (legacy) | `pip install -r requirements.txt` (music21) |
+| PNG extraction (EPUB) | Pillow |
+| PNG→MusicXML (Audiveris OMR) | [Audiveris](https://github.com/Audiveris/audiveris) install + `AUDIVERIS_BIN` |
 | Humanization | Separate [midihum](https://github.com/erwald/midihum) checkout with its own venv |
 
 ---

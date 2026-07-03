@@ -1,288 +1,237 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE score-partwise  PUBLIC "-//Recordare//DTD MusicXML 4.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
-<score-partwise version="4.0">
-  <movement-title>Music21 Fragment</movement-title>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0.3 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="4.0.3">
   <identification>
-    <creator type="composer">Music21</creator>
     <encoding>
-      <encoding-date>2026-07-01</encoding-date>
-      <software>music21 v.10.5.0</software>
-      <supports element="beam" type="yes" />
-      <supports element="stem" type="yes" />
-      <supports element="accidental" type="yes" />
+      <software>Audiveris 5.10.2</software>
+      <supports type="yes" element="print" attribute="new-system" value="yes"></supports>
+      <supports type="yes" element="print" attribute="new-page" value="yes"></supports>
+      <supports type="yes" element="accidental"></supports>
+      <supports type="yes" element="beam"></supports>
+      <supports type="yes" element="stem"></supports>
+      <software>ProxyMusic 4.0.3</software>
+      <encoding-date>2026-07-03</encoding-date>
     </encoding>
+    <source>/tmp/audiveris-w9drdm2u/Ex19-4.png</source>
+    <miscellaneous>
+      <miscellaneous-field name="source-file">/tmp/audiveris-w9drdm2u/Ex19-4.png</miscellaneous-field>
+      <miscellaneous-field name="source-sheet-1">1</miscellaneous-field>
+    </miscellaneous>
   </identification>
   <defaults>
     <scaling>
-      <millimeters>7</millimeters>
+      <millimeters>11.5147</millimeters>
       <tenths>40</tenths>
     </scaling>
+    <page-layout>
+      <page-height>262</page-height>
+      <page-width>601</page-width>
+      <page-margins type="both">
+        <left-margin>80</left-margin>
+        <right-margin>80</right-margin>
+        <top-margin>80</top-margin>
+        <bottom-margin>80</bottom-margin>
+      </page-margins>
+    </page-layout>
+    <lyric-font font-family="Sans Serif" font-size="10"></lyric-font>
   </defaults>
   <part-list>
-    <score-part id="P26e648fb35dbdbe49a60e0c657a6067d">
-      <part-name>SmartMusic SoftSynth</part-name>
-      <part-abbreviation>Vln</part-abbreviation>
-      <score-instrument id="I9042c24acbf6e675d46b945d353966dc">
-        <instrument-name>Violin</instrument-name>
-        <instrument-abbreviation>Vln</instrument-abbreviation>
+    <score-part id="P1">
+      <part-name>Voice</part-name>
+      <part-abbreviation>Voice</part-abbreviation>
+      <score-instrument id="P1-I1">
+        <instrument-name>Voice Oohs</instrument-name>
       </score-instrument>
-      <midi-instrument id="I9042c24acbf6e675d46b945d353966dc">
+      <midi-instrument id="P1-I1">
         <midi-channel>1</midi-channel>
-        <midi-program>41</midi-program>
+        <midi-program>54</midi-program>
+        <volume>78</volume>
       </midi-instrument>
     </score-part>
   </part-list>
-  <!--=========================== Part 1 ===========================-->
-  <part id="P26e648fb35dbdbe49a60e0c657a6067d">
-    <!--========================= Measure 1 ==========================-->
-    <measure implicit="no" number="1">
+  <!--= = = = = = = = = = = = = = = = = = = = = = = = = = = = =-->
+  <part id="P1">
+    <!--=======================================================-->
+    <measure number="1" width="229">
+      <print>
+        <system-layout>
+          <system-margins>
+            <left-margin>0</left-margin>
+            <right-margin>1</right-margin>
+          </system-margins>
+          <top-system-distance>45</top-system-distance>
+        </system-layout>
+        <measure-numbering>system</measure-numbering>
+      </print>
       <attributes>
-        <divisions>10080</divisions>
+        <divisions>12</divisions>
         <key>
           <fifths>1</fifths>
-          <mode>major</mode>
         </key>
-        <time>
-          <beats>6</beats>
-          <beat-type>8</beat-type>
-        </time>
         <clef>
           <sign>G</sign>
           <line>2</line>
         </clef>
+        <staff-details print-object="yes"></staff-details>
       </attributes>
-      <direction>
-        <direction-type>
-          <metronome parentheses="no">
-            <beat-unit>quarter</beat-unit>
-            <per-minute>100</per-minute>
-          </metronome>
-        </direction-type>
-        <sound tempo="100" />
-      </direction>
-      <direction>
-        <direction-type>
-          <metronome parentheses="no">
-            <beat-unit>quarter</beat-unit>
-            <per-minute>99.96</per-minute>
-          </metronome>
-        </direction-type>
-        <sound tempo="99.96" />
-      </direction>
-      <note dynamics="83.33">
+      <note default-x="72">
         <pitch>
           <step>G</step>
           <octave>5</octave>
         </pitch>
-        <duration>7560</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
+        <duration>6</duration>
+        <voice>1</voice>
         <type>eighth</type>
-        <dot />
+        <stem default-y="-42">down</stem>
+        <beam number="1">begin</beam>
+        <notations>
+          <slur type="start" number="1" placement="above" default-x="10" default-y="16" bezier-x="40" bezier-y="16"></slur>
+        </notations>
       </note>
-      <note dynamics="83.33">
+      <note default-x="105">
         <pitch>
           <step>E</step>
           <octave>5</octave>
         </pitch>
-        <duration>3360</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
-        <type>eighth</type>
-        <time-modification>
-          <actual-notes>3</actual-notes>
-          <normal-notes>2</normal-notes>
-          <normal-type>eighth</normal-type>
-        </time-modification>
-        <notations>
-          <tuplet bracket="yes" number="1" placement="above" type="start">
-            <tuplet-actual>
-              <tuplet-number>3</tuplet-number>
-              <tuplet-type>eighth</tuplet-type>
-            </tuplet-actual>
-            <tuplet-normal>
-              <tuplet-number>2</tuplet-number>
-              <tuplet-type>eighth</tuplet-type>
-            </tuplet-normal>
-          </tuplet>
-        </notations>
+        <duration>3</duration>
+        <voice>1</voice>
+        <type>16th</type>
+        <stem default-y="-42">down</stem>
+        <beam number="1">continue</beam>
+        <beam number="2">begin</beam>
       </note>
-      <note dynamics="83.33">
+      <note default-x="126">
         <pitch>
           <step>G</step>
           <octave>5</octave>
         </pitch>
-        <duration>3360</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
-        <type>eighth</type>
-        <time-modification>
-          <actual-notes>3</actual-notes>
-          <normal-notes>2</normal-notes>
-          <normal-type>eighth</normal-type>
-        </time-modification>
+        <duration>3</duration>
+        <voice>1</voice>
+        <type>16th</type>
+        <stem default-y="-34">down</stem>
+        <beam number="1">continue</beam>
+        <beam number="2">continue</beam>
       </note>
-      <note dynamics="83.33">
+      <note default-x="148">
         <pitch>
           <step>E</step>
           <octave>5</octave>
         </pitch>
-        <duration>3360</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
-        <type>eighth</type>
-        <time-modification>
-          <actual-notes>3</actual-notes>
-          <normal-notes>2</normal-notes>
-          <normal-type>eighth</normal-type>
-        </time-modification>
-        <notations>
-          <tuplet number="1" type="stop" />
-        </notations>
+        <duration>3</duration>
+        <voice>1</voice>
+        <type>16th</type>
+        <stem default-y="-42">down</stem>
+        <beam number="1">end</beam>
+        <beam number="2">end</beam>
       </note>
-      <note dynamics="83.33">
+      <note default-x="177">
         <pitch>
           <step>D</step>
+          <alter>1</alter>
           <octave>5</octave>
         </pitch>
-        <duration>15120</duration>
-        <tie type="start" />
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
+        <duration>12</duration>
+        <voice>1</voice>
         <type>quarter</type>
-        <dot />
-        <notations>
-          <tied type="start" />
-        </notations>
+        <accidental>sharp</accidental>
+        <stem default-y="-46">down</stem>
       </note>
     </measure>
-    <!--========================= Measure 2 ==========================-->
-    <measure implicit="no" number="2">
-      <note dynamics="83.33">
-        <pitch>
-          <step>D</step>
-          <octave>5</octave>
-        </pitch>
-        <duration>2520</duration>
-        <tie type="stop" />
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
-        <type>16th</type>
-        <notations>
-          <tied type="stop" />
-        </notations>
-      </note>
-      <note dynamics="83.33">
+    <!--=======================================================-->
+    <measure number="2" width="211">
+      <note default-x="36">
         <pitch>
           <step>E</step>
           <octave>5</octave>
         </pitch>
-        <duration>3360</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
-        <type>eighth</type>
+        <duration>8</duration>
+        <voice>1</voice>
+        <type>quarter</type>
         <time-modification>
           <actual-notes>3</actual-notes>
           <normal-notes>2</normal-notes>
-          <normal-type>eighth</normal-type>
         </time-modification>
+        <stem default-y="-35">down</stem>
         <notations>
-          <tuplet bracket="yes" number="1" placement="above" type="start">
-            <tuplet-actual>
-              <tuplet-number>3</tuplet-number>
-              <tuplet-type>eighth</tuplet-type>
-            </tuplet-actual>
-            <tuplet-normal>
-              <tuplet-number>2</tuplet-number>
-              <tuplet-type>eighth</tuplet-type>
-            </tuplet-normal>
-          </tuplet>
+          <tuplet type="start" number="1" placement="above"></tuplet>
+          <slur type="stop" number="1" default-x="-15" default-y="4" bezier-x="-39" bezier-y="22"></slur>
+          <slur type="start" number="1" placement="above" default-x="10" default-y="5" bezier-x="23" bezier-y="21"></slur>
         </notations>
       </note>
-      <note dynamics="83.33">
+      <note default-x="58">
         <pitch>
           <step>F</step>
           <alter>1</alter>
           <octave>5</octave>
         </pitch>
-        <duration>3360</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
-        <type>eighth</type>
+        <duration>8</duration>
+        <voice>1</voice>
+        <type>quarter</type>
         <time-modification>
           <actual-notes>3</actual-notes>
           <normal-notes>2</normal-notes>
-          <normal-type>eighth</normal-type>
         </time-modification>
+        <stem default-y="-35">down</stem>
       </note>
-      <note dynamics="83.33">
+      <note default-x="81">
         <pitch>
           <step>E</step>
           <octave>5</octave>
         </pitch>
-        <duration>3360</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
-        <type>eighth</type>
+        <duration>8</duration>
+        <voice>1</voice>
+        <type>quarter</type>
         <time-modification>
           <actual-notes>3</actual-notes>
           <normal-notes>2</normal-notes>
-          <normal-type>eighth</normal-type>
         </time-modification>
+        <stem default-y="-35">down</stem>
         <notations>
-          <tuplet number="1" type="stop" />
+          <tuplet type="stop" number="1"></tuplet>
         </notations>
       </note>
-      <note dynamics="83.33">
+      <note default-x="101">
         <pitch>
           <step>G</step>
           <octave>5</octave>
         </pitch>
-        <duration>3360</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
-        <type>eighth</type>
-        <time-modification>
-          <actual-notes>3</actual-notes>
-          <normal-notes>2</normal-notes>
-          <normal-type>eighth</normal-type>
-        </time-modification>
+        <duration>12</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-34">down</stem>
+      </note>
+      <note default-x="123">
+        <pitch>
+          <step>E</step>
+          <octave>5</octave>
+        </pitch>
+        <duration>12</duration>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem default-y="-42">down</stem>
         <notations>
-          <tuplet bracket="no" number="1" placement="above" type="start">
-            <tuplet-actual>
-              <tuplet-number>3</tuplet-number>
-              <tuplet-type>eighth</tuplet-type>
-            </tuplet-actual>
-            <tuplet-normal>
-              <tuplet-number>2</tuplet-number>
-              <tuplet-type>eighth</tuplet-type>
-            </tuplet-normal>
-          </tuplet>
-          <tuplet number="1" type="stop" />
+          <slur type="stop" number="1" default-x="4" default-y="7" bezier-x="-24" bezier-y="19"></slur>
         </notations>
       </note>
-      <note dynamics="77.78">
+      <note default-x="144">
         <pitch>
           <step>E</step>
           <octave>5</octave>
         </pitch>
-        <duration>2520</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
-        <type>16th</type>
-      </note>
-      <note dynamics="83.33">
-        <pitch>
-          <step>E</step>
-          <octave>5</octave>
-        </pitch>
-        <duration>5040</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
+        <duration>6</duration>
+        <voice>1</voice>
         <type>eighth</type>
+        <stem default-y="-42">down</stem>
       </note>
-      <note dynamics="77.78">
-        <pitch>
-          <step>E</step>
-          <alter>-1</alter>
-          <octave>5</octave>
-        </pitch>
-        <duration>10080</duration>
-        <instrument id="I9042c24acbf6e675d46b945d353966dc" />
+      <note default-x="160">
+        <rest>
+          <display-step>D</display-step>
+          <display-octave>5</display-octave>
+        </rest>
+        <duration>12</duration>
+        <voice>1</voice>
         <type>quarter</type>
-        <accidental>flat</accidental>
       </note>
-      <barline location="right">
-        <bar-style>light-heavy</bar-style>
-      </barline>
     </measure>
   </part>
 </score-partwise>
