@@ -45,7 +45,7 @@ Thumbs.db
 # Redundant download splits (canonical copy is Musical Composition Craft And Art/)
 downloads/Musical Composition Craft And Art - Odd/
 downloads/Musical Composition Craft And Art - Even/
-downloads/*.zip
+downloads/Musical Composition Craft And Art.midbak/
 
 # Docker
 # (no local-only docker artifacts currently)
