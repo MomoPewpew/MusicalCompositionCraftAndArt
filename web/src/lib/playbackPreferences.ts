@@ -1,48 +1,98 @@
-const VOLUME_KEY = "mcca:playback-volume";
+const LEGACY_VOLUME_KEY = "mcca:playback-volume";
+const MIDI_VOLUME_KEY = "mcca:midi-volume";
+const MOCKUP_VOLUME_KEY = "mcca:mockup-volume";
 const TEMPO_KEY = "mcca:midi-tempo";
 
 const DEFAULT_VOLUME = 100;
 const DEFAULT_TEMPO = 100;
+const VOLUME_MAX = 200;
 
 function canUseStorage(): boolean {
   return typeof window !== "undefined";
 }
 
-export function readGlobalVolume(): number {
+function clampVolume(value: number): number {
+  return Math.min(VOLUME_MAX, Math.max(0, Math.round(value)));
+}
+
+function readVolumeKey(key: string): number {
   if (!canUseStorage()) return DEFAULT_VOLUME;
   try {
-    const raw = localStorage.getItem(VOLUME_KEY);
+    const raw = localStorage.getItem(key);
     if (raw === null) return DEFAULT_VOLUME;
     const value = Number(raw);
     if (!Number.isFinite(value)) return DEFAULT_VOLUME;
-    return Math.min(200, Math.max(0, Math.round(value)));
+    return clampVolume(value);
   } catch {
     return DEFAULT_VOLUME;
   }
 }
 
-type VolumeListener = (volume: number) => void;
-const volumeListeners = new Set<VolumeListener>();
-
-export function writeGlobalVolume(volume: number): void {
+function writeVolumeKey(key: string, volume: number): void {
   if (!canUseStorage()) return;
-  const clamped = Math.min(200, Math.max(0, Math.round(volume)));
+  const clamped = clampVolume(volume);
   try {
-    localStorage.setItem(VOLUME_KEY, String(clamped));
+    localStorage.setItem(key, String(clamped));
   } catch {
     // ignore quota errors and private browsing
   }
-  for (const listener of volumeListeners) {
-    listener(clamped);
+}
+
+function migrateLegacyVolume(): void {
+  if (!canUseStorage()) return;
+  try {
+    const legacy = localStorage.getItem(LEGACY_VOLUME_KEY);
+    if (legacy === null) return;
+    if (localStorage.getItem(MIDI_VOLUME_KEY) === null) {
+      localStorage.setItem(MIDI_VOLUME_KEY, legacy);
+    }
+    if (localStorage.getItem(MOCKUP_VOLUME_KEY) === null) {
+      localStorage.setItem(MOCKUP_VOLUME_KEY, legacy);
+    }
+    localStorage.removeItem(LEGACY_VOLUME_KEY);
+  } catch {
+    // ignore
   }
 }
 
-export function subscribeGlobalVolume(listener: VolumeListener): () => void {
-  volumeListeners.add(listener);
-  return () => {
-    volumeListeners.delete(listener);
-  };
+type VolumeListener = (volume: number) => void;
+
+function createVolumePreference(storageKey: string) {
+  const listeners = new Set<VolumeListener>();
+
+  function read(): number {
+    migrateLegacyVolume();
+    return readVolumeKey(storageKey);
+  }
+
+  function write(volume: number): void {
+    const clamped = clampVolume(volume);
+    writeVolumeKey(storageKey, clamped);
+    for (const listener of listeners) {
+      listener(clamped);
+    }
+  }
+
+  function subscribe(listener: VolumeListener): () => void {
+    listeners.add(listener);
+    return () => {
+      listeners.delete(listener);
+    };
+  }
+
+  return { read, write, subscribe };
 }
+
+const midiVolumePreference = createVolumePreference(MIDI_VOLUME_KEY);
+const mockupVolumePreference = createVolumePreference(MOCKUP_VOLUME_KEY);
+
+export const readMidiVolume = midiVolumePreference.read;
+export const writeMidiVolume = midiVolumePreference.write;
+export const subscribeMidiVolume = midiVolumePreference.subscribe;
+
+export const readMockupVolume = mockupVolumePreference.read;
+export const writeMockupVolume = mockupVolumePreference.write;
+export const subscribeMockupVolume = mockupVolumePreference.subscribe;
 
 type TempoMap = Record<string, number>;
 

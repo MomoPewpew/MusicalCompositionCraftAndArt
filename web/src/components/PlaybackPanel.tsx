@@ -7,14 +7,17 @@ import * as Tone from "tone";
 import { registerMidiPlayer, resetOtherMidiPlayers } from "@/lib/midiPlaybackCoordinator";
 import { loadPianoSoundfont, resetPianoSoundfont } from "@/lib/pianoSoundfont";
 import {
-  readGlobalVolume,
   readMidiHumanize,
   readMidiTempo,
-  subscribeGlobalVolume,
+  readMidiVolume,
+  readMockupVolume,
   subscribeMidiHumanize,
-  writeGlobalVolume,
+  subscribeMidiVolume,
+  subscribeMockupVolume,
   writeMidiHumanize,
-  writeMidiTempo
+  writeMidiTempo,
+  writeMidiVolume,
+  writeMockupVolume
 } from "@/lib/playbackPreferences";
 
 const MIDI_GAIN_BOOST = 2;
@@ -158,20 +161,20 @@ export function AudioPlayback({ src }: { src: string }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolumeState] = useState(90);
+  const [volume, setVolumeState] = useState(100);
   const [ended, setEnded] = useState(false);
 
   useEffect(() => {
-    setVolumeState(Math.min(readGlobalVolume(), 100));
-    return subscribeGlobalVolume((value) => {
-      setVolumeState(Math.min(100, value));
+    setVolumeState(readMockupVolume());
+    return subscribeMockupVolume((value) => {
+      setVolumeState(value);
     });
   }, []);
 
   const setVolume = useCallback((value: number) => {
-    const clamped = Math.min(100, Math.max(0, Math.round(value)));
+    const clamped = Math.min(200, Math.max(0, Math.round(value)));
     setVolumeState(clamped);
-    writeGlobalVolume(clamped);
+    writeMockupVolume(clamped);
   }, []);
 
   useEffect(() => {
@@ -204,7 +207,7 @@ export function AudioPlayback({ src }: { src: string }) {
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = volume / 100;
+      audioRef.current.volume = Math.min(1, volume / 100);
     }
   }, [volume]);
 
@@ -244,6 +247,7 @@ export function AudioPlayback({ src }: { src: string }) {
       currentTime={currentTime}
       duration={duration}
       volume={volume}
+      volumeMax={200}
       onPlayPause={onPlayPause}
       onSeek={onSeek}
       onVolumeChange={setVolume}
@@ -334,8 +338,8 @@ export function MidiPlayback({
   );
 
   useEffect(() => {
-    setVolumeState(readGlobalVolume());
-    return subscribeGlobalVolume((value) => {
+    setVolumeState(readMidiVolume());
+    return subscribeMidiVolume((value) => {
       setVolumeState(value);
     });
   }, []);
@@ -361,7 +365,7 @@ export function MidiPlayback({
   const setVolume = useCallback((value: number) => {
     const clamped = Math.min(200, Math.max(0, Math.round(value)));
     setVolumeState(clamped);
-    writeGlobalVolume(clamped);
+    writeMidiVolume(clamped);
   }, []);
 
   const setTempo = useCallback(
