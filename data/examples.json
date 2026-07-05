@@ -1890,7 +1890,7 @@
       "assets": {
         "image": "Chapter 2/Example 1/Ex2-1.png",
         "midi": "Chapter 2/Example 1/Ex2-1.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex2-1.mp3"
       }
     },
     {
@@ -1909,7 +1909,7 @@
       "assets": {
         "image": "Chapter 2/Example 2/Ex2-2.png",
         "midi": "Chapter 2/Example 2/Ex2-2.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex2-2.mp3"
       }
     },
     {
@@ -1928,7 +1928,7 @@
       "assets": {
         "image": "Chapter 2/Example 3/Ex2-3.png",
         "midi": "Chapter 2/Example 3/Ex2-3.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex2-3.mp3"
       }
     },
     {
@@ -1947,7 +1947,7 @@
       "assets": {
         "image": "Chapter 2/Example 4/Ex2-4.png",
         "midi": "Chapter 2/Example 4/Ex2-4.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex2-4.mp3"
       }
     },
     {
@@ -1966,7 +1966,7 @@
       "assets": {
         "image": "Chapter 2/Example 5/Ex2-5.png",
         "midi": "Chapter 2/Example 5/Ex2-5.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex2-5.mp3"
       }
     },
     {
@@ -1985,7 +1985,7 @@
       "assets": {
         "image": "Chapter 2/Example 6/Ex2-6.png",
         "midi": "Chapter 2/Example 6/Ex2-6.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex2-6.mp3"
       }
     },
     {
@@ -2005,7 +2005,7 @@
       "assets": {
         "image": "Chapter 2/Example 7/Section 1/Ex2-7-1.png",
         "midi": "Chapter 2/Example 7/Section 1/Ex2-7-1.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex2-7-1.mp3"
       }
     },
     {
@@ -2025,7 +2025,7 @@
       "assets": {
         "image": "Chapter 2/Example 7/Section 2/Ex2-7-2.png",
         "midi": "Chapter 2/Example 7/Section 2/Ex2-7-2.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex2-7-2.mp3"
       }
     },
     {
@@ -2045,7 +2045,7 @@
       "assets": {
         "image": "Chapter 2/Example 7/Section 3/Ex2-7-3.png",
         "midi": "Chapter 2/Example 7/Section 3/Ex2-7-3.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex2-7-3.mp3"
       }
     },
     {
@@ -2140,7 +2140,7 @@
       "assets": {
         "image": "Chapter 4/Example 1/Ex4-1.png",
         "midi": "Chapter 4/Example 1/Ex4-1.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex4-1.mp3"
       }
     },
     {
@@ -2159,7 +2159,7 @@
       "assets": {
         "image": "Chapter 4/Example 2/Ex4-2.png",
         "midi": "Chapter 4/Example 2/Ex4-2.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex4-2.mp3"
       }
     },
     {
@@ -2179,7 +2179,7 @@
       "assets": {
         "image": "Chapter 4/Example 3/Section 1/Ex4-3-1.png",
         "midi": "Chapter 4/Example 3/Section 1/Ex4-3-1.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex4-3-1.mp3"
       }
     },
     {
@@ -2199,7 +2199,7 @@
       "assets": {
         "image": "Chapter 4/Example 3/Section 2/Ex4-3-2.png",
         "midi": "Chapter 4/Example 3/Section 2/Ex4-3-2.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex4-3-2.mp3"
       }
     },
     {

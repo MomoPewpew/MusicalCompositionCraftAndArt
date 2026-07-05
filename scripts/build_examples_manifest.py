@@ -129,8 +129,15 @@ def relative_asset_path(chapter_name: str, example_id: str, filename: str) -> st
 
 def find_mockup_audio(example_id: str, explicit: str | None = None) -> str | None:
     if explicit:
-        path = ROOT / explicit
-        return explicit if path.is_file() else None
+        explicit_path = Path(explicit)
+        repo_relative = ROOT / explicit_path
+        if repo_relative.is_file():
+            return str(explicit_path).replace("\\", "/")
+
+        # Bare filename in JSON (e.g. "Ex4-1.mp3") → look in mockups/.
+        in_mockups = MOCKUPS_DIR / explicit_path.name
+        if in_mockups.is_file():
+            return str(in_mockups.relative_to(ROOT)).replace("\\", "/")
 
     for ext in (".wav", ".mp3", ".m4a", ".ogg"):
         candidate = MOCKUPS_DIR / f"{example_id}{ext}"
