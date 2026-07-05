@@ -10,6 +10,11 @@ import {
   isExamplePathActive,
   parseActiveChapterFromPath
 } from "@/lib/examples";
+import {
+  chapterExercisesHref,
+  chapterHasExercises,
+  isChapterExercisesPathActive
+} from "@/lib/exerciseAssets";
 
 const navLinkClass = [
   "block rounded-lg px-2 py-1.5 text-sm transition",
@@ -81,6 +86,20 @@ export function BookSidebar() {
                     </Link>
                   </li>
                 ))}
+                {chapter.number != null && chapterHasExercises(chapter.number) ? (
+                  <li>
+                    <Link
+                      href={chapterExercisesHref(chapter.number)}
+                      className={
+                        isChapterExercisesPathActive(pathname, chapter.number)
+                          ? activeNavLinkClass
+                          : navLinkClass
+                      }
+                    >
+                      Exercises
+                    </Link>
+                  </li>
+                ) : null}
               </ul>
             </details>
           );

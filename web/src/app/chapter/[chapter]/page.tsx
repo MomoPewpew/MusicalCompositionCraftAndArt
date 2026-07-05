@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 
+import { ExerciseChapterLink } from "@/components/ChapterExercises";
 import { ExampleCard } from "@/components/ExamplePageView";
 import { MobileChapterNav } from "@/components/MobileChapterNav";
 import { getChapter, getChapters, getGroupedExamplesForChapter } from "@/lib/examples";
@@ -47,6 +48,8 @@ export default async function ChapterPage({
           </li>
         ))}
       </ul>
+
+      <ExerciseChapterLink chapter={chapter} />
     </div>
   );
 }

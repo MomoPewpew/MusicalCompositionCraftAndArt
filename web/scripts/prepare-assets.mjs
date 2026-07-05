@@ -2,6 +2,7 @@
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { spawnSync } from "node:child_process";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const webRoot = resolve(__dirname, "..");
@@ -12,6 +13,18 @@ const humanizedDir = join(repoRoot, "downloads", "Musical Composition Craft And 
 const publicAssetsDir = join(webRoot, "public", "assets");
 const generatedDir = join(webRoot, "src", "generated");
 const generatedManifestPath = join(generatedDir, "examples.json");
+const generatedExerciseAssetsPath = join(generatedDir, "exercise-assets.json");
+const exerciseAssetsManifestPath = join(repoRoot, "data", "exercise-assets.json");
+const buildExerciseArchiveScript = join(repoRoot, "scripts", "build_exercise_archive.py");
+
+function removeDir(path) {
+  if (!existsSync(path)) return;
+  try {
+    rmSync(path, { recursive: true, force: true, maxRetries: 3, retryDelay: 100 });
+  } catch {
+    spawnSync("rm", ["-rf", path], { stdio: "inherit" });
+  }
+}
 
 function copyFile(source, dest) {
   mkdirSync(dirname(dest), { recursive: true });
@@ -105,6 +118,43 @@ function copyExampleAssets(example) {
   return { assets, copied, missing };
 }
 
+function buildExerciseArchive() {
+  if (!existsSync(buildExerciseArchiveScript)) {
+    console.warn("Exercise archive script not found; skipping.");
+    return;
+  }
+
+  const python = process.env.PYTHON ?? "python3";
+  const result = spawnSync(python, [buildExerciseArchiveScript], {
+    cwd: repoRoot,
+    stdio: "inherit"
+  });
+  if (result.status !== 0) {
+    throw new Error("build_exercise_archive.py failed");
+  }
+
+  if (!existsSync(exerciseAssetsManifestPath)) {
+    writeFileSync(
+      generatedExerciseAssetsPath,
+      `${JSON.stringify({ fileCount: 0, chapters: {} }, null, 2)}\n`,
+      "utf8"
+    );
+    return;
+  }
+
+  const manifest = JSON.parse(readFileSync(exerciseAssetsManifestPath, "utf8"));
+  for (const chapter of Object.values(manifest.chapters ?? {})) {
+    if (chapter.archive) {
+      chapter.archive = toPublicPath(chapter.archive.replace(/^assets\//, ""));
+    }
+  }
+  writeFileSync(generatedExerciseAssetsPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  if (manifest.fileCount > 0) {
+    const chapterCount = Object.keys(manifest.chapters ?? {}).length;
+    console.log(`Exercise MusicXML: ${manifest.fileCount} files across ${chapterCount} chapter(s)`);
+  }
+}
+
 async function main() {
   if (!existsSync(manifestPath)) {
     console.error(`Manifest not found: ${manifestPath}`);
@@ -113,7 +163,7 @@ async function main() {
   }
 
   const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
-  rmSync(publicAssetsDir, { recursive: true, force: true });
+  removeDir(publicAssetsDir);
   mkdirSync(publicAssetsDir, { recursive: true });
   mkdirSync(generatedDir, { recursive: true });
 
@@ -135,6 +185,7 @@ async function main() {
   };
 
   writeFileSync(generatedManifestPath, `${JSON.stringify(generated, null, 2)}\n`, "utf8");
+  buildExerciseArchive();
   await ensureSoundfont();
   console.log(`Prepared assets: ${copied} copied, ${missing} missing`);
   if (humanizedMidi > 0) {

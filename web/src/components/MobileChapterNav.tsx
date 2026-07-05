@@ -10,6 +10,11 @@ import {
   isExamplePathActive,
   parseActiveChapterFromPath
 } from "@/lib/examples";
+import {
+  chapterExercisesHref,
+  chapterHasExercises,
+  isChapterExercisesPathActive
+} from "@/lib/exerciseAssets";
 
 export function MobileChapterNav() {
   const pathname = usePathname();
@@ -65,6 +70,19 @@ export function MobileChapterNav() {
             {example.label}
           </Link>
         ))}
+        {activeChapter.number != null && chapterHasExercises(activeChapter.number) ? (
+          <Link
+            href={chapterExercisesHref(activeChapter.number)}
+            className={[
+              "rounded-full border px-3 py-1 text-xs font-medium",
+              isChapterExercisesPathActive(pathname, activeChapter.number)
+                ? "border-fuchsia-400/40 bg-fuchsia-500/10 text-zinc-950 dark:text-zinc-50"
+                : "border-black/10 bg-white/60 text-zinc-700 dark:border-white/10 dark:bg-zinc-950/30 dark:text-zinc-300"
+            ].join(" ")}
+          >
+            Exercises
+          </Link>
+        ) : null}
       </div>
     </div>
   );
