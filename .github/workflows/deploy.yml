@@ -76,27 +76,7 @@ jobs:
           SSH_PORT_CLEAN="$(printf %s "${SSH_PORT}" | tr -d '\r\n')"
           SSH_TARGET_DIR_CLEAN="$(printf %s "${SSH_TARGET_DIR}" | tr -d '\r\n')"
 
-          cat > sftp-batch.txt <<'EOF'
-          pwd
-          ls
-          cd __TARGET_DIR__
-          pwd
-          ls
-          rm -r assets
-          lcd out
-          put -r assets
-          put -r _next
-          put -r chapter
-          put -r extra
-          put -r soundfonts
-          put -r 404
-          put index.html
-          put index.txt
-          put 404.html
-          bye
-          EOF
-
-          sed -i "s|__TARGET_DIR__|${SSH_TARGET_DIR_CLEAN}|g" sftp-batch.txt
+          node scripts/generate-sftp-batch.mjs "${SSH_TARGET_DIR_CLEAN}"
 
           sshpass -p "${SSH_PASSWORD_CLEAN}" \
             sftp -oBatchMode=no -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null \
