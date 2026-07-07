@@ -7,7 +7,9 @@ on:
       - "web/**"
       - "data/**"
       - "downloads/**"
+      - "exercise_assets/**"
       - "scripts/build_examples_manifest.py"
+      - "scripts/build_exercise_archive.py"
       - "scripts/extract_citations.py"
       - ".github/workflows/deploy.yml"
 
