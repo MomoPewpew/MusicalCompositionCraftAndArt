@@ -8,7 +8,7 @@
     <creator type="composer">Composer / arranger</creator>
     <encoding>
       <software>MuseScore Studio 4.7.3</software>
-      <encoding-date>2026-07-05</encoding-date>
+      <encoding-date>2026-07-07</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="no"/>
@@ -70,19 +70,7 @@
           <sign>G</sign>
           <line>2</line>
           </clef>
-        <for-part>
-          <part-transpose>
-            <diatonic>-4</diatonic>
-            <chromatic>-7</chromatic>
-            </part-transpose>
-          </for-part>
         </attributes>
-      <direction placement="above" system="only-top">
-        <direction-type>
-          <words font-weight="bold" font-size="12">Allegro</words>
-          </direction-type>
-        <sound tempo="144"/>
-        </direction>
       <direction placement="below">
         <direction-type>
           <dynamics>
@@ -90,6 +78,12 @@
             </dynamics>
           </direction-type>
         <sound dynamics="106.67"/>
+        </direction>
+      <direction placement="above" system="only-top">
+        <direction-type>
+          <words font-weight="bold" font-size="12">Allegro</words>
+          </direction-type>
+        <sound tempo="144"/>
         </direction>
       <note>
         <pitch>
@@ -330,13 +324,6 @@
           <line>4</line>
           </clef>
         </attributes>
-      <direction placement="above" system="also-top">
-        <direction-type>
-          <words font-weight="bold" font-size="12">Allegro</words>
-          </direction-type>
-        <staff>1</staff>
-        <sound tempo="144"/>
-        </direction>
       <note>
         <rest/>
         <duration>1</duration>
@@ -767,6 +754,7 @@
         <duration>4</duration>
         <voice>5</voice>
         <type>half</type>
+        <accidental cautionary="yes" parentheses="no">flat</accidental>
         <stem>up</stem>
         <staff>2</staff>
         </note>
