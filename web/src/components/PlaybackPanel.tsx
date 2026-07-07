@@ -433,7 +433,7 @@ export function MidiPlayback({
       midiRef.current = null;
 
       try {
-        const midiResponse = await fetch(activeSrc);
+        const midiResponse = await fetch(activeSrc, { cache: "no-store" });
         if (!midiResponse.ok) {
           throw new Error(`MIDI fetch failed (${midiResponse.status})`);
         }

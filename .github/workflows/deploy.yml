@@ -82,8 +82,17 @@ jobs:
           cd __TARGET_DIR__
           pwd
           ls
+          rm -r assets
           lcd out
-          put -r ./*
+          put -r assets
+          put -r _next
+          put -r chapter
+          put -r extra
+          put -r soundfonts
+          put -r 404
+          put index.html
+          put index.txt
+          put 404.html
           bye
           EOF
 
