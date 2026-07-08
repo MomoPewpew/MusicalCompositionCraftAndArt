@@ -5,8 +5,8 @@ import { StudyGroupChapterLink } from "@/components/ChapterStudyGroup";
 import { ExerciseChapterLink } from "@/components/ChapterExercises";
 import { ExampleCard } from "@/components/ExamplePageView";
 import { MobileChapterNav } from "@/components/MobileChapterNav";
+import { getChapterLandingTitle } from "@/lib/chapterTitles";
 import { getChapter, getChapters, getGroupedExamplesForChapter } from "@/lib/examples";
-import { getChapterInfographic } from "@/lib/infographics";
 
 export const dynamicParams = false;
 
@@ -26,8 +26,7 @@ export default async function ChapterPage({
   if (!chapter) notFound();
 
   const grouped = getGroupedExamplesForChapter(chapter);
-  const infographic = getChapterInfographic(chapter.number);
-  const chapterTitle = infographic?.title ? `${chapter.name} — ${infographic.title}` : chapter.name;
+  const chapterTitle = getChapterLandingTitle(chapter.number, chapter.name);
 
   return (
     <div className="space-y-8">

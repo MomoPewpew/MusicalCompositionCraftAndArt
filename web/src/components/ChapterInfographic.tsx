@@ -39,7 +39,7 @@ export function ChapterInfographicPageView({ chapter }: { chapter: ChapterEntry 
   const infographic = getChapterInfographic(chapter.number);
   if (!infographic) return null;
 
-  const alt = `${chapter.name} infographic: ${infographic.title}`;
+  const alt = `${chapter.name} infographic`;
 
   return (
     <div className="space-y-8">
@@ -54,9 +54,6 @@ export function ChapterInfographicPageView({ chapter }: { chapter: ChapterEntry 
           <h1 className="text-3xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
             {chapter.name} — Infographic
           </h1>
-          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            {infographic.title}
-          </p>
         </div>
       </div>
 

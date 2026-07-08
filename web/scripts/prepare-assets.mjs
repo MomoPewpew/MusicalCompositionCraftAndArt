@@ -16,8 +16,10 @@ const generatedManifestPath = join(generatedDir, "examples.json");
 const generatedExerciseAssetsPath = join(generatedDir, "exercise-assets.json");
 const generatedInfographicsPath = join(generatedDir, "infographics.json");
 const generatedStudyGroupSessionsPath = join(generatedDir, "study-group-sessions.json");
+const generatedChapterTitlesPath = join(generatedDir, "chapter-titles.json");
 const exerciseAssetsManifestPath = join(repoRoot, "data", "exercise-assets.json");
 const studyGroupSessionsPath = join(repoRoot, "data", "study-group-sessions.json");
+const chapterTitlesPath = join(repoRoot, "data", "chapter-titles.json");
 const infographicsSourceDir = join(repoRoot, "infographics");
 const buildExerciseArchiveScript = join(repoRoot, "scripts", "build_exercise_archive.py");
 
@@ -204,7 +206,6 @@ function copyInfographics() {
     copyFile(source, dest);
 
     chapters[String(parsed.chapter)] = {
-      title: parsed.title,
       image: toPublicPath(`infographics/${destName}`)
     };
     copied += 1;
@@ -220,6 +221,27 @@ function copyInfographics() {
     console.log(`Infographics: ${copied} chapter image(s)`);
   }
   return copied;
+}
+
+function copyChapterTitles() {
+  const emptyManifest = { chapters: {} };
+
+  if (!existsSync(chapterTitlesPath)) {
+    writeFileSync(
+      generatedChapterTitlesPath,
+      `${JSON.stringify(emptyManifest, null, 2)}\n`,
+      "utf8"
+    );
+    return;
+  }
+
+  const manifest = JSON.parse(readFileSync(chapterTitlesPath, "utf8"));
+  writeFileSync(generatedChapterTitlesPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+
+  const titleCount = Object.keys(manifest.chapters ?? {}).length;
+  if (titleCount > 0) {
+    console.log(`Chapter titles: ${titleCount} chapter(s)`);
+  }
 }
 
 function copyStudyGroupSessions() {
@@ -279,6 +301,7 @@ async function main() {
   writeFileSync(generatedManifestPath, `${JSON.stringify(generated, null, 2)}\n`, "utf8");
   buildExerciseArchive();
   copyInfographics();
+  copyChapterTitles();
   copyStudyGroupSessions();
   await ensureSoundfont();
   console.log(`Prepared assets: ${copied} copied, ${missing} missing`);

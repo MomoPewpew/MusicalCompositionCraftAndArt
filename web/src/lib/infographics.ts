@@ -1,7 +1,6 @@
 import infographics from "@/generated/infographics.json";
 
 export type ChapterInfographicEntry = {
-  title: string;
   image: string;
 };
 
