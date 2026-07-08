@@ -15,7 +15,9 @@ const generatedDir = join(webRoot, "src", "generated");
 const generatedManifestPath = join(generatedDir, "examples.json");
 const generatedExerciseAssetsPath = join(generatedDir, "exercise-assets.json");
 const generatedInfographicsPath = join(generatedDir, "infographics.json");
+const generatedStudyGroupSessionsPath = join(generatedDir, "study-group-sessions.json");
 const exerciseAssetsManifestPath = join(repoRoot, "data", "exercise-assets.json");
+const studyGroupSessionsPath = join(repoRoot, "data", "study-group-sessions.json");
 const infographicsSourceDir = join(repoRoot, "infographics");
 const buildExerciseArchiveScript = join(repoRoot, "scripts", "build_exercise_archive.py");
 
@@ -220,6 +222,31 @@ function copyInfographics() {
   return copied;
 }
 
+function copyStudyGroupSessions() {
+  const emptyManifest = { chapters: {} };
+
+  if (!existsSync(studyGroupSessionsPath)) {
+    writeFileSync(
+      generatedStudyGroupSessionsPath,
+      `${JSON.stringify(emptyManifest, null, 2)}\n`,
+      "utf8"
+    );
+    return;
+  }
+
+  const manifest = JSON.parse(readFileSync(studyGroupSessionsPath, "utf8"));
+  writeFileSync(generatedStudyGroupSessionsPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+
+  const sessionCount = Object.values(manifest.chapters ?? {}).reduce(
+    (total, chapter) => total + (chapter.sessions?.length ?? 0),
+    0
+  );
+  if (sessionCount > 0) {
+    const chapterCount = Object.keys(manifest.chapters ?? {}).length;
+    console.log(`Study group: ${sessionCount} session(s) across ${chapterCount} chapter(s)`);
+  }
+}
+
 async function main() {
   if (!existsSync(manifestPath)) {
     console.error(`Manifest not found: ${manifestPath}`);
@@ -252,6 +279,7 @@ async function main() {
   writeFileSync(generatedManifestPath, `${JSON.stringify(generated, null, 2)}\n`, "utf8");
   buildExerciseArchive();
   copyInfographics();
+  copyStudyGroupSessions();
   await ensureSoundfont();
   console.log(`Prepared assets: ${copied} copied, ${missing} missing`);
   if (humanizedMidi > 0) {

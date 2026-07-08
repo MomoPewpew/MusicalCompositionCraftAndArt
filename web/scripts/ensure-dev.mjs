@@ -2,5 +2,5 @@
 import { clearNextCacheIfStale } from "./clear-next-cache.mjs";
 
 if (clearNextCacheIfStale()) {
-  console.log("Clearing production .next cache before dev server...");
+  console.log("Clearing stale .next cache before dev server...");
 }

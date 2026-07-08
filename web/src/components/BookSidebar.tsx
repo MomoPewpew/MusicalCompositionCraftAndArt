@@ -20,6 +20,11 @@ import {
   chapterHasInfographic,
   isChapterInfographicPathActive
 } from "@/lib/infographics";
+import {
+  chapterStudyGroupHref,
+  chapterHasStudyGroupSessions,
+  isChapterStudyGroupPathActive
+} from "@/lib/studyGroupSessions";
 
 const navLinkClass = [
   "block rounded-lg px-2 py-1.5 text-sm transition",
@@ -102,6 +107,20 @@ export function BookSidebar() {
                       }
                     >
                       Infographic
+                    </Link>
+                  </li>
+                ) : null}
+                {chapter.number != null && chapterHasStudyGroupSessions(chapter.number) ? (
+                  <li>
+                    <Link
+                      href={chapterStudyGroupHref(chapter.number)}
+                      className={
+                        isChapterStudyGroupPathActive(pathname, chapter.number)
+                          ? activeNavLinkClass
+                          : navLinkClass
+                      }
+                    >
+                      Study group
                     </Link>
                   </li>
                 ) : null}

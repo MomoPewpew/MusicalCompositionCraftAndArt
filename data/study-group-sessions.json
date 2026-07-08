@@ -1,0 +1,16 @@
+{
+  "chapters": {
+    "1": {
+      "sessions": [
+        {
+          "title": "Session 1",
+          "youtube": "https://youtu.be/rW8JaisMCoQ"
+        },
+        {
+          "title": "Session 2",
+          "youtube": "https://youtu.be/Bi9jQH0N9xE"
+        }
+      ]
+    }
+  }
+}

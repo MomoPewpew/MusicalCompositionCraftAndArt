@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { InfographicChapterLink } from "@/components/ChapterInfographic";
+import { StudyGroupChapterLink } from "@/components/ChapterStudyGroup";
 import { ExerciseChapterLink } from "@/components/ChapterExercises";
 import { ExampleCard } from "@/components/ExamplePageView";
 import { MobileChapterNav } from "@/components/MobileChapterNav";
@@ -51,6 +52,8 @@ export default async function ChapterPage({
       </ul>
 
       <InfographicChapterLink chapter={chapter} />
+
+      <StudyGroupChapterLink chapter={chapter} />
 
       <ExerciseChapterLink chapter={chapter} />
     </div>
