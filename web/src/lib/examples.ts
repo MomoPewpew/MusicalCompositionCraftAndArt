@@ -1,4 +1,7 @@
 import examples from "@/generated/examples.json";
+import { getChaptersWithExercises } from "@/lib/exerciseAssets";
+import { getChaptersWithInfographics } from "@/lib/infographics";
+import { getChaptersWithStudyGroupSessions } from "@/lib/studyGroupSessions";
 
 export type ExampleRoute = {
   chapter: string;
@@ -59,16 +62,43 @@ export function getManifest(): ExamplesManifest {
   return manifest;
 }
 
+function getAllChapters(): ChapterEntry[] {
+  const chapters = [...manifest.chapters];
+
+  const extraChapter = chapters.find((chapter) => chapter.slug === "extra") ?? null;
+  const numbered = chapters.filter((chapter) => chapter.slug !== "extra" && chapter.number != null);
+  const existingNumbers = new Set(numbered.map((chapter) => chapter.number as number));
+
+  const supplementalNumbers = new Set<number>();
+  for (const chapter of getChaptersWithInfographics()) supplementalNumbers.add(chapter);
+  for (const chapter of getChaptersWithStudyGroupSessions()) supplementalNumbers.add(chapter);
+  for (const chapter of getChaptersWithExercises()) supplementalNumbers.add(chapter);
+
+  for (const number of supplementalNumbers) {
+    if (existingNumbers.has(number)) continue;
+    numbered.push({
+      name: `Chapter ${number}`,
+      number,
+      slug: `chapter-${number}`,
+      exampleCount: 0,
+      examples: []
+    });
+  }
+
+  numbered.sort((a, b) => (a.number as number) - (b.number as number));
+  return extraChapter ? [...numbered, extraChapter] : numbered;
+}
+
 export function getChapters(): ChapterEntry[] {
-  return manifest.chapters;
+  return getAllChapters();
 }
 
 export function getChapter(slug: string): ChapterEntry | undefined {
-  return manifest.chapters.find((chapter) => chapter.slug === slug);
+  return getAllChapters().find((chapter) => chapter.slug === slug);
 }
 
 export function getChapterByNumber(number: number): ChapterEntry | undefined {
-  return manifest.chapters.find((chapter) => chapter.number === number);
+  return getAllChapters().find((chapter) => chapter.number === number);
 }
 
 export function getExampleBySlug(slug: string): ExampleEntry | undefined {

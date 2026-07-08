@@ -39,17 +39,23 @@ export default async function ChapterPage({
         </p>
       </div>
 
-      <ul className="space-y-2">
-        {grouped.map((example) => (
-          <li key={example.exampleNum}>
-            <ExampleCard
-              chapter={chapter}
-              exampleNum={example.exampleNum}
-              label={example.label}
-            />
-          </li>
-        ))}
-      </ul>
+      {grouped.length > 0 ? (
+        <ul className="space-y-2">
+          {grouped.map((example) => (
+            <li key={example.exampleNum}>
+              <ExampleCard
+                chapter={chapter}
+                exampleNum={example.exampleNum}
+                label={example.label}
+              />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="text-sm text-zinc-600 dark:text-zinc-400">
+          No examples are available for this chapter yet.
+        </p>
+      )}
 
       <InfographicChapterLink chapter={chapter} />
 
