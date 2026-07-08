@@ -1,6 +1,6 @@
 import examples from "@/generated/examples.json";
 import { getChaptersWithExercises } from "@/lib/exerciseAssets";
-import { getChapterInfographic, getChaptersWithInfographics } from "@/lib/infographics";
+import { getChaptersWithInfographics } from "@/lib/infographics";
 import { getChaptersWithStudyGroupSessions } from "@/lib/studyGroupSessions";
 
 export type ExampleRoute = {
@@ -76,10 +76,8 @@ function getAllChapters(): ChapterEntry[] {
 
   for (const number of supplementalNumbers) {
     if (existingNumbers.has(number)) continue;
-    const infographic = getChapterInfographic(number);
-    const title = infographic?.title ? ` — ${infographic.title}` : "";
     numbered.push({
-      name: `Chapter ${number}${title}`,
+      name: `Chapter ${number}`,
       number,
       slug: `chapter-${number}`,
       exampleCount: 0,
@@ -87,17 +85,8 @@ function getAllChapters(): ChapterEntry[] {
     });
   }
 
-  const withTitles = numbered.map((chapter) => {
-    if (chapter.number == null) return chapter;
-    const infographic = getChapterInfographic(chapter.number);
-    if (!infographic?.title) return chapter;
-    // If the chapter is already titled (or has been overridden elsewhere), don't overwrite it.
-    if (chapter.name.includes("—")) return chapter;
-    return { ...chapter, name: `Chapter ${chapter.number} — ${infographic.title}` };
-  });
-
-  withTitles.sort((a, b) => (a.number as number) - (b.number as number));
-  return extraChapter ? [...withTitles, extraChapter] : withTitles;
+  numbered.sort((a, b) => (a.number as number) - (b.number as number));
+  return extraChapter ? [...numbered, extraChapter] : numbered;
 }
 
 export function getChapters(): ChapterEntry[] {

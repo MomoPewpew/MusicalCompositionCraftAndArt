@@ -6,6 +6,7 @@ import { ExerciseChapterLink } from "@/components/ChapterExercises";
 import { ExampleCard } from "@/components/ExamplePageView";
 import { MobileChapterNav } from "@/components/MobileChapterNav";
 import { getChapter, getChapters, getGroupedExamplesForChapter } from "@/lib/examples";
+import { getChapterInfographic } from "@/lib/infographics";
 
 export const dynamicParams = false;
 
@@ -25,6 +26,8 @@ export default async function ChapterPage({
   if (!chapter) notFound();
 
   const grouped = getGroupedExamplesForChapter(chapter);
+  const infographic = getChapterInfographic(chapter.number);
+  const chapterTitle = infographic?.title ? `${chapter.name} — ${infographic.title}` : chapter.name;
 
   return (
     <div className="space-y-8">
@@ -32,7 +35,7 @@ export default async function ChapterPage({
 
       <div className="space-y-3">
         <h1 className="text-3xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
-          {chapter.name}
+          {chapterTitle}
         </h1>
         <p className="text-sm text-zinc-600 dark:text-zinc-400">
           {grouped.length} example{grouped.length === 1 ? "" : "s"} in this chapter.

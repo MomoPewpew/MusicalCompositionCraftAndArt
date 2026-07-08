@@ -18,6 +18,7 @@ import {
 import {
   chapterInfographicHref,
   chapterHasInfographic,
+  getChapterInfographic,
   isChapterInfographicPathActive
 } from "@/lib/infographics";
 import {
@@ -77,7 +78,11 @@ export function BookSidebar() {
                   className="hover:underline decoration-black/20 underline-offset-4 dark:decoration-white/20"
                   onClick={(event) => event.stopPropagation()}
                 >
-                  {chapter.name}
+                  {(() => {
+                    if (chapter.number == null) return chapter.name;
+                    const info = getChapterInfographic(chapter.number);
+                    return info?.title ? `${chapter.name} — ${info.title}` : chapter.name;
+                  })()}
                 </Link>
                 <span className="ml-2 text-[11px] font-normal text-zinc-500 dark:text-zinc-500">
                   {grouped.length}
