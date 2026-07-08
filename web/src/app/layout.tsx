@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import "./globals.css";
 import { BookSidebar } from "@/components/BookSidebar";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { getManifest } from "@/lib/examples";
@@ -36,6 +37,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider>
+          <ScrollToTop />
           <div className="min-h-dvh">
             <header className="sticky top-0 z-20 relative">
               <div className="pointer-events-none absolute inset-0 -z-10 border-b border-black/10 bg-white/70 backdrop-blur-sm dark:border-white/10 dark:bg-zinc-950/65" />

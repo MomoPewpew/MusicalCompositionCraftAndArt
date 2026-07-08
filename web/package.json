@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node scripts/ensure-dev.mjs && node scripts/prepare-assets.mjs && next dev -H 0.0.0.0 -p 3001",
     "humanize-midi": "python3 ../scripts/humanize_midi_assets.py",
-    "build": "node scripts/prepare-assets.mjs && next build",
+    "build": "node scripts/prepare-assets.mjs && next build && node scripts/clear-next-cache.mjs",
     "start": "next start -H 0.0.0.0 -p 3001",
     "lint": "next lint"
   },

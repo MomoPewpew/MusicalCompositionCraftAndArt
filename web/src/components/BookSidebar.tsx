@@ -15,6 +15,11 @@ import {
   chapterHasExercises,
   isChapterExercisesPathActive
 } from "@/lib/exerciseAssets";
+import {
+  chapterInfographicHref,
+  chapterHasInfographic,
+  isChapterInfographicPathActive
+} from "@/lib/infographics";
 
 const navLinkClass = [
   "block rounded-lg px-2 py-1.5 text-sm transition",
@@ -86,6 +91,20 @@ export function BookSidebar() {
                     </Link>
                   </li>
                 ))}
+                {chapter.number != null && chapterHasInfographic(chapter.number) ? (
+                  <li>
+                    <Link
+                      href={chapterInfographicHref(chapter.number)}
+                      className={
+                        isChapterInfographicPathActive(pathname, chapter.number)
+                          ? activeNavLinkClass
+                          : navLinkClass
+                      }
+                    >
+                      Infographic
+                    </Link>
+                  </li>
+                ) : null}
                 {chapter.number != null && chapterHasExercises(chapter.number) ? (
                   <li>
                     <Link

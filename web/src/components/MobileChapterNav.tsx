@@ -15,6 +15,11 @@ import {
   chapterHasExercises,
   isChapterExercisesPathActive
 } from "@/lib/exerciseAssets";
+import {
+  chapterInfographicHref,
+  chapterHasInfographic,
+  isChapterInfographicPathActive
+} from "@/lib/infographics";
 
 export function MobileChapterNav() {
   const pathname = usePathname();
@@ -70,6 +75,19 @@ export function MobileChapterNav() {
             {example.label}
           </Link>
         ))}
+        {activeChapter.number != null && chapterHasInfographic(activeChapter.number) ? (
+          <Link
+            href={chapterInfographicHref(activeChapter.number)}
+            className={[
+              "rounded-full border px-3 py-1 text-xs font-medium",
+              isChapterInfographicPathActive(pathname, activeChapter.number)
+                ? "border-fuchsia-400/40 bg-fuchsia-500/10 text-zinc-950 dark:text-zinc-50"
+                : "border-black/10 bg-white/60 text-zinc-700 dark:border-white/10 dark:bg-zinc-950/30 dark:text-zinc-300"
+            ].join(" ")}
+          >
+            Infographic
+          </Link>
+        ) : null}
         {activeChapter.number != null && chapterHasExercises(activeChapter.number) ? (
           <Link
             href={chapterExercisesHref(activeChapter.number)}

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
@@ -14,7 +14,9 @@ const publicAssetsDir = join(webRoot, "public", "assets");
 const generatedDir = join(webRoot, "src", "generated");
 const generatedManifestPath = join(generatedDir, "examples.json");
 const generatedExerciseAssetsPath = join(generatedDir, "exercise-assets.json");
+const generatedInfographicsPath = join(generatedDir, "infographics.json");
 const exerciseAssetsManifestPath = join(repoRoot, "data", "exercise-assets.json");
+const infographicsSourceDir = join(repoRoot, "infographics");
 const buildExerciseArchiveScript = join(repoRoot, "scripts", "build_exercise_archive.py");
 
 function removeDir(path) {
@@ -155,6 +157,69 @@ function buildExerciseArchive() {
   }
 }
 
+function slugifyInfographicTitle(title) {
+  return title
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "");
+}
+
+function parseInfographicFilename(filename) {
+  const match = filename.match(/^(\d+)\.\s*(.+)\.png$/i);
+  if (!match) return null;
+
+  const chapter = Number(match[1]);
+  const title = match[2].trim();
+  if (!Number.isFinite(chapter) || chapter < 1) return null;
+
+  const slug = `${String(chapter).padStart(2, "0")}-${slugifyInfographicTitle(title)}`;
+  return { chapter, title, slug };
+}
+
+function copyInfographics() {
+  const chapters = {};
+
+  if (!existsSync(infographicsSourceDir)) {
+    writeFileSync(
+      generatedInfographicsPath,
+      `${JSON.stringify({ chapterCount: 0, chapters: {} }, null, 2)}\n`,
+      "utf8"
+    );
+    return 0;
+  }
+
+  const infographicsDestDir = join(publicAssetsDir, "infographics");
+  mkdirSync(infographicsDestDir, { recursive: true });
+
+  let copied = 0;
+  for (const filename of readdirSync(infographicsSourceDir).sort()) {
+    const parsed = parseInfographicFilename(filename);
+    if (!parsed) continue;
+
+    const source = join(infographicsSourceDir, filename);
+    const destName = `${parsed.slug}.png`;
+    const dest = join(infographicsDestDir, destName);
+    copyFile(source, dest);
+
+    chapters[String(parsed.chapter)] = {
+      title: parsed.title,
+      image: toPublicPath(`infographics/${destName}`)
+    };
+    copied += 1;
+  }
+
+  const manifest = {
+    chapterCount: Object.keys(chapters).length,
+    chapters
+  };
+  writeFileSync(generatedInfographicsPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+
+  if (copied > 0) {
+    console.log(`Infographics: ${copied} chapter image(s)`);
+  }
+  return copied;
+}
+
 async function main() {
   if (!existsSync(manifestPath)) {
     console.error(`Manifest not found: ${manifestPath}`);
@@ -186,6 +251,7 @@ async function main() {
 
   writeFileSync(generatedManifestPath, `${JSON.stringify(generated, null, 2)}\n`, "utf8");
   buildExerciseArchive();
+  copyInfographics();
   await ensureSoundfont();
   console.log(`Prepared assets: ${copied} copied, ${missing} missing`);
   if (humanizedMidi > 0) {
