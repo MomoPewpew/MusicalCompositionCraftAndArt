@@ -1,0 +1,6168 @@
+{
+  "playlistId": "PLSntcNF64SVVhPiEzHVIjIP0TvutZhK8J",
+  "playlistUrl": "https://www.youtube.com/playlist?list=PLSntcNF64SVVhPiEzHVIjIP0TvutZhK8J",
+  "videoCount": 52,
+  "captionsDir": "data/youtube-captions/belkin-musical-composition",
+  "videos": [
+    {
+      "playlistIndex": 1,
+      "videoId": "kzr4D5GklsU",
+      "title": "Musical Composition, Craft and Art #1 - Introduction",
+      "topic": "Introduction",
+      "url": "https://www.youtube.com/watch?v=kzr4D5GklsU",
+      "hasTranscript": true,
+      "transcriptWords": 991,
+      "bestMatch": {
+        "chapter": 11,
+        "chapterTitle": "Contrasting",
+        "confidence": 0.604,
+        "scores": {
+          "title": 0.235,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.079,
+      "topMatches": [
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.604,
+          "scores": {
+            "title": 0.235,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.525,
+          "scores": {
+            "title": 0.1,
+            "keywords": 0.9,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (0.90)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.52,
+          "scores": {
+            "title": 0.15,
+            "keywords": 0.8,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (0.80)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.516,
+          "scores": {
+            "title": 0.171,
+            "keywords": 0.75,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (0.75)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 3,
+          "chapterTitle": "Singing",
+          "confidence": 0.476,
+          "scores": {
+            "title": 0.189,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 2,
+      "videoId": "_yI70FTzdq4",
+      "title": "Musical Composition, Craft and Art #2 - Psychology and Music, part 1",
+      "topic": "Psychology and Music, part 1",
+      "url": "https://www.youtube.com/watch?v=_yI70FTzdq4",
+      "hasTranscript": true,
+      "transcriptWords": 1069,
+      "bestMatch": {
+        "chapter": 13,
+        "chapterTitle": "Progressing",
+        "confidence": 0.557,
+        "scores": {
+          "title": 0.118,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.028,
+      "topMatches": [
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.557,
+          "scores": {
+            "title": 0.118,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.529,
+          "scores": {
+            "title": 0.047,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.505,
+          "scores": {
+            "title": 0.082,
+            "keywords": 0.85,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (0.85)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 7,
+          "chapterTitle": "One-part forms",
+          "confidence": 0.461,
+          "scores": {
+            "title": 0.154,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        },
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.446,
+          "scores": {
+            "title": 0.122,
+            "keywords": 0.55,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (0.55)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 3,
+      "videoId": "cX-qm7r9IuI",
+      "title": "Musical Composition, Craft and Art #3 - Psychology and Music, part 2",
+      "topic": "Psychology and Music, part 2",
+      "url": "https://www.youtube.com/watch?v=cX-qm7r9IuI",
+      "hasTranscript": true,
+      "transcriptWords": 1149,
+      "bestMatch": {
+        "chapter": 14,
+        "chapterTitle": "Rondo Form",
+        "confidence": 0.559,
+        "scores": {
+          "title": 0.122,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.011,
+      "topMatches": [
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.559,
+          "scores": {
+            "title": 0.122,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.548,
+          "scores": {
+            "title": 0.095,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.542,
+          "scores": {
+            "title": 0.079,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.538,
+          "scores": {
+            "title": 0.071,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.532,
+          "scores": {
+            "title": 0.055,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 4,
+      "videoId": "l-Y8fuEaGaw",
+      "title": "Musical Composition, Craft and Art #4 - Psychology and Music, part 3",
+      "topic": "Psychology and Music, part 3",
+      "url": "https://www.youtube.com/watch?v=l-Y8fuEaGaw",
+      "hasTranscript": true,
+      "transcriptWords": 1141,
+      "bestMatch": {
+        "chapter": 13,
+        "chapterTitle": "Progressing",
+        "confidence": 0.557,
+        "scores": {
+          "title": 0.118,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.015,
+      "topMatches": [
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.557,
+          "scores": {
+            "title": 0.118,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.542,
+          "scores": {
+            "title": 0.079,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.54,
+          "scores": {
+            "title": 0.075,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.538,
+          "scores": {
+            "title": 0.071,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.532,
+          "scores": {
+            "title": 0.055,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 5,
+      "videoId": "c9s-2POXox4",
+      "title": "Musical Composition, Craft and Art #5 - On Craftsmanship",
+      "topic": "On Craftsmanship",
+      "url": "https://www.youtube.com/watch?v=c9s-2POXox4",
+      "hasTranscript": true,
+      "transcriptWords": 2033,
+      "bestMatch": {
+        "chapter": 11,
+        "chapterTitle": "Contrasting",
+        "confidence": 0.59,
+        "scores": {
+          "title": 0.2,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.011,
+      "topMatches": [
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.59,
+          "scores": {
+            "title": 0.2,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.579,
+          "scores": {
+            "title": 0.173,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.577,
+          "scores": {
+            "title": 0.167,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.577,
+          "scores": {
+            "title": 0.167,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.553,
+          "scores": {
+            "title": 0.108,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 6,
+      "videoId": "6Mh9L-38ZZg",
+      "title": "Musical Composition, Craft and Art #6 -  On Framing",
+      "topic": "On Framing",
+      "url": "https://www.youtube.com/watch?v=6Mh9L-38ZZg",
+      "hasTranscript": true,
+      "transcriptWords": 1506,
+      "bestMatch": {
+        "chapter": 19,
+        "chapterTitle": "Sonata Form",
+        "confidence": 0.613,
+        "scores": {
+          "title": 0.257,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.013,
+      "topMatches": [
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.613,
+          "scores": {
+            "title": 0.257,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.6,
+          "scores": {
+            "title": 0.225,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.596,
+          "scores": {
+            "title": 0.214,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.586,
+          "scores": {
+            "title": 0.189,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.52,
+          "scores": {
+            "title": 0.3,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 7,
+      "videoId": "i790kS-MlAA",
+      "title": "Musical Composition, Craft and Art #7 - On Motives, Why and How",
+      "topic": "On Motives, Why and How",
+      "url": "https://www.youtube.com/watch?v=i790kS-MlAA",
+      "hasTranscript": true,
+      "transcriptWords": 1339,
+      "bestMatch": {
+        "chapter": 1,
+        "chapterTitle": "Motive",
+        "confidence": 0.747,
+        "scores": {
+          "title": 0.443,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "title overlap (0.44)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.193,
+      "topMatches": [
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.747,
+          "scores": {
+            "title": 0.443,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "title overlap (0.44)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.554,
+          "scores": {
+            "title": 0.109,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.549,
+          "scores": {
+            "title": 0.096,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.456,
+          "scores": {
+            "title": 0.141,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.455,
+          "scores": {
+            "title": 0.136,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 8,
+      "videoId": "pcUa8gnNzCQ",
+      "title": "Musical Composition, Craft and Art #8 - On Unity",
+      "topic": "On Unity",
+      "url": "https://www.youtube.com/watch?v=pcUa8gnNzCQ",
+      "hasTranscript": true,
+      "transcriptWords": 1553,
+      "bestMatch": {
+        "chapter": 17,
+        "chapterTitle": "Returning",
+        "confidence": 0.574,
+        "scores": {
+          "title": 0.159,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.007,
+      "topMatches": [
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.574,
+          "scores": {
+            "title": 0.159,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.567,
+          "scores": {
+            "title": 0.142,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.561,
+          "scores": {
+            "title": 0.129,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.534,
+          "scores": {
+            "title": 0.06,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.48,
+          "scores": {
+            "title": 0.2,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 9,
+      "videoId": "sk2Vbqzyy98",
+      "title": "Musical Composition, Craft and Art #9 - On Development",
+      "topic": "On Development",
+      "url": "https://www.youtube.com/watch?v=sk2Vbqzyy98",
+      "hasTranscript": true,
+      "transcriptWords": 898,
+      "bestMatch": {
+        "chapter": 19,
+        "chapterTitle": "Sonata Form",
+        "confidence": 0.582,
+        "scores": {
+          "title": 0.18,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.009,
+      "topMatches": [
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.582,
+          "scores": {
+            "title": 0.18,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 16,
+          "chapterTitle": "Exploring",
+          "confidence": 0.573,
+          "scores": {
+            "title": 0.157,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 6,
+          "chapterTitle": "Presenting",
+          "confidence": 0.57,
+          "scores": {
+            "title": 0.15,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.57,
+          "scores": {
+            "title": 0.15,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.564,
+          "scores": {
+            "title": 0.135,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 10,
+      "videoId": "wqzTF1N4mEQ",
+      "title": "Musical Composition, Craft and Art #10 - On Progression",
+      "topic": "On Progression",
+      "url": "https://www.youtube.com/watch?v=wqzTF1N4mEQ",
+      "hasTranscript": true,
+      "transcriptWords": 1189,
+      "bestMatch": {
+        "chapter": 13,
+        "chapterTitle": "Progressing",
+        "confidence": 0.714,
+        "scores": {
+          "title": 0.36,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "title overlap (0.36)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.144,
+      "topMatches": [
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.714,
+          "scores": {
+            "title": 0.36,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "title overlap (0.36)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.57,
+          "scores": {
+            "title": 0.15,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.568,
+          "scores": {
+            "title": 0.144,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.564,
+          "scores": {
+            "title": 0.135,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 6,
+          "chapterTitle": "Presenting",
+          "confidence": 0.49,
+          "scores": {
+            "title": 0.225,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 11,
+      "videoId": "ZKL_G949RWg",
+      "title": "Musical Composition, Craft and Art #11 - On Climax pt. 1",
+      "topic": "On Climax pt. 1",
+      "url": "https://www.youtube.com/watch?v=ZKL_G949RWg",
+      "hasTranscript": true,
+      "transcriptWords": 1707,
+      "bestMatch": {
+        "chapter": 13,
+        "chapterTitle": "Progressing",
+        "confidence": 0.599,
+        "scores": {
+          "title": 0.072,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.053,
+      "topMatches": [
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.599,
+          "scores": {
+            "title": 0.072,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.546,
+          "scores": {
+            "title": 0.09,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.546,
+          "scores": {
+            "title": 0.09,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 9,
+          "chapterTitle": "Binary Form",
+          "confidence": 0.539,
+          "scores": {
+            "title": 0.072,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.528,
+          "scores": {
+            "title": 0.045,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 12,
+      "videoId": "KALXqYVB_g4",
+      "title": "Musical Composition, Craft and Art #12 - On Climax pt. 2",
+      "topic": "On Climax pt. 2",
+      "url": "https://www.youtube.com/watch?v=KALXqYVB_g4",
+      "hasTranscript": true,
+      "transcriptWords": 1197,
+      "bestMatch": {
+        "chapter": 13,
+        "chapterTitle": "Progressing",
+        "confidence": 0.599,
+        "scores": {
+          "title": 0.072,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.038,
+      "topMatches": [
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.599,
+          "scores": {
+            "title": 0.072,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 10,
+          "chapterTitle": "Variation Form",
+          "confidence": 0.561,
+          "scores": {
+            "title": 0.129,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.553,
+          "scores": {
+            "title": 0.108,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.546,
+          "scores": {
+            "title": 0.09,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.546,
+          "scores": {
+            "title": 0.09,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 13,
+      "videoId": "UdoA5jrmWUo",
+      "title": "Musical Composition, Craft and Art #13 - No climax?",
+      "topic": "No climax?",
+      "url": "https://www.youtube.com/watch?v=UdoA5jrmWUo",
+      "hasTranscript": true,
+      "transcriptWords": 1414,
+      "bestMatch": {
+        "chapter": 13,
+        "chapterTitle": "Progressing",
+        "confidence": 0.588,
+        "scores": {
+          "title": 0.045,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.002,
+      "topMatches": [
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.588,
+          "scores": {
+            "title": 0.045,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.586,
+          "scores": {
+            "title": 0.189,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 9,
+          "chapterTitle": "Binary Form",
+          "confidence": 0.564,
+          "scores": {
+            "title": 0.135,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.558,
+          "scores": {
+            "title": 0.12,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.558,
+          "scores": {
+            "title": 0.12,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 14,
+      "videoId": "M2pt4TLtNc0",
+      "title": "Musical Composition, Craft and Art #14 - On Repetition pt. 1",
+      "topic": "On Repetition pt. 1",
+      "url": "https://www.youtube.com/watch?v=M2pt4TLtNc0",
+      "hasTranscript": true,
+      "transcriptWords": 795,
+      "bestMatch": {
+        "chapter": 14,
+        "chapterTitle": "Rondo Form",
+        "confidence": 0.621,
+        "scores": {
+          "title": 0.129,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.037,
+      "topMatches": [
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.621,
+          "scores": {
+            "title": 0.129,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.584,
+          "scores": {
+            "title": 0.186,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.577,
+          "scores": {
+            "title": 0.167,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.572,
+          "scores": {
+            "title": 0.155,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.56,
+          "scores": {
+            "title": 0.124,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 15,
+      "videoId": "qi-VTZ190Mg",
+      "title": "Musical Composition, Craft and Art #15 - On Repetition pt. 2",
+      "topic": "On Repetition pt. 2",
+      "url": "https://www.youtube.com/watch?v=qi-VTZ190Mg",
+      "hasTranscript": true,
+      "transcriptWords": 1240,
+      "bestMatch": {
+        "chapter": 14,
+        "chapterTitle": "Rondo Form",
+        "confidence": 0.621,
+        "scores": {
+          "title": 0.129,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.034,
+      "topMatches": [
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.621,
+          "scores": {
+            "title": 0.129,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.587,
+          "scores": {
+            "title": 0.193,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.584,
+          "scores": {
+            "title": 0.186,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.577,
+          "scores": {
+            "title": 0.167,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.572,
+          "scores": {
+            "title": 0.155,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 16,
+      "videoId": "1j3FofKA__U",
+      "title": "Musical Composition, Craft and Art #16 - On Recapitulation",
+      "topic": "On Recapitulation",
+      "url": "https://www.youtube.com/watch?v=1j3FofKA__U",
+      "hasTranscript": true,
+      "transcriptWords": 1157,
+      "bestMatch": {
+        "chapter": 17,
+        "chapterTitle": "Returning",
+        "confidence": 0.653,
+        "scores": {
+          "title": 0.208,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.05,
+      "topMatches": [
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.653,
+          "scores": {
+            "title": 0.208,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.603,
+          "scores": {
+            "title": 0.233,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.6,
+          "scores": {
+            "title": 0.225,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 6,
+          "chapterTitle": "Presenting",
+          "confidence": 0.577,
+          "scores": {
+            "title": 0.167,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.574,
+          "scores": {
+            "title": 0.161,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 17,
+      "videoId": "LP_UBr73KLg",
+      "title": "Musical Composition, Craft and Art #17 - On Salience",
+      "topic": "On Salience",
+      "url": "https://www.youtube.com/watch?v=LP_UBr73KLg",
+      "hasTranscript": true,
+      "transcriptWords": 1401,
+      "bestMatch": {
+        "chapter": 1,
+        "chapterTitle": "Motive",
+        "confidence": 0.574,
+        "scores": {
+          "title": 0.159,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.015,
+      "topMatches": [
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.574,
+          "scores": {
+            "title": 0.159,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.559,
+          "scores": {
+            "title": 0.123,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.552,
+          "scores": {
+            "title": 0.106,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.543,
+          "scores": {
+            "title": 0.082,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.482,
+          "scores": {
+            "title": 0.205,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 18,
+      "videoId": "nLLR5Fr0I-A",
+      "title": "Musical Composition, Craft and Art #18 - Why?",
+      "topic": "Why?",
+      "url": "https://www.youtube.com/watch?v=nLLR5Fr0I-A",
+      "hasTranscript": true,
+      "transcriptWords": 1376,
+      "bestMatch": {
+        "chapter": 4,
+        "chapterTitle": "Playing",
+        "confidence": 0.546,
+        "scores": {
+          "title": 0.09,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.036,
+      "topMatches": [
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.546,
+          "scores": {
+            "title": 0.09,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 10,
+          "chapterTitle": "Variation Form",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 19,
+      "videoId": "WeBe52qxsr4",
+      "title": "Musical Composition, Craft and Art #19  - A New Look at Fugue",
+      "topic": "A New Look at Fugue",
+      "url": "https://www.youtube.com/watch?v=WeBe52qxsr4",
+      "hasTranscript": true,
+      "transcriptWords": 1237,
+      "bestMatch": {
+        "chapter": 19,
+        "chapterTitle": "Sonata Form",
+        "confidence": 0.606,
+        "scores": {
+          "title": 0.09,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.046,
+      "topMatches": [
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.606,
+          "scores": {
+            "title": 0.09,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.56,
+          "scores": {
+            "title": 0.124,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.56,
+          "scores": {
+            "title": 0.124,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.546,
+          "scores": {
+            "title": 0.09,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.536,
+          "scores": {
+            "title": 0.064,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 20,
+      "videoId": "h5QDJO6Oy4E",
+      "title": "Musical Composition, Craft and Art #20 - On suspense",
+      "topic": "On suspense",
+      "url": "https://www.youtube.com/watch?v=h5QDJO6Oy4E",
+      "hasTranscript": true,
+      "transcriptWords": 954,
+      "bestMatch": {
+        "chapter": 12,
+        "chapterTitle": "Connecting",
+        "confidence": 0.579,
+        "scores": {
+          "title": 0.171,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.004,
+      "topMatches": [
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.579,
+          "scores": {
+            "title": 0.171,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.575,
+          "scores": {
+            "title": 0.164,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.552,
+          "scores": {
+            "title": 0.106,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.543,
+          "scores": {
+            "title": 0.082,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 20,
+          "chapterTitle": "Refinements",
+          "confidence": 0.465,
+          "scores": {
+            "title": 0.164,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 21,
+      "videoId": "CYsAK-Ou86c",
+      "title": "Musical Composition, Craft and Art #21 - The Education of a Composer",
+      "topic": "The Education of a Composer",
+      "url": "https://www.youtube.com/watch?v=CYsAK-Ou86c",
+      "hasTranscript": true,
+      "transcriptWords": 1874,
+      "bestMatch": {
+        "chapter": 11,
+        "chapterTitle": "Contrasting",
+        "confidence": 0.557,
+        "scores": {
+          "title": 0.118,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.003,
+      "topMatches": [
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.557,
+          "scores": {
+            "title": 0.118,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.554,
+          "scores": {
+            "title": 0.109,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.542,
+          "scores": {
+            "title": 0.079,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.538,
+          "scores": {
+            "title": 0.071,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 10,
+          "chapterTitle": "Variation Form",
+          "confidence": 0.47,
+          "scores": {
+            "title": 0.176,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 22,
+      "videoId": "R9aDMQa5lAQ",
+      "title": "Musical Composition, Craft and Art #22 - Musical Character",
+      "topic": "Musical Character",
+      "url": "https://www.youtube.com/watch?v=R9aDMQa5lAQ",
+      "hasTranscript": true,
+      "transcriptWords": 1036,
+      "bestMatch": {
+        "chapter": 11,
+        "chapterTitle": "Contrasting",
+        "confidence": 0.561,
+        "scores": {
+          "title": 0.129,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.011,
+      "topMatches": [
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.561,
+          "scores": {
+            "title": 0.129,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.55,
+          "scores": {
+            "title": 0.1,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 3,
+          "chapterTitle": "Singing",
+          "confidence": 0.54,
+          "scores": {
+            "title": 0.075,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.525,
+          "scores": {
+            "title": 0.037,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.463,
+          "scores": {
+            "title": 0.157,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 23,
+      "videoId": "nOUoiu59x0s",
+      "title": "Musical Composition, Craft and Art #23 - On Style and Norms",
+      "topic": "On Style and Norms",
+      "url": "https://www.youtube.com/watch?v=nOUoiu59x0s",
+      "hasTranscript": true,
+      "transcriptWords": 1822,
+      "bestMatch": {
+        "chapter": 11,
+        "chapterTitle": "Contrasting",
+        "confidence": 0.572,
+        "scores": {
+          "title": 0.155,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.017,
+      "topMatches": [
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.572,
+          "scores": {
+            "title": 0.155,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.555,
+          "scores": {
+            "title": 0.113,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.55,
+          "scores": {
+            "title": 0.1,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.54,
+          "scores": {
+            "title": 0.075,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 7,
+          "chapterTitle": "One-part forms",
+          "confidence": 0.479,
+          "scores": {
+            "title": 0.197,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 24,
+      "videoId": "AlTPWRSNhmE",
+      "title": "Musical Composition, Craft and Art #24 - on Making Surprises Convincing",
+      "topic": "on Making Surprises Convincing",
+      "url": "https://www.youtube.com/watch?v=AlTPWRSNhmE",
+      "hasTranscript": true,
+      "transcriptWords": 1530,
+      "bestMatch": {
+        "chapter": 11,
+        "chapterTitle": "Contrasting",
+        "confidence": 0.563,
+        "scores": {
+          "title": 0.132,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.008,
+      "topMatches": [
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.563,
+          "scores": {
+            "title": 0.132,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.555,
+          "scores": {
+            "title": 0.113,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.55,
+          "scores": {
+            "title": 0.1,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.549,
+          "scores": {
+            "title": 0.097,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.547,
+          "scores": {
+            "title": 0.092,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 25,
+      "videoId": "nSZH3d8XCGQ",
+      "title": "Musical Composition, Craft and Art #25 - Transitions",
+      "topic": "Transitions",
+      "url": "https://www.youtube.com/watch?v=nSZH3d8XCGQ",
+      "hasTranscript": true,
+      "transcriptWords": 817,
+      "bestMatch": {
+        "chapter": 12,
+        "chapterTitle": "Connecting",
+        "confidence": 0.639,
+        "scores": {
+          "title": 0.171,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.014,
+      "topMatches": [
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.639,
+          "scores": {
+            "title": 0.171,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.625,
+          "scores": {
+            "title": 0.286,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.563,
+          "scores": {
+            "title": 0.164,
+            "keywords": 0.95,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (0.95)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.552,
+          "scores": {
+            "title": 0.106,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.55,
+          "scores": {
+            "title": 0.1,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 26,
+      "videoId": "s7oBbw2MA1A",
+      "title": "Musical Composition, Craft and Art #26 - Punctuation and Breathing",
+      "topic": "Punctuation and Breathing",
+      "url": "https://www.youtube.com/watch?v=s7oBbw2MA1A",
+      "hasTranscript": true,
+      "transcriptWords": 1496,
+      "bestMatch": {
+        "chapter": 5,
+        "chapterTitle": "Punctuating",
+        "confidence": 0.68,
+        "scores": {
+          "title": 0.275,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.09,
+      "topMatches": [
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.68,
+          "scores": {
+            "title": 0.275,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.59,
+          "scores": {
+            "title": 0.2,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.58,
+          "scores": {
+            "title": 0.175,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.563,
+          "scores": {
+            "title": 0.132,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.56,
+          "scores": {
+            "title": 0.125,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 27,
+      "videoId": "Byw0pOOiIL4",
+      "title": "Musical Composition, Craft and Art #27 - Anomalies",
+      "topic": "Anomalies",
+      "url": "https://www.youtube.com/watch?v=Byw0pOOiIL4",
+      "hasTranscript": true,
+      "transcriptWords": 1668,
+      "bestMatch": {
+        "chapter": 13,
+        "chapterTitle": "Progressing",
+        "confidence": 0.564,
+        "scores": {
+          "title": 0.135,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.0,
+      "topMatches": [
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.564,
+          "scores": {
+            "title": 0.135,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.564,
+          "scores": {
+            "title": 0.135,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.55,
+          "scores": {
+            "title": 0.1,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.55,
+          "scores": {
+            "title": 0.1,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.472,
+          "scores": {
+            "title": 0.18,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 28,
+      "videoId": "vKCOp7QUYTc",
+      "title": "Musical Composition, Craft and Art #28 - Underlining Special Moments",
+      "topic": "Underlining Special Moments",
+      "url": "https://www.youtube.com/watch?v=vKCOp7QUYTc",
+      "hasTranscript": true,
+      "transcriptWords": 1160,
+      "bestMatch": {
+        "chapter": 11,
+        "chapterTitle": "Contrasting",
+        "confidence": 0.557,
+        "scores": {
+          "title": 0.118,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.008,
+      "topMatches": [
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.557,
+          "scores": {
+            "title": 0.118,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 6,
+          "chapterTitle": "Presenting",
+          "confidence": 0.549,
+          "scores": {
+            "title": 0.097,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.548,
+          "scores": {
+            "title": 0.095,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.538,
+          "scores": {
+            "title": 0.071,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.521,
+          "scores": {
+            "title": 0.027,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 29,
+      "videoId": "20ewyhl876w",
+      "title": "Musical Composition, Craft and Art #29 - Problems with Beginnings",
+      "topic": "Problems with Beginnings",
+      "url": "https://www.youtube.com/watch?v=20ewyhl876w",
+      "hasTranscript": true,
+      "transcriptWords": 918,
+      "bestMatch": {
+        "chapter": 15,
+        "chapterTitle": "Beginning",
+        "confidence": 0.768,
+        "scores": {
+          "title": 0.495,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "title overlap (0.50)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.194,
+      "topMatches": [
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.768,
+          "scores": {
+            "title": 0.495,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "title overlap (0.50)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.574,
+          "scores": {
+            "title": 0.159,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.572,
+          "scores": {
+            "title": 0.154,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.57,
+          "scores": {
+            "title": 0.15,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.542,
+          "scores": {
+            "title": 0.079,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 30,
+      "videoId": "2aJOtDMo30w",
+      "title": "Musical Composition, Craft and Art #30 - Problems with Endings",
+      "topic": "Problems with Endings",
+      "url": "https://www.youtube.com/watch?v=2aJOtDMo30w",
+      "hasTranscript": true,
+      "transcriptWords": 1066,
+      "bestMatch": {
+        "chapter": 18,
+        "chapterTitle": "Ending",
+        "confidence": 0.75,
+        "scores": {
+          "title": 0.45,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "title overlap (0.45)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.15,
+      "topMatches": [
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.75,
+          "scores": {
+            "title": 0.45,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "title overlap (0.45)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.6,
+          "scores": {
+            "title": 0.225,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.594,
+          "scores": {
+            "title": 0.21,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 6,
+          "chapterTitle": "Presenting",
+          "confidence": 0.505,
+          "scores": {
+            "title": 0.261,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        },
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.484,
+          "scores": {
+            "title": 0.21,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 31,
+      "videoId": "js1oDeaHz3Q",
+      "title": "Musical Composition Craft and Art - # 31 - The Sense of Form",
+      "topic": "The Sense of Form",
+      "url": "https://www.youtube.com/watch?v=js1oDeaHz3Q",
+      "hasTranscript": true,
+      "transcriptWords": 2281,
+      "bestMatch": {
+        "chapter": 8,
+        "chapterTitle": "Ternary Form",
+        "confidence": 0.699,
+        "scores": {
+          "title": 0.473,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "title overlap (0.47)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.018,
+      "topMatches": [
+        {
+          "chapter": 8,
+          "chapterTitle": "Ternary Form",
+          "confidence": 0.699,
+          "scores": {
+            "title": 0.473,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "title overlap (0.47)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 10,
+          "chapterTitle": "Variation Form",
+          "confidence": 0.681,
+          "scores": {
+            "title": 0.428,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "title overlap (0.43)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.677,
+          "scores": {
+            "title": 0.418,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "title overlap (0.42)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.583,
+          "scores": {
+            "title": 0.458,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "title overlap (0.46)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        },
+        {
+          "chapter": 9,
+          "chapterTitle": "Binary Form",
+          "confidence": 0.567,
+          "scores": {
+            "title": 0.418,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "title overlap (0.42)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 32,
+      "videoId": "RYLCkuNXF8A",
+      "title": "Musical Composition Craft and Art - # 32 - The Destiny of a Musical Idea",
+      "topic": "The Destiny of a Musical Idea",
+      "url": "https://www.youtube.com/watch?v=RYLCkuNXF8A",
+      "hasTranscript": true,
+      "transcriptWords": 1328,
+      "bestMatch": {
+        "chapter": 8,
+        "chapterTitle": "Ternary Form",
+        "confidence": 0.571,
+        "scores": {
+          "title": 0.154,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.016,
+      "topMatches": [
+        {
+          "chapter": 8,
+          "chapterTitle": "Ternary Form",
+          "confidence": 0.571,
+          "scores": {
+            "title": 0.154,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.555,
+          "scores": {
+            "title": 0.113,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.551,
+          "scores": {
+            "title": 0.103,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.548,
+          "scores": {
+            "title": 0.095,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.547,
+          "scores": {
+            "title": 0.092,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 33,
+      "videoId": "awTqJtz2gtc",
+      "title": "Musical Composition Craft and Art - # 33 - On modulation and tonal density",
+      "topic": "On modulation and tonal density",
+      "url": "https://www.youtube.com/watch?v=awTqJtz2gtc",
+      "hasTranscript": true,
+      "transcriptWords": 949,
+      "bestMatch": {
+        "chapter": 19,
+        "chapterTitle": "Sonata Form",
+        "confidence": 0.604,
+        "scores": {
+          "title": 0.086,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.043,
+      "topMatches": [
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.604,
+          "scores": {
+            "title": 0.086,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.561,
+          "scores": {
+            "title": 0.129,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.561,
+          "scores": {
+            "title": 0.129,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.559,
+          "scores": {
+            "title": 0.122,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.537,
+          "scores": {
+            "title": 0.068,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 34,
+      "videoId": "ADAaCWajEIc",
+      "title": "Musical Composition Craft and Art - # 34 - On Modern Music and Musical Tradition",
+      "topic": "On Modern Music and Musical Tradition",
+      "url": "https://www.youtube.com/watch?v=ADAaCWajEIc",
+      "hasTranscript": true,
+      "transcriptWords": 1509,
+      "bestMatch": {
+        "chapter": 11,
+        "chapterTitle": "Contrasting",
+        "confidence": 0.57,
+        "scores": {
+          "title": 0.15,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.011,
+      "topMatches": [
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.57,
+          "scores": {
+            "title": 0.15,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 10,
+          "chapterTitle": "Variation Form",
+          "confidence": 0.559,
+          "scores": {
+            "title": 0.124,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.555,
+          "scores": {
+            "title": 0.113,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.549,
+          "scores": {
+            "title": 0.098,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.547,
+          "scores": {
+            "title": 0.094,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 35,
+      "videoId": "wnWHmy2jiUE",
+      "title": "Musical Composition Craft and Art - # 35 - Composers and Performers",
+      "topic": "Composers and Performers",
+      "url": "https://www.youtube.com/watch?v=wnWHmy2jiUE",
+      "hasTranscript": true,
+      "transcriptWords": 1674,
+      "bestMatch": {
+        "chapter": 2,
+        "chapterTitle": "Phrase",
+        "confidence": 0.546,
+        "scores": {
+          "title": 0.09,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.001,
+      "topMatches": [
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.546,
+          "scores": {
+            "title": 0.09,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.545,
+          "scores": {
+            "title": 0.087,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.519,
+          "scores": {
+            "title": 0.055,
+            "keywords": 0.95,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (0.95)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.485,
+          "scores": {
+            "title": 0.212,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        },
+        {
+          "chapter": 20,
+          "chapterTitle": "Refinements",
+          "confidence": 0.462,
+          "scores": {
+            "title": 0.154,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 36,
+      "videoId": "tCvUjv7S5RI",
+      "title": "Musical Composition Craft and Art - # 36 - A New Way of Thinking about Tonality",
+      "topic": "A New Way of Thinking about Tonality",
+      "url": "https://www.youtube.com/watch?v=tCvUjv7S5RI",
+      "hasTranscript": true,
+      "transcriptWords": 1590,
+      "bestMatch": {
+        "chapter": 4,
+        "chapterTitle": "Playing",
+        "confidence": 0.552,
+        "scores": {
+          "title": 0.105,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.008,
+      "topMatches": [
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.552,
+          "scores": {
+            "title": 0.105,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.544,
+          "scores": {
+            "title": 0.086,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.541,
+          "scores": {
+            "title": 0.077,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.541,
+          "scores": {
+            "title": 0.077,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.448,
+          "scores": {
+            "title": 0.12,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 37,
+      "videoId": "LkgylsDT_3o",
+      "title": "Musical Composition, Craft and Art #37",
+      "topic": "",
+      "url": "https://www.youtube.com/watch?v=LkgylsDT_3o",
+      "hasTranscript": true,
+      "transcriptWords": 1776,
+      "bestMatch": {
+        "chapter": 3,
+        "chapterTitle": "Singing",
+        "confidence": 0.51,
+        "scores": {
+          "title": 0.0,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.0,
+      "topMatches": [
+        {
+          "chapter": 3,
+          "chapterTitle": "Singing",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 38,
+      "videoId": "3bvWr_9XsYs",
+      "title": "Musical Composition, Craft and Art #38 - On originality",
+      "topic": "On originality",
+      "url": "https://www.youtube.com/watch?v=3bvWr_9XsYs",
+      "hasTranscript": true,
+      "transcriptWords": 1441,
+      "bestMatch": {
+        "chapter": 19,
+        "chapterTitle": "Sonata Form",
+        "confidence": 0.582,
+        "scores": {
+          "title": 0.18,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.009,
+      "topMatches": [
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.582,
+          "scores": {
+            "title": 0.18,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.573,
+          "scores": {
+            "title": 0.157,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.56,
+          "scores": {
+            "title": 0.188,
+            "keywords": 0.9,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (0.90)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.557,
+          "scores": {
+            "title": 0.117,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.546,
+          "scores": {
+            "title": 0.09,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 39,
+      "videoId": "CnxKs7AULro",
+      "title": "Musical Composition, Craft an Art, #39",
+      "topic": "Musical Composition, Craft an Art, #39",
+      "url": "https://www.youtube.com/watch?v=CnxKs7AULro",
+      "hasTranscript": true,
+      "transcriptWords": 1379,
+      "bestMatch": {
+        "chapter": 19,
+        "chapterTitle": "Sonata Form",
+        "confidence": 0.549,
+        "scores": {
+          "title": 0.098,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.005,
+      "topMatches": [
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.549,
+          "scores": {
+            "title": 0.098,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 3,
+          "chapterTitle": "Singing",
+          "confidence": 0.544,
+          "scores": {
+            "title": 0.086,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 14,
+          "chapterTitle": "Rondo Form",
+          "confidence": 0.542,
+          "scores": {
+            "title": 0.08,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.535,
+          "scores": {
+            "title": 0.061,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.535,
+          "scores": {
+            "title": 0.061,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 40,
+      "videoId": "mqK2Rxm-jY8",
+      "title": "Musical Composition Craft and Art #40",
+      "topic": "Musical Composition Craft and Art #40",
+      "url": "https://www.youtube.com/watch?v=mqK2Rxm-jY8",
+      "hasTranscript": true,
+      "transcriptWords": 951,
+      "bestMatch": {
+        "chapter": 11,
+        "chapterTitle": "Contrasting",
+        "confidence": 0.556,
+        "scores": {
+          "title": 0.115,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.007,
+      "topMatches": [
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.556,
+          "scores": {
+            "title": 0.115,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.549,
+          "scores": {
+            "title": 0.098,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.536,
+          "scores": {
+            "title": 0.064,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.534,
+          "scores": {
+            "title": 0.06,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.533,
+          "scores": {
+            "title": 0.057,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 41,
+      "videoId": "tfAZAaaDDec",
+      "title": "Musical Composition, Craft and Art #41 - On Interruptions",
+      "topic": "On Interruptions",
+      "url": "https://www.youtube.com/watch?v=tfAZAaaDDec",
+      "hasTranscript": true,
+      "transcriptWords": 841,
+      "bestMatch": {
+        "chapter": 12,
+        "chapterTitle": "Connecting",
+        "confidence": 0.565,
+        "scores": {
+          "title": 0.138,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.002,
+      "topMatches": [
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.565,
+          "scores": {
+            "title": 0.138,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.563,
+          "scores": {
+            "title": 0.133,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.559,
+          "scores": {
+            "title": 0.123,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.55,
+          "scores": {
+            "title": 0.1,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.526,
+          "scores": {
+            "title": 0.041,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 42,
+      "videoId": "0XpaPjyOmIA",
+      "title": "Musical Composition, Craft and Art, #42",
+      "topic": "Musical Composition, Craft and Art, #42",
+      "url": "https://www.youtube.com/watch?v=0XpaPjyOmIA",
+      "hasTranscript": true,
+      "transcriptWords": 4872,
+      "bestMatch": {
+        "chapter": 5,
+        "chapterTitle": "Punctuating",
+        "confidence": 0.556,
+        "scores": {
+          "title": 0.115,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.0,
+      "topMatches": [
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.556,
+          "scores": {
+            "title": 0.115,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.556,
+          "scores": {
+            "title": 0.115,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.549,
+          "scores": {
+            "title": 0.098,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.548,
+          "scores": {
+            "title": 0.096,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.544,
+          "scores": {
+            "title": 0.086,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 43,
+      "videoId": "8XqqSQP5cr4",
+      "title": "Musical Composition, Craft and Art #43 - The Composer's Voice",
+      "topic": "The Composer's Voice",
+      "url": "https://www.youtube.com/watch?v=8XqqSQP5cr4",
+      "hasTranscript": true,
+      "transcriptWords": 3000,
+      "bestMatch": {
+        "chapter": 13,
+        "chapterTitle": "Progressing",
+        "confidence": 0.556,
+        "scores": {
+          "title": 0.116,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.0,
+      "topMatches": [
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.556,
+          "scores": {
+            "title": 0.116,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.556,
+          "scores": {
+            "title": 0.116,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.552,
+          "scores": {
+            "title": 0.104,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 10,
+          "chapterTitle": "Variation Form",
+          "confidence": 0.552,
+          "scores": {
+            "title": 0.106,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.538,
+          "scores": {
+            "title": 0.069,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 44,
+      "videoId": "-6MsmWwGuDE",
+      "title": "Musical Composition, Craft and Art #44 - What makes a great composer?",
+      "topic": "What makes a great composer?",
+      "url": "https://www.youtube.com/watch?v=-6MsmWwGuDE",
+      "hasTranscript": true,
+      "transcriptWords": 1321,
+      "bestMatch": {
+        "chapter": 17,
+        "chapterTitle": "Returning",
+        "confidence": 0.55,
+        "scores": {
+          "title": 0.1,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.005,
+      "topMatches": [
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.55,
+          "scores": {
+            "title": 0.1,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 10,
+          "chapterTitle": "Variation Form",
+          "confidence": 0.545,
+          "scores": {
+            "title": 0.088,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.539,
+          "scores": {
+            "title": 0.073,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.538,
+          "scores": {
+            "title": 0.071,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.538,
+          "scores": {
+            "title": 0.071,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 45,
+      "videoId": "gauu2I4Mkh4",
+      "title": "Musical Composition #45",
+      "topic": "",
+      "url": "https://www.youtube.com/watch?v=gauu2I4Mkh4",
+      "hasTranscript": true,
+      "transcriptWords": 2110,
+      "bestMatch": {
+        "chapter": 2,
+        "chapterTitle": "Phrase",
+        "confidence": 0.51,
+        "scores": {
+          "title": 0.0,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.0,
+      "topMatches": [
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 46,
+      "videoId": "JOS2hWqbMWc",
+      "title": "Musical Composition, Craft and Art #46 - The Counterpoint Checklist",
+      "topic": "The Counterpoint Checklist",
+      "url": "https://www.youtube.com/watch?v=JOS2hWqbMWc",
+      "hasTranscript": true,
+      "transcriptWords": 1209,
+      "bestMatch": {
+        "chapter": 20,
+        "chapterTitle": "Refinements",
+        "confidence": 0.609,
+        "scores": {
+          "title": 0.097,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.054,
+      "topMatches": [
+        {
+          "chapter": 20,
+          "chapterTitle": "Refinements",
+          "confidence": 0.609,
+          "scores": {
+            "title": 0.097,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 18,
+          "chapterTitle": "Ending",
+          "confidence": 0.555,
+          "scores": {
+            "title": 0.113,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 4,
+          "chapterTitle": "Playing",
+          "confidence": 0.543,
+          "scores": {
+            "title": 0.082,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.468,
+          "scores": {
+            "title": 0.17,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.46,
+          "scores": {
+            "title": 0.15,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 47,
+      "videoId": "hE11zT20328",
+      "title": "Musical Composition Craft and Art # 47 - the Orchestration Checklist",
+      "topic": "Musical Composition Craft and Art # 47 - the Orchestration Checklist",
+      "url": "https://www.youtube.com/watch?v=hE11zT20328",
+      "hasTranscript": true,
+      "transcriptWords": 1757,
+      "bestMatch": {
+        "chapter": 20,
+        "chapterTitle": "Refinements",
+        "confidence": 0.579,
+        "scores": {
+          "title": 0.023,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.85
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      "matchMargin": 0.027,
+      "topMatches": [
+        {
+          "chapter": 20,
+          "chapterTitle": "Refinements",
+          "confidence": 0.579,
+          "scores": {
+            "title": 0.023,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.552,
+          "scores": {
+            "title": 0.105,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.53,
+          "scores": {
+            "title": 0.05,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 3,
+          "chapterTitle": "Singing",
+          "confidence": 0.53,
+          "scores": {
+            "title": 0.049,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 13,
+          "chapterTitle": "Progressing",
+          "confidence": 0.524,
+          "scores": {
+            "title": 0.035,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 48,
+      "videoId": "OrmimUq0CXQ",
+      "title": "Musical Composition Craft and Art #48",
+      "topic": "Musical Composition Craft and Art #48",
+      "url": "https://www.youtube.com/watch?v=OrmimUq0CXQ",
+      "hasTranscript": true,
+      "transcriptWords": 1613,
+      "bestMatch": {
+        "chapter": 5,
+        "chapterTitle": "Punctuating",
+        "confidence": 0.556,
+        "scores": {
+          "title": 0.115,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.0,
+      "topMatches": [
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.556,
+          "scores": {
+            "title": 0.115,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.556,
+          "scores": {
+            "title": 0.115,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 3,
+          "chapterTitle": "Singing",
+          "confidence": 0.543,
+          "scores": {
+            "title": 0.084,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.536,
+          "scores": {
+            "title": 0.064,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.534,
+          "scores": {
+            "title": 0.06,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 49,
+      "videoId": "MA4X8U8CvVo",
+      "title": "Musical Composition Craft and Art #49 -The form checklist",
+      "topic": "Musical Composition Craft and Art #49 -The form checklist",
+      "url": "https://www.youtube.com/watch?v=MA4X8U8CvVo",
+      "hasTranscript": true,
+      "transcriptWords": 1571,
+      "bestMatch": {
+        "chapter": 19,
+        "chapterTitle": "Sonata Form",
+        "confidence": 0.659,
+        "scores": {
+          "title": 0.373,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "title overlap (0.37)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.078,
+      "topMatches": [
+        {
+          "chapter": 19,
+          "chapterTitle": "Sonata Form",
+          "confidence": 0.659,
+          "scores": {
+            "title": 0.373,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "title overlap (0.37)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 20,
+          "chapterTitle": "Refinements",
+          "confidence": 0.581,
+          "scores": {
+            "title": 0.027,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.85
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.85)"
+          ]
+        },
+        {
+          "chapter": 10,
+          "chapterTitle": "Variation Form",
+          "confidence": 0.547,
+          "scores": {
+            "title": 0.366,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.0
+          },
+          "reasons": [
+            "title overlap (0.37)",
+            "caption keywords (1.00)",
+            "ebook prose (1.00)"
+          ]
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.542,
+          "scores": {
+            "title": 0.081,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.542,
+          "scores": {
+            "title": 0.081,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 50,
+      "videoId": "amW_Uy4puh8",
+      "title": "Musical Composition, Craft and Art #50",
+      "topic": "",
+      "url": "https://www.youtube.com/watch?v=amW_Uy4puh8",
+      "hasTranscript": true,
+      "transcriptWords": 1428,
+      "bestMatch": {
+        "chapter": 1,
+        "chapterTitle": "Motive",
+        "confidence": 0.51,
+        "scores": {
+          "title": 0.0,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.0,
+      "topMatches": [
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 17,
+          "chapterTitle": "Returning",
+          "confidence": 0.51,
+          "scores": {
+            "title": 0.0,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 51,
+      "videoId": "-fBS28Gfdt0",
+      "title": "Musical Composition Craft and Art # 51",
+      "topic": "Musical Composition Craft and Art # 51",
+      "url": "https://www.youtube.com/watch?v=-fBS28Gfdt0",
+      "hasTranscript": true,
+      "transcriptWords": 1130,
+      "bestMatch": {
+        "chapter": 11,
+        "chapterTitle": "Contrasting",
+        "confidence": 0.556,
+        "scores": {
+          "title": 0.115,
+          "keywords": 1.0,
+          "prose": 1.0,
+          "alias": 0.55
+        },
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      "matchMargin": 0.012,
+      "topMatches": [
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.556,
+          "scores": {
+            "title": 0.115,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 1,
+          "chapterTitle": "Motive",
+          "confidence": 0.544,
+          "scores": {
+            "title": 0.086,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 2,
+          "chapterTitle": "Phrase",
+          "confidence": 0.536,
+          "scores": {
+            "title": 0.064,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 15,
+          "chapterTitle": "Beginning",
+          "confidence": 0.534,
+          "scores": {
+            "title": 0.06,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        },
+        {
+          "chapter": 16,
+          "chapterTitle": "Exploring",
+          "confidence": 0.526,
+          "scores": {
+            "title": 0.04,
+            "keywords": 1.0,
+            "prose": 1.0,
+            "alias": 0.55
+          },
+          "reasons": [
+            "caption keywords (1.00)",
+            "ebook prose (1.00)",
+            "topic alias (0.55)"
+          ]
+        }
+      ]
+    },
+    {
+      "playlistIndex": 52,
+      "videoId": "o3jKiaJWJhE",
+      "title": "Musical Composition Craft and Art # 52",
+      "topic": "Musical Composition Craft and Art # 52",
+      "url": "https://www.youtube.com/watch?v=o3jKiaJWJhE",
+      "hasTranscript": false,
+      "transcriptWords": 0,
+      "bestMatch": {
+        "chapter": 10,
+        "chapterTitle": "Variation Form",
+        "confidence": 0.058,
+        "scores": {
+          "title": 0.144,
+          "keywords": 0.0,
+          "prose": 0.0,
+          "alias": 0.0
+        },
+        "reasons": []
+      },
+      "matchMargin": 0.012,
+      "topMatches": [
+        {
+          "chapter": 10,
+          "chapterTitle": "Variation Form",
+          "confidence": 0.058,
+          "scores": {
+            "title": 0.144,
+            "keywords": 0.0,
+            "prose": 0.0,
+            "alias": 0.0
+          },
+          "reasons": []
+        },
+        {
+          "chapter": 5,
+          "chapterTitle": "Punctuating",
+          "confidence": 0.046,
+          "scores": {
+            "title": 0.115,
+            "keywords": 0.0,
+            "prose": 0.0,
+            "alias": 0.0
+          },
+          "reasons": []
+        },
+        {
+          "chapter": 11,
+          "chapterTitle": "Contrasting",
+          "confidence": 0.046,
+          "scores": {
+            "title": 0.115,
+            "keywords": 0.0,
+            "prose": 0.0,
+            "alias": 0.0
+          },
+          "reasons": []
+        },
+        {
+          "chapter": 7,
+          "chapterTitle": "One-part forms",
+          "confidence": 0.043,
+          "scores": {
+            "title": 0.108,
+            "keywords": 0.0,
+            "prose": 0.0,
+            "alias": 0.0
+          },
+          "reasons": []
+        },
+        {
+          "chapter": 12,
+          "chapterTitle": "Connecting",
+          "confidence": 0.039,
+          "scores": {
+            "title": 0.098,
+            "keywords": 0.0,
+            "prose": 0.0,
+            "alias": 0.0
+          },
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "byChapter": {
+    "11": [
+      {
+        "videoId": "kzr4D5GklsU",
+        "title": "Musical Composition, Craft and Art #1 - Introduction",
+        "url": "https://www.youtube.com/watch?v=kzr4D5GklsU",
+        "confidence": 0.604,
+        "margin": 0.079,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "c9s-2POXox4",
+        "title": "Musical Composition, Craft and Art #5 - On Craftsmanship",
+        "url": "https://www.youtube.com/watch?v=c9s-2POXox4",
+        "confidence": 0.59,
+        "margin": 0.011,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "nOUoiu59x0s",
+        "title": "Musical Composition, Craft and Art #23 - On Style and Norms",
+        "url": "https://www.youtube.com/watch?v=nOUoiu59x0s",
+        "confidence": 0.572,
+        "margin": 0.017,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "ADAaCWajEIc",
+        "title": "Musical Composition Craft and Art - # 34 - On Modern Music and Musical Tradition",
+        "url": "https://www.youtube.com/watch?v=ADAaCWajEIc",
+        "confidence": 0.57,
+        "margin": 0.011,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "AlTPWRSNhmE",
+        "title": "Musical Composition, Craft and Art #24 - on Making Surprises Convincing",
+        "url": "https://www.youtube.com/watch?v=AlTPWRSNhmE",
+        "confidence": 0.563,
+        "margin": 0.008,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "R9aDMQa5lAQ",
+        "title": "Musical Composition, Craft and Art #22 - Musical Character",
+        "url": "https://www.youtube.com/watch?v=R9aDMQa5lAQ",
+        "confidence": 0.561,
+        "margin": 0.011,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "CYsAK-Ou86c",
+        "title": "Musical Composition, Craft and Art #21 - The Education of a Composer",
+        "url": "https://www.youtube.com/watch?v=CYsAK-Ou86c",
+        "confidence": 0.557,
+        "margin": 0.003,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "vKCOp7QUYTc",
+        "title": "Musical Composition, Craft and Art #28 - Underlining Special Moments",
+        "url": "https://www.youtube.com/watch?v=vKCOp7QUYTc",
+        "confidence": 0.557,
+        "margin": 0.008,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "mqK2Rxm-jY8",
+        "title": "Musical Composition Craft and Art #40",
+        "url": "https://www.youtube.com/watch?v=mqK2Rxm-jY8",
+        "confidence": 0.556,
+        "margin": 0.007,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "-fBS28Gfdt0",
+        "title": "Musical Composition Craft and Art # 51",
+        "url": "https://www.youtube.com/watch?v=-fBS28Gfdt0",
+        "confidence": 0.556,
+        "margin": 0.012,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "videoId": "wqzTF1N4mEQ",
+        "title": "Musical Composition, Craft and Art #10 - On Progression",
+        "url": "https://www.youtube.com/watch?v=wqzTF1N4mEQ",
+        "confidence": 0.714,
+        "margin": 0.144,
+        "reasons": [
+          "title overlap (0.36)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "ZKL_G949RWg",
+        "title": "Musical Composition, Craft and Art #11 - On Climax pt. 1",
+        "url": "https://www.youtube.com/watch?v=ZKL_G949RWg",
+        "confidence": 0.599,
+        "margin": 0.053,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "KALXqYVB_g4",
+        "title": "Musical Composition, Craft and Art #12 - On Climax pt. 2",
+        "url": "https://www.youtube.com/watch?v=KALXqYVB_g4",
+        "confidence": 0.599,
+        "margin": 0.038,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "UdoA5jrmWUo",
+        "title": "Musical Composition, Craft and Art #13 - No climax?",
+        "url": "https://www.youtube.com/watch?v=UdoA5jrmWUo",
+        "confidence": 0.588,
+        "margin": 0.002,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "Byw0pOOiIL4",
+        "title": "Musical Composition, Craft and Art #27 - Anomalies",
+        "url": "https://www.youtube.com/watch?v=Byw0pOOiIL4",
+        "confidence": 0.564,
+        "margin": 0.0,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "_yI70FTzdq4",
+        "title": "Musical Composition, Craft and Art #2 - Psychology and Music, part 1",
+        "url": "https://www.youtube.com/watch?v=_yI70FTzdq4",
+        "confidence": 0.557,
+        "margin": 0.028,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "l-Y8fuEaGaw",
+        "title": "Musical Composition, Craft and Art #4 - Psychology and Music, part 3",
+        "url": "https://www.youtube.com/watch?v=l-Y8fuEaGaw",
+        "confidence": 0.557,
+        "margin": 0.015,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "8XqqSQP5cr4",
+        "title": "Musical Composition, Craft and Art #43 - The Composer's Voice",
+        "url": "https://www.youtube.com/watch?v=8XqqSQP5cr4",
+        "confidence": 0.556,
+        "margin": 0.0,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      }
+    ],
+    "14": [
+      {
+        "videoId": "M2pt4TLtNc0",
+        "title": "Musical Composition, Craft and Art #14 - On Repetition pt. 1",
+        "url": "https://www.youtube.com/watch?v=M2pt4TLtNc0",
+        "confidence": 0.621,
+        "margin": 0.037,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "qi-VTZ190Mg",
+        "title": "Musical Composition, Craft and Art #15 - On Repetition pt. 2",
+        "url": "https://www.youtube.com/watch?v=qi-VTZ190Mg",
+        "confidence": 0.621,
+        "margin": 0.034,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "cX-qm7r9IuI",
+        "title": "Musical Composition, Craft and Art #3 - Psychology and Music, part 2",
+        "url": "https://www.youtube.com/watch?v=cX-qm7r9IuI",
+        "confidence": 0.559,
+        "margin": 0.011,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      }
+    ],
+    "19": [
+      {
+        "videoId": "MA4X8U8CvVo",
+        "title": "Musical Composition Craft and Art #49 -The form checklist",
+        "url": "https://www.youtube.com/watch?v=MA4X8U8CvVo",
+        "confidence": 0.659,
+        "margin": 0.078,
+        "reasons": [
+          "title overlap (0.37)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "6Mh9L-38ZZg",
+        "title": "Musical Composition, Craft and Art #6 -  On Framing",
+        "url": "https://www.youtube.com/watch?v=6Mh9L-38ZZg",
+        "confidence": 0.613,
+        "margin": 0.013,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "WeBe52qxsr4",
+        "title": "Musical Composition, Craft and Art #19  - A New Look at Fugue",
+        "url": "https://www.youtube.com/watch?v=WeBe52qxsr4",
+        "confidence": 0.606,
+        "margin": 0.046,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "awTqJtz2gtc",
+        "title": "Musical Composition Craft and Art - # 33 - On modulation and tonal density",
+        "url": "https://www.youtube.com/watch?v=awTqJtz2gtc",
+        "confidence": 0.604,
+        "margin": 0.043,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "sk2Vbqzyy98",
+        "title": "Musical Composition, Craft and Art #9 - On Development",
+        "url": "https://www.youtube.com/watch?v=sk2Vbqzyy98",
+        "confidence": 0.582,
+        "margin": 0.009,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "3bvWr_9XsYs",
+        "title": "Musical Composition, Craft and Art #38 - On originality",
+        "url": "https://www.youtube.com/watch?v=3bvWr_9XsYs",
+        "confidence": 0.582,
+        "margin": 0.009,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      }
+    ],
+    "1": [
+      {
+        "videoId": "i790kS-MlAA",
+        "title": "Musical Composition, Craft and Art #7 - On Motives, Why and How",
+        "url": "https://www.youtube.com/watch?v=i790kS-MlAA",
+        "confidence": 0.747,
+        "margin": 0.193,
+        "reasons": [
+          "title overlap (0.44)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "LP_UBr73KLg",
+        "title": "Musical Composition, Craft and Art #17 - On Salience",
+        "url": "https://www.youtube.com/watch?v=LP_UBr73KLg",
+        "confidence": 0.574,
+        "margin": 0.015,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      }
+    ],
+    "17": [
+      {
+        "videoId": "1j3FofKA__U",
+        "title": "Musical Composition, Craft and Art #16 - On Recapitulation",
+        "url": "https://www.youtube.com/watch?v=1j3FofKA__U",
+        "confidence": 0.653,
+        "margin": 0.05,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "pcUa8gnNzCQ",
+        "title": "Musical Composition, Craft and Art #8 - On Unity",
+        "url": "https://www.youtube.com/watch?v=pcUa8gnNzCQ",
+        "confidence": 0.574,
+        "margin": 0.007,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "-6MsmWwGuDE",
+        "title": "Musical Composition, Craft and Art #44 - What makes a great composer?",
+        "url": "https://www.youtube.com/watch?v=-6MsmWwGuDE",
+        "confidence": 0.55,
+        "margin": 0.005,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "videoId": "nSZH3d8XCGQ",
+        "title": "Musical Composition, Craft and Art #25 - Transitions",
+        "url": "https://www.youtube.com/watch?v=nSZH3d8XCGQ",
+        "confidence": 0.639,
+        "margin": 0.014,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "h5QDJO6Oy4E",
+        "title": "Musical Composition, Craft and Art #20 - On suspense",
+        "url": "https://www.youtube.com/watch?v=h5QDJO6Oy4E",
+        "confidence": 0.579,
+        "margin": 0.004,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "tfAZAaaDDec",
+        "title": "Musical Composition, Craft and Art #41 - On Interruptions",
+        "url": "https://www.youtube.com/watch?v=tfAZAaaDDec",
+        "confidence": 0.565,
+        "margin": 0.002,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      }
+    ],
+    "5": [
+      {
+        "videoId": "s7oBbw2MA1A",
+        "title": "Musical Composition, Craft and Art #26 - Punctuation and Breathing",
+        "url": "https://www.youtube.com/watch?v=s7oBbw2MA1A",
+        "confidence": 0.68,
+        "margin": 0.09,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "0XpaPjyOmIA",
+        "title": "Musical Composition, Craft and Art, #42",
+        "url": "https://www.youtube.com/watch?v=0XpaPjyOmIA",
+        "confidence": 0.556,
+        "margin": 0.0,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "OrmimUq0CXQ",
+        "title": "Musical Composition Craft and Art #48",
+        "url": "https://www.youtube.com/watch?v=OrmimUq0CXQ",
+        "confidence": 0.556,
+        "margin": 0.0,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      }
+    ],
+    "15": [
+      {
+        "videoId": "20ewyhl876w",
+        "title": "Musical Composition, Craft and Art #29 - Problems with Beginnings",
+        "url": "https://www.youtube.com/watch?v=20ewyhl876w",
+        "confidence": 0.768,
+        "margin": 0.194,
+        "reasons": [
+          "title overlap (0.50)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      }
+    ],
+    "18": [
+      {
+        "videoId": "2aJOtDMo30w",
+        "title": "Musical Composition, Craft and Art #30 - Problems with Endings",
+        "url": "https://www.youtube.com/watch?v=2aJOtDMo30w",
+        "confidence": 0.75,
+        "margin": 0.15,
+        "reasons": [
+          "title overlap (0.45)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "videoId": "js1oDeaHz3Q",
+        "title": "Musical Composition Craft and Art - # 31 - The Sense of Form",
+        "url": "https://www.youtube.com/watch?v=js1oDeaHz3Q",
+        "confidence": 0.699,
+        "margin": 0.018,
+        "reasons": [
+          "title overlap (0.47)",
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      },
+      {
+        "videoId": "RYLCkuNXF8A",
+        "title": "Musical Composition Craft and Art - # 32 - The Destiny of a Musical Idea",
+        "url": "https://www.youtube.com/watch?v=RYLCkuNXF8A",
+        "confidence": 0.571,
+        "margin": 0.016,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "videoId": "tCvUjv7S5RI",
+        "title": "Musical Composition Craft and Art - # 36 - A New Way of Thinking about Tonality",
+        "url": "https://www.youtube.com/watch?v=tCvUjv7S5RI",
+        "confidence": 0.552,
+        "margin": 0.008,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.55)"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "videoId": "JOS2hWqbMWc",
+        "title": "Musical Composition, Craft and Art #46 - The Counterpoint Checklist",
+        "url": "https://www.youtube.com/watch?v=JOS2hWqbMWc",
+        "confidence": 0.609,
+        "margin": 0.054,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      },
+      {
+        "videoId": "hE11zT20328",
+        "title": "Musical Composition Craft and Art # 47 - the Orchestration Checklist",
+        "url": "https://www.youtube.com/watch?v=hE11zT20328",
+        "confidence": 0.579,
+        "margin": 0.027,
+        "reasons": [
+          "caption keywords (1.00)",
+          "ebook prose (1.00)",
+          "topic alias (0.85)"
+        ]
+      }
+    ]
+  }
+}
