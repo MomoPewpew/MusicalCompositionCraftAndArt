@@ -17,10 +17,22 @@ export default function HomePage() {
         <h1 className="text-4xl font-semibold tracking-tight text-zinc-950 dark:text-zinc-50">
           {manifest.book}
         </h1>
-        <p className="max-w-3xl text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
-          Browse musical examples from Alan Belkin&apos;s textbook with sheet music, source citations,
-          mockup playback where available, and MIDI playback with tempo control.
-        </p>
+        <div className="max-w-3xl space-y-4 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
+          <p>
+            This site is an unofficial companion to Alan Belkin&apos;s textbook,{" "}
+            <em>Musical Composition: Craft and Art</em>. It grew out of a study group for the
+            book, hosted by Ryan Leach at 12 Story Music Academy.
+          </p>
+          <p>
+            Browse textbook examples with sheet music, source citations, mockup playback where
+            available, and MIDI playback with tempo control.
+          </p>
+          <p>
+            Each chapter also links to teaching videos—from Belkin and from educators who build on
+            his work—study group session recordings, and MusicXML files for the exercise material,
+            where available.
+          </p>
+        </div>
         <p className="text-sm text-zinc-600 dark:text-zinc-400">
           {manifest.exampleCount} examples across {chapters.length} chapters. Use the chapter
           navigation to browse examples.
