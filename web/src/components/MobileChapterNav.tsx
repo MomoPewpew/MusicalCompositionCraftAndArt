@@ -25,6 +25,11 @@ import {
   chapterHasStudyGroupSessions,
   isChapterStudyGroupPathActive
 } from "@/lib/studyGroupSessions";
+import {
+  chapterTeachingVideosHref,
+  chapterHasTeachingVideos,
+  isChapterTeachingVideosPathActive
+} from "@/lib/teachingVideos";
 
 export function MobileChapterNav() {
   const pathname = usePathname();
@@ -104,6 +109,19 @@ export function MobileChapterNav() {
             ].join(" ")}
           >
             Study group
+          </Link>
+        ) : null}
+        {activeChapter.number != null && chapterHasTeachingVideos(activeChapter.number) ? (
+          <Link
+            href={chapterTeachingVideosHref(activeChapter.number)}
+            className={[
+              "rounded-full border px-3 py-1 text-xs font-medium",
+              isChapterTeachingVideosPathActive(pathname, activeChapter.number)
+                ? "border-fuchsia-400/40 bg-fuchsia-500/10 text-zinc-950 dark:text-zinc-50"
+                : "border-black/10 bg-white/60 text-zinc-700 dark:border-white/10 dark:bg-zinc-950/30 dark:text-zinc-300"
+            ].join(" ")}
+          >
+            Teaching videos
           </Link>
         ) : null}
         {activeChapter.number != null && chapterHasExercises(activeChapter.number) ? (

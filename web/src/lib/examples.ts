@@ -2,6 +2,7 @@ import examples from "@/generated/examples.json";
 import { getChaptersWithExercises } from "@/lib/exerciseAssets";
 import { getChaptersWithInfographics } from "@/lib/infographics";
 import { getChaptersWithStudyGroupSessions } from "@/lib/studyGroupSessions";
+import { getChaptersWithTeachingVideos } from "@/lib/teachingVideos";
 
 export type ExampleRoute = {
   chapter: string;
@@ -72,6 +73,7 @@ function getAllChapters(): ChapterEntry[] {
   const supplementalNumbers = new Set<number>();
   for (const chapter of getChaptersWithInfographics()) supplementalNumbers.add(chapter);
   for (const chapter of getChaptersWithStudyGroupSessions()) supplementalNumbers.add(chapter);
+  for (const chapter of getChaptersWithTeachingVideos()) supplementalNumbers.add(chapter);
   for (const chapter of getChaptersWithExercises()) supplementalNumbers.add(chapter);
 
   for (const number of supplementalNumbers) {

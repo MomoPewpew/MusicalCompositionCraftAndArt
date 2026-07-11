@@ -1,13 +1,14 @@
-import { formatTimestamp, parseYouTubeReference } from "@/lib/youtube";
+import { formatTimestamp, parseYouTubeReference, type YouTubeEmbedKind } from "@/lib/youtube";
 
 type YouTubeEmbedProps = {
   youtube: string;
   startSeconds?: number;
+  kind?: YouTubeEmbedKind;
   title: string;
 };
 
-export function YouTubeEmbed({ youtube, startSeconds, title }: YouTubeEmbedProps) {
-  const parsed = parseYouTubeReference(youtube, startSeconds);
+export function YouTubeEmbed({ youtube, startSeconds, kind, title }: YouTubeEmbedProps) {
+  const parsed = parseYouTubeReference(youtube, { startSeconds, kind });
   if (!parsed) {
     return (
       <p className="text-sm text-red-700 dark:text-red-300">
@@ -15,6 +16,8 @@ export function YouTubeEmbed({ youtube, startSeconds, title }: YouTubeEmbedProps
       </p>
     );
   }
+
+  const linkLabel = parsed.kind === "playlist" ? "Open playlist on YouTube" : "Open on YouTube";
 
   return (
     <div className="space-y-3">
@@ -35,9 +38,9 @@ export function YouTubeEmbed({ youtube, startSeconds, title }: YouTubeEmbedProps
           rel="noreferrer"
           className="underline decoration-black/20 underline-offset-4 hover:decoration-black/40 dark:decoration-white/20 dark:hover:decoration-white/40"
         >
-          Open on YouTube
+          {linkLabel}
         </a>
-        {parsed.startSeconds > 0 ? (
+        {parsed.kind === "video" && parsed.startSeconds > 0 ? (
           <span> · starts at {formatTimestamp(parsed.startSeconds)}</span>
         ) : null}
       </p>

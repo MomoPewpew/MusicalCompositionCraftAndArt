@@ -1,0 +1,28 @@
+{
+  "chapters": {
+    "1": {
+      "videos": [
+        {
+          "title": "Teaching video 1",
+          "youtube": "https://www.youtube.com/watch?v=i790kS-MlAA"
+        },
+        {
+          "title": "Teaching video 2",
+          "youtube": "https://www.youtube.com/watch?v=Ou0ydcar74o&pp=ygUScnlhbiBsZWFjaCBtb3RpdmVz"
+        },
+        {
+          "title": "Teaching video 3",
+          "youtube": "https://www.youtube.com/watch?v=lcYkxoCAJ3o&pp=ygUScnlhbiBsZWFjaCBtb3RpdmVz"
+        },
+        {
+          "title": "Teaching video 4",
+          "youtube": "https://www.youtube.com/watch?v=5m_M6DMHnKo"
+        },
+        {
+          "title": "Teaching video 5",
+          "youtube": "https://www.youtube.com/watch?v=qhpPuvmZqf0"
+        }
+      ]
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "fileCount": 7,
+  "fileCount": 29,
   "chapters": {
     "1": {
       "fileCount": 7,
@@ -13,6 +13,76 @@
         "Exe1-6-(6).musicxml"
       ],
       "archive": "assets/exercises/chapter-1.zip"
+    },
+    "2": {
+      "fileCount": 3,
+      "files": [
+        "Exe2-1-(1).musicxml",
+        "Exe2-1-(2).musicxml",
+        "Exe2-1-(3).musicxml"
+      ],
+      "archive": "assets/exercises/chapter-2.zip"
+    },
+    "5": {
+      "fileCount": 2,
+      "files": [
+        "Exe5-2.musicxml",
+        "Exe5-3.musicxml"
+      ],
+      "archive": "assets/exercises/chapter-5.zip"
+    },
+    "6": {
+      "fileCount": 6,
+      "files": [
+        "Exe6-1.musicxml",
+        "Exe6-2-(1).musicxml",
+        "Exe6-2-(2).musicxml",
+        "Exe6-3-(1).musicxml",
+        "Exe6-3-(2).musicxml",
+        "Exe6-4.musicxml"
+      ],
+      "archive": "assets/exercises/chapter-6.zip"
+    },
+    "10": {
+      "fileCount": 1,
+      "files": [
+        "Exe10-2.musicxml"
+      ],
+      "archive": "assets/exercises/chapter-10.zip"
+    },
+    "11": {
+      "fileCount": 2,
+      "files": [
+        "Exe11-2.musicxml",
+        "Exe11-3.musicxml"
+      ],
+      "archive": "assets/exercises/chapter-11.zip"
+    },
+    "12": {
+      "fileCount": 3,
+      "files": [
+        "Exe12-1.musicxml",
+        "Exe12-2-(1).musicxml",
+        "Exe12-2-(3).musicxml"
+      ],
+      "archive": "assets/exercises/chapter-12.zip"
+    },
+    "16": {
+      "fileCount": 2,
+      "files": [
+        "Exe16-2.musicxml",
+        "Exe16-3.musicxml"
+      ],
+      "archive": "assets/exercises/chapter-16.zip"
+    },
+    "20": {
+      "fileCount": 3,
+      "files": [
+        "Exe20-3.musicxml",
+        "Exe20-4-(1).musicxml",
+        "Exe20-4-(2).musicxml"
+      ],
+      "archive": "assets/exercises/chapter-20.zip"
     }
   }
 }

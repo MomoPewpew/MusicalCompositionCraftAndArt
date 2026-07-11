@@ -17,9 +17,11 @@ const generatedExerciseAssetsPath = join(generatedDir, "exercise-assets.json");
 const generatedInfographicsPath = join(generatedDir, "infographics.json");
 const generatedStudyGroupSessionsPath = join(generatedDir, "study-group-sessions.json");
 const generatedChapterTitlesPath = join(generatedDir, "chapter-titles.json");
+const generatedTeachingVideosPath = join(generatedDir, "teaching-videos.json");
 const exerciseAssetsManifestPath = join(repoRoot, "data", "exercise-assets.json");
 const studyGroupSessionsPath = join(repoRoot, "data", "study-group-sessions.json");
 const chapterTitlesPath = join(repoRoot, "data", "chapter-titles.json");
+const teachingVideosPath = join(repoRoot, "data", "teaching-videos.json");
 const infographicsSourceDir = join(repoRoot, "infographics");
 const buildExerciseArchiveScript = join(repoRoot, "scripts", "build_exercise_archive.py");
 
@@ -244,6 +246,31 @@ function copyChapterTitles() {
   }
 }
 
+function copyTeachingVideos() {
+  const emptyManifest = { chapters: {} };
+
+  if (!existsSync(teachingVideosPath)) {
+    writeFileSync(
+      generatedTeachingVideosPath,
+      `${JSON.stringify(emptyManifest, null, 2)}\n`,
+      "utf8"
+    );
+    return;
+  }
+
+  const manifest = JSON.parse(readFileSync(teachingVideosPath, "utf8"));
+  writeFileSync(generatedTeachingVideosPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+
+  const videoCount = Object.values(manifest.chapters ?? {}).reduce(
+    (total, chapter) => total + (chapter.videos?.length ?? 0),
+    0
+  );
+  if (videoCount > 0) {
+    const chapterCount = Object.keys(manifest.chapters ?? {}).length;
+    console.log(`Teaching videos: ${videoCount} video(s) across ${chapterCount} chapter(s)`);
+  }
+}
+
 function copyStudyGroupSessions() {
   const emptyManifest = { chapters: {} };
 
@@ -303,6 +330,7 @@ async function main() {
   copyInfographics();
   copyChapterTitles();
   copyStudyGroupSessions();
+  copyTeachingVideos();
   await ensureSoundfont();
   console.log(`Prepared assets: ${copied} copied, ${missing} missing`);
   if (humanizedMidi > 0) {

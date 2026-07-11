@@ -26,6 +26,11 @@ import {
   chapterHasStudyGroupSessions,
   isChapterStudyGroupPathActive
 } from "@/lib/studyGroupSessions";
+import {
+  chapterTeachingVideosHref,
+  chapterHasTeachingVideos,
+  isChapterTeachingVideosPathActive
+} from "@/lib/teachingVideos";
 
 const navLinkClass = [
   "block rounded-lg px-2 py-1.5 text-sm transition",
@@ -122,6 +127,20 @@ export function BookSidebar() {
                       }
                     >
                       Study group
+                    </Link>
+                  </li>
+                ) : null}
+                {chapter.number != null && chapterHasTeachingVideos(chapter.number) ? (
+                  <li>
+                    <Link
+                      href={chapterTeachingVideosHref(chapter.number)}
+                      className={
+                        isChapterTeachingVideosPathActive(pathname, chapter.number)
+                          ? activeNavLinkClass
+                          : navLinkClass
+                      }
+                    >
+                      Teaching videos
                     </Link>
                   </li>
                 ) : null}
