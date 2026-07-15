@@ -3,12 +3,20 @@
     "1": {
       "sessions": [
         {
-          "title": "Session 1",
+          "title": "Session 1 - Reading",
           "youtube": "https://youtu.be/rW8JaisMCoQ"
         },
         {
-          "title": "Session 2",
+          "title": "Session 2 - Exercises",
           "youtube": "https://youtu.be/Bi9jQH0N9xE"
+        }
+      ]
+    },
+    "2": {
+      "sessions": [
+        {
+          "title": "Session 3 - Reading",
+          "youtube": "https://youtu.be/SiAm1otE310"
         }
       ]
     }
