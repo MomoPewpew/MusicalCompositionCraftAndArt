@@ -9,6 +9,7 @@ import {
   type ExampleEntry
 } from "@/lib/examples";
 import { AudioPlayback, MidiPlayback, MockupUnavailableBlurb } from "@/components/PlaybackPanel";
+import { ZoomableImage } from "@/components/ZoomableImage";
 
 const glassCard = [
   "rounded-2xl border border-black/10 bg-white/70 p-5 shadow-[0_0_0_1px_rgba(0,0,0,0.03)]",
@@ -65,14 +66,12 @@ function ExampleSectionView({ example }: { example: ExampleEntry }) {
           Sheet Music
         </h3>
         {example.assets.image ? (
-          <figure className="score-sheet">
-            {/* eslint-disable-next-line @next/next/no-img-element -- static PNG scores from textbook */}
-            <img
-              src={example.assets.image}
-              alt={`Sheet music for ${example.id}`}
-              className="mx-auto block h-auto w-full max-w-full object-contain"
-            />
-          </figure>
+          <ZoomableImage
+            src={example.assets.image}
+            alt={`Sheet music for ${example.id}`}
+            imageClassName="dark:invert"
+            zoomAlign="center"
+          />
         ) : (
           <p className="text-sm text-zinc-700 dark:text-zinc-300">
             Sheet music image is not available for this example.

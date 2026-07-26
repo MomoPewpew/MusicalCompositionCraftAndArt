@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { ZoomableInfographic } from "@/components/ZoomableInfographic";
+import { ZoomableImage } from "@/components/ZoomableImage";
 import { chapterInfographicHref, getChapterInfographic } from "@/lib/infographics";
 import { chapterHref, type ChapterEntry } from "@/lib/examples";
 
@@ -78,7 +78,7 @@ export function ChapterInfographicPageView({ chapter }: { chapter: ChapterEntry 
         </div>
 
         <div className="mt-5">
-          <ZoomableInfographic src={infographic.image} alt={alt} />
+          <ZoomableImage src={infographic.image} alt={alt} />
         </div>
       </section>
     </div>

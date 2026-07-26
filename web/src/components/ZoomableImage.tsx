@@ -7,12 +7,21 @@ const CLICK_MAX_MS = 300;
 
 type Pan = { x: number; y: number };
 
-type ZoomableInfographicProps = {
+type ZoomableImageProps = {
   src: string;
   alt: string;
+  /** Extra classes on the preview and zoomed images (e.g. dark:invert for scores). */
+  imageClassName?: string;
+  /** Where the zoomed image sits before the user pans. */
+  zoomAlign?: "top" | "center";
 };
 
-export function ZoomableInfographic({ src, alt }: ZoomableInfographicProps) {
+export function ZoomableImage({
+  src,
+  alt,
+  imageClassName,
+  zoomAlign = "top"
+}: ZoomableImageProps) {
   const [zoomed, setZoomed] = useState(false);
   const [pan, setPan] = useState<Pan>({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -96,6 +105,26 @@ export function ZoomableInfographic({ src, alt }: ZoomableInfographicProps) {
     setIsDragging(false);
   };
 
+  const previewImageClass = [
+    "mx-auto block h-auto max-h-[min(70vh,720px)] w-full object-contain",
+    imageClassName
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  const zoomImageClass = [
+    "pointer-events-none absolute left-1/2 max-w-none select-none",
+    zoomAlign === "center" ? "top-1/2" : "top-6",
+    imageClassName
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  const zoomTransform =
+    zoomAlign === "center"
+      ? `translate(calc(-50% + ${pan.x}px), calc(-50% + ${pan.y}px))`
+      : `translate(calc(-50% + ${pan.x}px), ${pan.y}px)`;
+
   return (
     <>
       <button
@@ -105,21 +134,14 @@ export function ZoomableInfographic({ src, alt }: ZoomableInfographicProps) {
           setZoomed(true);
         }}
         className={[
-          "group mx-auto block w-full max-w-3xl cursor-zoom-in rounded-xl border border-black/10 bg-white p-3",
-          "transition hover:border-black/20 hover:shadow-md",
+          "group mx-auto block w-full max-w-3xl cursor-zoom-in",
           "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/10",
-          "dark:border-white/10 dark:bg-zinc-900/40 dark:hover:border-white/20",
           "dark:focus-visible:ring-white/20"
         ].join(" ")}
         aria-label={`Zoom ${alt}`}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element -- static infographic PNG */}
-        <img
-          src={src}
-          alt={alt}
-          loading="lazy"
-          className="mx-auto block h-auto max-h-[min(70vh,720px)] w-full object-contain"
-        />
+        {/* eslint-disable-next-line @next/next/no-img-element -- static content images */}
+        <img src={src} alt={alt} loading="lazy" className={previewImageClass} />
         <p className="mt-2 text-center text-xs text-zinc-500 group-hover:text-zinc-700 dark:text-zinc-400 dark:group-hover:text-zinc-300">
           Click to zoom · drag to pan · click again to close
         </p>
@@ -137,15 +159,15 @@ export function ZoomableInfographic({ src, alt }: ZoomableInfographicProps) {
           onPointerCancel={onOverlayPointerUp}
           style={{ cursor: isDragging ? "grabbing" : "grab", touchAction: "none" }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element -- static infographic PNG */}
+          {/* eslint-disable-next-line @next/next/no-img-element -- static content images */}
           <img
             src={src}
             alt={alt}
             draggable={false}
             onLoad={onZoomImageLoad}
-            className="pointer-events-none absolute left-1/2 top-6 max-w-none select-none"
+            className={zoomImageClass}
             style={{
-              transform: `translate(calc(-50% + ${pan.x}px), ${pan.y}px)`,
+              transform: zoomTransform,
               width: zoomWidth ? `${zoomWidth}px` : "90vw",
               height: "auto"
             }}
