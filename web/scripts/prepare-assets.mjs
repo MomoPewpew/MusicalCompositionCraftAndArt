@@ -18,10 +18,13 @@ const generatedInfographicsPath = join(generatedDir, "infographics.json");
 const generatedStudyGroupSessionsPath = join(generatedDir, "study-group-sessions.json");
 const generatedChapterTitlesPath = join(generatedDir, "chapter-titles.json");
 const generatedTeachingVideosPath = join(generatedDir, "teaching-videos.json");
+const generatedExampleYouTubePath = join(generatedDir, "example-youtube.json");
 const exerciseAssetsManifestPath = join(repoRoot, "data", "exercise-assets.json");
 const studyGroupSessionsPath = join(repoRoot, "data", "study-group-sessions.json");
 const chapterTitlesPath = join(repoRoot, "data", "chapter-titles.json");
 const teachingVideosPath = join(repoRoot, "data", "teaching-videos.json");
+const exampleYouTubePath = join(repoRoot, "data", "example-youtube.json");
+const youtubeArchivesDir = join(repoRoot, "youtube-archives");
 const infographicsSourceDir = join(repoRoot, "infographics");
 const buildExerciseArchiveScript = join(repoRoot, "scripts", "build_exercise_archive.py");
 
@@ -271,6 +274,54 @@ function copyTeachingVideos() {
   }
 }
 
+function findYouTubeArchive(exampleId) {
+  for (const ext of ["mp3", "m4a", "ogg", "wav"]) {
+    const source = join(youtubeArchivesDir, `${exampleId}.${ext}`);
+    if (existsSync(source)) return { source, ext };
+  }
+  return null;
+}
+
+function copyExampleYouTube() {
+  const emptyManifest = {};
+
+  if (!existsSync(exampleYouTubePath)) {
+    writeFileSync(
+      generatedExampleYouTubePath,
+      `${JSON.stringify(emptyManifest, null, 2)}\n`,
+      "utf8"
+    );
+    return;
+  }
+
+  const manifest = JSON.parse(readFileSync(exampleYouTubePath, "utf8"));
+  const enriched = {};
+  let archiveCount = 0;
+
+  for (const [exampleId, entry] of Object.entries(manifest ?? {})) {
+    const next = { ...entry };
+    const archive = findYouTubeArchive(exampleId);
+    if (archive) {
+      const basename = `${exampleId}.${archive.ext}`;
+      const dest = join(publicAssetsDir, "youtube-archives", basename);
+      copyFile(archive.source, dest);
+      next.archiveAudio = toPublicPath(`youtube-archives/${basename}`);
+      archiveCount += 1;
+    }
+    enriched[exampleId] = next;
+  }
+
+  writeFileSync(generatedExampleYouTubePath, `${JSON.stringify(enriched, null, 2)}\n`, "utf8");
+
+  const recordingCount = Object.keys(enriched).length;
+  if (recordingCount > 0) {
+    console.log(
+      `Example YouTube: ${recordingCount} recording(s)` +
+        (archiveCount > 0 ? `, ${archiveCount} archive audio` : "")
+    );
+  }
+}
+
 function copyStudyGroupSessions() {
   const emptyManifest = { chapters: {} };
 
@@ -331,6 +382,7 @@ async function main() {
   copyChapterTitles();
   copyStudyGroupSessions();
   copyTeachingVideos();
+  copyExampleYouTube();
   await ensureSoundfont();
   console.log(`Prepared assets: ${copied} copied, ${missing} missing`);
   if (humanizedMidi > 0) {

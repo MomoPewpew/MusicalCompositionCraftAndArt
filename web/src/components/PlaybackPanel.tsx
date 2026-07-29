@@ -156,7 +156,13 @@ function PlaybackShell({
   );
 }
 
-export function AudioPlayback({ src }: { src: string }) {
+export function AudioPlayback({
+  src,
+  label = "Mockup"
+}: {
+  src: string;
+  label?: string;
+}) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -240,7 +246,7 @@ export function AudioPlayback({ src }: { src: string }) {
 
   return (
     <PlaybackShell
-      label="Mockup"
+      label={label}
       badge={src.split(".").pop()?.toLowerCase() ?? "audio"}
       isPlaying={isPlaying}
       ended={ended}

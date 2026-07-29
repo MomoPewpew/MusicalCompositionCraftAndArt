@@ -1,14 +1,13 @@
 import Link from "next/link";
 
 import {
-  chapterHref,
   exampleHref,
-  getGroupedExamplesForChapter,
   groupedExamplePageTitle,
   type ChapterEntry,
   type ExampleEntry
 } from "@/lib/examples";
-import { AudioPlayback, MidiPlayback, MockupUnavailableBlurb } from "@/components/PlaybackPanel";
+import { getExampleYouTube } from "@/lib/exampleYouTube";
+import { ExamplePlaybackTabs } from "@/components/ExamplePlaybackTabs";
 import { ZoomableImage } from "@/components/ZoomableImage";
 
 const glassCard = [
@@ -44,6 +43,8 @@ export function ExampleCard({
 }
 
 function ExampleSectionView({ example }: { example: ExampleEntry }) {
+  const recording = getExampleYouTube(example.id);
+
   return (
     <div className="space-y-6">
       <section className={glassCard}>
@@ -79,21 +80,17 @@ function ExampleSectionView({ example }: { example: ExampleEntry }) {
         )}
       </section>
 
-      <section className="space-y-4">
-        <h3 className="text-xs font-medium uppercase tracking-wide text-zinc-600 dark:text-zinc-400">
+      <section className={glassCard}>
+        <h3 className="mb-4 text-xs font-medium uppercase tracking-wide text-zinc-600 dark:text-zinc-400">
           Playback
         </h3>
-        {example.assets.mockupAudio ? (
-          <AudioPlayback src={example.assets.mockupAudio} />
-        ) : (
-          <MockupUnavailableBlurb />
-        )}
-        {example.assets.midi ? (
-          <MidiPlayback
-            src={example.assets.midi}
-            humanizedSrc={example.assets.midiHumanized}
-          />
-        ) : null}
+        <ExamplePlaybackTabs
+          exampleId={example.id}
+          youtube={recording}
+          mockupAudio={example.assets.mockupAudio}
+          midi={example.assets.midi}
+          midiHumanized={example.assets.midiHumanized}
+        />
       </section>
     </div>
   );

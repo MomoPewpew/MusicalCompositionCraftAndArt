@@ -9,6 +9,8 @@ on:
       - "downloads/**"
       - "exercise_assets/**"
       - "infographics/**"
+      - "mockups/**"
+      - "youtube-archives/**"
       - "scripts/build_examples_manifest.py"
       - "scripts/build_exercise_archive.py"
       - "scripts/extract_citations.py"

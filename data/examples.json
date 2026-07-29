@@ -2064,7 +2064,7 @@
       "assets": {
         "image": "Chapter 3/Example 1/Ex3-1.png",
         "midi": "Chapter 3/Example 1/Ex3-1.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex3-1.mp3"
       }
     },
     {
@@ -2083,7 +2083,7 @@
       "assets": {
         "image": "Chapter 3/Example 2/Ex3-2.png",
         "midi": "Chapter 3/Example 2/Ex3-2.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex3-2.mp3"
       }
     },
     {
@@ -2102,7 +2102,7 @@
       "assets": {
         "image": "Chapter 3/Example 3/Ex3-3.png",
         "midi": "Chapter 3/Example 3/Ex3-3.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex3-3.mp3"
       }
     },
     {
@@ -2121,7 +2121,7 @@
       "assets": {
         "image": "Chapter 3/Example 4/Ex3-4.png",
         "midi": "Chapter 3/Example 4/Ex3-4.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex3-4.mp3"
       }
     },
     {
@@ -2218,7 +2218,7 @@
       "assets": {
         "image": "Chapter 5/Example 1/Ex5-1.png",
         "midi": "Chapter 5/Example 1/Ex5-1.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-1.mp3"
       }
     },
     {
@@ -2237,7 +2237,7 @@
       "assets": {
         "image": "Chapter 5/Example 2/Ex5-2.png",
         "midi": "Chapter 5/Example 2/Ex5-2.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-2.mp3"
       }
     },
     {
@@ -2256,7 +2256,7 @@
       "assets": {
         "image": "Chapter 5/Example 3/Ex5-3.png",
         "midi": "Chapter 5/Example 3/Ex5-3.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-3.mp3"
       }
     },
     {
@@ -2275,7 +2275,7 @@
       "assets": {
         "image": "Chapter 5/Example 4/Ex5-4.png",
         "midi": "Chapter 5/Example 4/Ex5-4.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-4.mp3"
       }
     },
     {
@@ -2294,7 +2294,7 @@
       "assets": {
         "image": "Chapter 5/Example 5/Ex5-5.png",
         "midi": "Chapter 5/Example 5/Ex5-5.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-5.mp3"
       }
     },
     {
@@ -2313,7 +2313,7 @@
       "assets": {
         "image": "Chapter 5/Example 6/Ex5-6.png",
         "midi": "Chapter 5/Example 6/Ex5-6.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-6.mp3"
       }
     },
     {
@@ -2332,7 +2332,7 @@
       "assets": {
         "image": "Chapter 5/Example 7/Ex5-7.png",
         "midi": "Chapter 5/Example 7/Ex5-7.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-7.mp3"
       }
     },
     {
@@ -2351,7 +2351,7 @@
       "assets": {
         "image": "Chapter 5/Example 8/Ex5-8.png",
         "midi": "Chapter 5/Example 8/Ex5-8.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-8.mp3"
       }
     },
     {
@@ -2370,7 +2370,7 @@
       "assets": {
         "image": "Chapter 5/Example 9/Ex5-9.png",
         "midi": "Chapter 5/Example 9/Ex5-9.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-9.mp3"
       }
     },
     {
@@ -2389,7 +2389,7 @@
       "assets": {
         "image": "Chapter 5/Example 10/Ex5-10.png",
         "midi": "Chapter 5/Example 10/Ex5-10.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-10.mp3"
       }
     },
     {
@@ -2408,7 +2408,7 @@
       "assets": {
         "image": "Chapter 5/Example 11/Ex5-11.png",
         "midi": "Chapter 5/Example 11/Ex5-11.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-11.mp3"
       }
     },
     {
@@ -2427,7 +2427,7 @@
       "assets": {
         "image": "Chapter 5/Example 12/Ex5-12.png",
         "midi": "Chapter 5/Example 12/Ex5-12.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex5-12.mp3"
       }
     },
     {

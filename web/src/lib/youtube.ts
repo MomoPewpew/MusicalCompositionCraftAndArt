@@ -5,8 +5,15 @@ export type ParsedYouTubeReference = {
   videoId: string | null;
   playlistId: string | null;
   startSeconds: number;
+  endSeconds: number;
   watchUrl: string;
   embedUrl: string;
+};
+
+export type ParseYouTubeOptions = {
+  startSeconds?: number;
+  endSeconds?: number;
+  kind?: YouTubeEmbedKind;
 };
 
 function parseYouTubeStartTime(value: string): number {
@@ -62,7 +69,8 @@ export function buildYouTubeEmbedUrl(
   kind: YouTubeEmbedKind,
   videoId: string | null,
   playlistId: string | null,
-  startSeconds = 0
+  startSeconds = 0,
+  endSeconds = 0
 ): string {
   if (kind === "playlist" && playlistId) {
     const params = new URLSearchParams({ list: playlistId, rel: "0" });
@@ -72,28 +80,32 @@ export function buildYouTubeEmbedUrl(
   const params = new URLSearchParams({ rel: "0" });
   if (playlistId) params.set("list", playlistId);
   if (startSeconds > 0) params.set("start", String(startSeconds));
+  if (endSeconds > 0) params.set("end", String(endSeconds));
   return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
 }
 
 export function parseYouTubeReference(
   youtube: string,
-  options: { startSeconds?: number; kind?: YouTubeEmbedKind } = {}
+  options: ParseYouTubeOptions = {}
 ): ParsedYouTubeReference | null {
   const trimmed = youtube.trim();
   if (!trimmed) return null;
 
-  const { startSeconds: startSecondsOverride, kind: kindOverride } = options;
+  const { startSeconds: startSecondsOverride, endSeconds: endSecondsOverride, kind: kindOverride } =
+    options;
 
   if (/^[\w-]{11}$/.test(trimmed)) {
     const startSeconds = startSecondsOverride ?? 0;
+    const endSeconds = endSecondsOverride ?? 0;
     const kind = kindOverride ?? "video";
     return {
       kind,
       videoId: trimmed,
       playlistId: null,
       startSeconds,
+      endSeconds,
       watchUrl: buildYouTubeWatchUrl("video", trimmed, null, startSeconds),
-      embedUrl: buildYouTubeEmbedUrl("video", trimmed, null, startSeconds)
+      embedUrl: buildYouTubeEmbedUrl("video", trimmed, null, startSeconds, endSeconds)
     };
   }
 
@@ -104,6 +116,7 @@ export function parseYouTubeReference(
       videoId: null,
       playlistId: trimmed,
       startSeconds: 0,
+      endSeconds: 0,
       watchUrl: buildYouTubeWatchUrl(kind, null, trimmed),
       embedUrl: buildYouTubeEmbedUrl(kind, null, trimmed)
     };
@@ -141,13 +154,18 @@ export function parseYouTubeReference(
     const parsedFromUrl = fromUrl ? parseYouTubeStartTime(fromUrl) : 0;
     const startSeconds = startSecondsOverride ?? parsedFromUrl;
 
+    const endFromUrl = url.searchParams.get("end");
+    const parsedEndFromUrl = endFromUrl ? parseYouTubeStartTime(endFromUrl) : 0;
+    const endSeconds = endSecondsOverride ?? parsedEndFromUrl;
+
     return {
       kind,
       videoId,
       playlistId,
       startSeconds,
+      endSeconds,
       watchUrl: buildYouTubeWatchUrl(kind, videoId, playlistId, startSeconds),
-      embedUrl: buildYouTubeEmbedUrl(kind, videoId, playlistId, startSeconds)
+      embedUrl: buildYouTubeEmbedUrl(kind, videoId, playlistId, startSeconds, endSeconds)
     };
   } catch {
     return null;

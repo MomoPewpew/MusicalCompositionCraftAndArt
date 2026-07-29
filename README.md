@@ -2,7 +2,7 @@
 
 Educational viewer for [Alan Belkin](https://alanbelkinmusic.com/)’s textbook *Musical Composition: Craft and Art*, with sheet music images, figure citations, and in-browser playback.
 
-The repo also contains Python tooling to download the original assets from [Real Music Theory](https://textbook.realmusictheory.com/?book=Musical+Composition+Craft+And+Art), build a web manifest from the EPUB citations, correct MIDI tempi, and optionally humanize dynamics.
+The repo also contains Python tooling to download the original assets from [Real Music Theory](https://textbook.realmusictheory.com/?book=Musical+Composition+Craft+And+Art), build a web manifest from the EPUB citations, correct MIDI tempi, optionally humanize dynamics, and archive clipped YouTube audio for attributed repertoire.
 
 **149 examples** across 20 chapters plus an Extra section.
 
@@ -26,6 +26,7 @@ Opens at http://localhost:3001
 ├── data/                  # Citations, manifest, overrides
 │   ├── citations.json     # Figure captions + prose (from EPUB)
 │   ├── examples.json      # Web manifest (generated)
+│   ├── example-youtube.json  # Curated YouTube recordings per example
 │   ├── citation_overrides.json
 │   ├── tempo_overrides.json
 │   └── uncited.json
@@ -33,7 +34,8 @@ Opens at http://localhost:3001
 │   └── Musical Composition Craft And Art/   # Canonical MIDI + PNG assets
 │   └── Musical Composition Craft And Art.humanized/  # Humanized MIDI (shipped)
 ├── mockups/               # Optional WAV/MP3 mockup audio per example
-├── scripts/               # Manifest, tempo, humanization pipeline
+├── youtube-archives/      # Clipped YouTube audio (shipped; from yt-dlp)
+├── scripts/               # Manifest, tempo, humanization, YouTube archive pipeline
 ├── web/                   # Next.js 15 static export site
 └── download_book.py       # Fetch assets from Real Music Theory S3
 ```
@@ -46,11 +48,14 @@ Static Next.js site — browse chapters and examples with:
 
 - **Citations** — attributed composer/work captions from the textbook, with fallbacks for Belkin originals and exercises
 - **Sheet music** — PNG scores from the textbook
-- **Mockup audio** — WAV/MP3 when provided in `mockups/`
-- **MIDI playback** — FluidR3 grand piano soundfont in the browser, with:
-  - Volume slider (0–200%, synced across players on a page)
-  - Tempo slider (50–150%, remembered per example)
-  - **Humanize dynamics** toggle (on by default) — switches between original and [midihum](https://github.com/erwald/midihum)-processed MIDI
+- **Playback tabs** — switch between available styles (unavailable tabs stay visible but disabled):
+  - **YouTube** — curated embed of a popular recording, clipped with `start` / `end` when set
+  - **YouTube archive** — committed audio clip of that same excerpt (fallback if the video is removed, embedding is disabled, or blocked in your country)
+  - **Mockup** — WAV/MP3 when provided in `mockups/`
+  - **MIDI** — FluidR3 grand piano soundfont in the browser, with:
+    - Volume slider (0–200%, synced across players on a page)
+    - Tempo slider (50–150%, remembered per example)
+    - **Humanize dynamics** toggle (on by default) — switches between original and [midihum](https://github.com/erwald/midihum)-processed MIDI
 
 ### Development
 
@@ -60,7 +65,7 @@ npm install
 npm run dev
 ```
 
-`prepare-assets.mjs` runs automatically: copies MIDI/PNG from `downloads/` (and humanized variants when present) into `web/public/assets/`, downloads the piano soundfont if needed, and writes `web/src/generated/examples.json`.
+`prepare-assets.mjs` runs automatically: copies MIDI/PNG from `downloads/` (and humanized variants when present), mockups, and YouTube archive audio into `web/public/assets/`, downloads the piano soundfont if needed, and writes generated JSON under `web/src/generated/` (including `examples.json` and `example-youtube.json`).
 
 ### Production build
 
@@ -97,11 +102,41 @@ python3 scripts/build_examples_manifest.py
 | `data/uncited.json` | Belkin original compositions with no textbook citation |
 | `data/citation_overrides.json` | Manual citation fixes (e.g. multi-panel figures) |
 | `data/tempo_overrides.json` | Manual BPM overrides for tempo correction |
+| `data/example-youtube.json` | Curated YouTube recordings (URL, optional start/end, label) per example id |
 | `data/examples.json` | Final manifest consumed by the website |
 
 ### Mockup audio
 
-Drop files in `mockups/` named `{example-id}.wav` (e.g. `Ex5-2.wav`), then re-run `build_examples_manifest.py` and rebuild the site.
+Drop files in `mockups/` named `{example-id}.wav` / `.mp3` (e.g. `Ex5-2.wav`), then re-run `build_examples_manifest.py` and rebuild the site.
+
+### YouTube recordings and archives
+
+Attributed examples can link a real-world recording in `data/example-youtube.json`:
+
+```json
+{
+  "Ex3-4": {
+    "youtube": "https://www.youtube.com/watch?v=VIDEO_ID",
+    "startSeconds": 0,
+    "endSeconds": 58,
+    "label": "Kaufmann — Walther’s Prize Song"
+  }
+}
+```
+
+- Key by example id (`Ex3-4`, `Ex1-1-(1)`, …).
+- `startSeconds` / `endSeconds` are absolute times in the source video (YouTube embed `start` / `end`).
+- The site shows the embed on the **YouTube** tab when an entry exists.
+
+To ship a durable audio fallback, download the clipped excerpt **on your machine** (requires [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) and `ffmpeg`; **not** run in GitHub Actions):
+
+```bash
+python3 scripts/download_youtube_archives.py
+python3 scripts/download_youtube_archives.py --example Ex3-4
+python3 scripts/download_youtube_archives.py --force   # re-download
+```
+
+Writes `youtube-archives/{example-id}.mp3`. `startSeconds` defaults to `0`; omit `endSeconds` to archive through the end of the video. Commit the MP3s; deploy copies them like mockups. The **YouTube archive** tab unlocks when that file is present.
 
 ---
 
@@ -266,6 +301,7 @@ python3 -m venv .venv
 | PNG extraction (EPUB) | Pillow |
 | PNG→MusicXML (Audiveris OMR) | [Audiveris](https://github.com/Audiveris/audiveris) install + `AUDIVERIS_BIN` |
 | Humanization | Separate [midihum](https://github.com/erwald/midihum) checkout with its own venv |
+| YouTube archives (local only) | [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) + `ffmpeg` on PATH |
 
 ---
 

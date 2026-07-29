@@ -22,6 +22,7 @@ web/out/
 web/public/assets/
 web/public/soundfonts/FluidR3_GM/*.js
 web/src/generated/
+*.tsbuildinfo
 
 # Environment and secrets
 .env
