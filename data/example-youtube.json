@@ -1,4 +1,70 @@
 {
+  "Ex1-1-(1)": {
+    "youtube": "https://www.youtube.com/watch?v=iXU8EXL7a_4",
+    "label": "Sibelius: 2. Sinfonie ∙ hr-Sinfonieorchester ∙ Susanna Mälkki",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex1-1-(2)": {
+    "youtube": "https://www.youtube.com/watch?v=2tB2SLLnPZg",
+    "label": "Brahms Symphony No.3 (3rd movement) - Barbirolli",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex1-1-(3)": {
+    "youtube": "https://www.youtube.com/watch?v=oXLKu-HglnM",
+    "label": "Beethoven String Quartet Op.59 No.1 \"Razumovsky\"",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex1-1-(4)": {
+    "youtube": "https://www.youtube.com/watch?v=uVAPgZyXPNE",
+    "label": "Bach - WTC I Prelude and fugue no. 10 in E minor BWV 855 - Haas | Netherlands Bach Society",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex1-4": {
+    "youtube": "https://www.youtube.com/watch?v=kkNPezHTWzU",
+    "label": "András Schiff - Bach. French Suite No.6 in E Major BWV817",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex2-1": {
+    "youtube": "https://www.youtube.com/watch?v=9Yr720ftjaA",
+    "label": "Gustav Mahler - Symphony No. 3 (Lucerne Festival Orcherstra, Claudio Abbado)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex2-2": {
+    "youtube": "https://www.youtube.com/watch?v=kB4m2Qan4eM",
+    "label": "Beethoven String Quartet No 9 Op 59 No 3 in C major Alban Berg Quartet",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex2-3": {
+    "youtube": "https://www.youtube.com/watch?v=Knd04_iYTGc",
+    "label": "Béla Bartók - String Quartet No. 3, Sz. 85",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex2-4": {
+    "youtube": "https://www.youtube.com/watch?v=TeGbUB0E0jU",
+    "label": "Scarlatti: Keyboard Sonata in D major, K.336",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex2-5": {
+    "youtube": "https://www.youtube.com/watch?v=aA0MHmwsq8U",
+    "label": "György Ligeti: Sonata for Solo Cello [w/ score]",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex2-6": {
+    "youtube": "https://www.youtube.com/watch?v=FasOLduYZr0",
+    "label": "Debussy: Estampes, CD 108: II. La soirée dans Grenade",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
   "Ex3-3": {
     "youtube": "https://www.youtube.com/watch?v=DnO7FBS1akI",
     "label": "Tosca (1976 film) — Kabaivanska, Domingo, Milnes; Bartoletti",
@@ -10,5 +76,467 @@
     "label": "Kaufmann — Walther’s Prize Song (Morgenlich leuchtend)",
     "startSeconds": 0,
     "endSeconds": 58
+  },
+  "Ex4-1": {
+    "youtube": "https://www.youtube.com/watch?v=0ka61YBmOD0",
+    "label": "C. Debussy - Prelude No.4: Les sons et les parfums tournent dans l'air du soir - Krystian Zimerman",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex4-2": {
+    "youtube": "https://www.youtube.com/watch?v=f3oK4XVMARs",
+    "label": "Mozart: String Quartet No. 19, Dissonance | Gewandhaus Quartet",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex5-1": {
+    "youtube": "https://www.youtube.com/watch?v=vHyV8noUXC0",
+    "label": "Gustav Mahler - Symphony No. 10 \"Adagio\" | Vienna Philharmonic, Leonard Bernstein [HD]",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex5-3": {
+    "youtube": "https://www.youtube.com/watch?v=kkNPezHTWzU",
+    "label": "András Schiff - Bach. French Suite No.6 in E Major BWV817",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex5-4": {
+    "youtube": "https://www.youtube.com/watch?v=Y7G5ithbFys",
+    "label": "Tschaikowsky: 4. Sinfonie ∙ hr-Sinfonieorchester ∙ Carlos Miguel Prieto",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex5-5": {
+    "youtube": "https://www.youtube.com/watch?v=JGO_qd4PTh4",
+    "label": "Franz Schubert: String Quartet No. 13 in A minor (the Rosamunde Quartet), D. 804, Op. 29",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex5-6": {
+    "youtube": "https://www.youtube.com/watch?v=UFl9xuYP5T8",
+    "label": "Brahms: Violinkonzert ∙ hr-Sinfonieorchester ∙ Hilary Hahn ∙ Paavo Järvi",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex5-7": {
+    "youtube": "https://www.youtube.com/watch?v=xCf9YXEvHHA",
+    "label": "Stravinsky – The Firebird | Simon Rattle | BRSO",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex5-8": {
+    "youtube": "https://www.youtube.com/watch?v=jXhHjfHRDnk",
+    "label": "Maurice Ravel - Valses nobles et sentimentales (1911)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex5-9": {
+    "youtube": "https://www.youtube.com/watch?v=QImFm4Y_QPM",
+    "label": "Ludwig van Beethoven - Piano Sonata No. 23 \"Appassionata\", Op. 57 [Complete] (Piano Solo)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex6-1": {
+    "youtube": "https://www.youtube.com/watch?v=8172DMv0KeQ",
+    "label": "Schubert: Twelve German Dances Op. 171 (D 790) - Jacques Abram, 1964 - MHS OR S-130",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex6-2": {
+    "youtube": "https://www.youtube.com/watch?v=wUPYIcAu1QI",
+    "label": "Barenboim Play Mozart Sonate C Major (complete) K. 309",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex6-3": {
+    "youtube": "https://www.youtube.com/watch?v=W7WpjF2VILE",
+    "label": "Beethoven: Sonata No.20 in G Major, Op.49 No.2 (Goode, Lewis)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex6-4": {
+    "youtube": "https://www.youtube.com/watch?v=by557ZESHCk",
+    "label": "Franz Schubert - String Quartet No.9, D 173 (with score)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex6-5": {
+    "youtube": "https://www.youtube.com/watch?v=RTnc9o4o75w",
+    "label": "Barenboim: Beethoven - Sonata No. 12 in A-flat major, Op. 26",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex7-1": {
+    "youtube": "https://www.youtube.com/watch?v=QpEit_Lll0k",
+    "label": "F. Chopin : Prelude op. 28 no. 1 in C Major (Kissin)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex7-2": {
+    "youtube": "https://www.youtube.com/watch?v=pSpf9bKK_Zk",
+    "label": "Chopin - 24 Preludes, Op.28 (Yuja Wang)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex9-1": {
+    "youtube": "https://www.youtube.com/watch?v=QjoMy6ZV5F8",
+    "label": "András Schiff - Bach Partita No.1 in B-flat BWV 825",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex9-2": {
+    "youtube": "https://www.youtube.com/watch?v=-OjD6FrnRf4",
+    "label": "Mozart – 12 Minuets, KV568, No. 2 in F major (with score)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex9-3": {
+    "youtube": "https://www.youtube.com/watch?v=6z82w0l6kwE",
+    "label": "Schumann - Träumerei, \"Kinderszenen\" No. 7, Scenes from Childhood | Vladimir Horowitz",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex10-1": {
+    "youtube": "https://www.youtube.com/watch?v=HAdIC_9iLN0",
+    "label": "Gabriel Fauré - Thème et Variations Op. 73 (1895)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex10-2": {
+    "youtube": "https://www.youtube.com/watch?v=oGsnJn7yI6c",
+    "label": "Ludwig van Beethoven - Quatuor n°16 en fa majeur op.135 - 3ème mouvement -",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex10-3": {
+    "youtube": "https://www.youtube.com/watch?v=q9tbCkACbGU",
+    "label": "Brahms: Variations and Fugue on a Theme by Handel, Op.24 (Kovacevich)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex10-4": {
+    "youtube": "https://www.youtube.com/watch?v=q9tbCkACbGU",
+    "label": "Brahms: Variations and Fugue on a Theme by Handel, Op.24 (Kovacevich)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex10-5": {
+    "youtube": "https://www.youtube.com/watch?v=q9tbCkACbGU",
+    "label": "Brahms: Variations and Fugue on a Theme by Handel, Op.24 (Kovacevich)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex10-6": {
+    "youtube": "https://www.youtube.com/watch?v=q9tbCkACbGU",
+    "label": "Brahms: Variations and Fugue on a Theme by Handel, Op.24 (Kovacevich)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex10-7": {
+    "youtube": "https://www.youtube.com/watch?v=q9tbCkACbGU",
+    "label": "Brahms: Variations and Fugue on a Theme by Handel, Op.24 (Kovacevich)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex11-1": {
+    "youtube": "https://www.youtube.com/watch?v=de-NLJ0doao",
+    "label": "Beethoven String Quartet No 1 Op 18 in F major Alban Berg Quartett",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex11-2": {
+    "youtube": "https://www.youtube.com/watch?v=SMbgwEB5_NI",
+    "label": "Felix Mendelssohn - Rondo Capriccioso, Op. 14 - Jan Lisiecki",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex11-3": {
+    "youtube": "https://www.youtube.com/watch?v=SMbgwEB5_NI",
+    "label": "Felix Mendelssohn - Rondo Capriccioso, Op. 14 - Jan Lisiecki",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex11-9": {
+    "youtube": "https://www.youtube.com/watch?v=TXV8yO1FucA",
+    "label": "Copland: Appalachian Spring",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex11-10": {
+    "youtube": "https://www.youtube.com/watch?v=TXV8yO1FucA",
+    "label": "Copland: Appalachian Spring",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-1": {
+    "youtube": "https://www.youtube.com/watch?v=7nrMNX2wRUQ",
+    "label": "Yeol Eum Son plays Haydn's Piano Sonata in F major, Hob.XVI/23",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-2": {
+    "youtube": "https://www.youtube.com/watch?v=7nrMNX2wRUQ",
+    "label": "Yeol Eum Son plays Haydn's Piano Sonata in F major, Hob.XVI/23",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-3": {
+    "youtube": "https://www.youtube.com/watch?v=RPfcrQYjjQo",
+    "label": "Henri Dutilleux - Cello Concerto (Tout un monde lointain...)",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-4": {
+    "youtube": "https://www.youtube.com/watch?v=exMaWKVcCEs",
+    "label": "The Danish String Quartet plays Beethoven's Quartet Nr.10",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-6": {
+    "youtube": "https://www.youtube.com/watch?v=VUSfrgPQjRM",
+    "label": "Igor Stravinsky - Symphony of Psalms [With score]",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-7-(1)": {
+    "youtube": "https://www.youtube.com/watch?v=qbcfuMlNRWg",
+    "label": "Brahms: 2. Sinfonie ∙ hr-Sinfonieorchester ∙ Andrés Orozco-Estrada",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-7-(2)": {
+    "youtube": "https://www.youtube.com/watch?v=qbcfuMlNRWg",
+    "label": "Brahms: 2. Sinfonie ∙ hr-Sinfonieorchester ∙ Andrés Orozco-Estrada",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-7-(3)": {
+    "youtube": "https://www.youtube.com/watch?v=qbcfuMlNRWg",
+    "label": "Brahms: 2. Sinfonie ∙ hr-Sinfonieorchester ∙ Andrés Orozco-Estrada",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-7-(4)": {
+    "youtube": "https://www.youtube.com/watch?v=qbcfuMlNRWg",
+    "label": "Brahms: 2. Sinfonie ∙ hr-Sinfonieorchester ∙ Andrés Orozco-Estrada",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-7-(5)": {
+    "youtube": "https://www.youtube.com/watch?v=qbcfuMlNRWg",
+    "label": "Brahms: 2. Sinfonie ∙ hr-Sinfonieorchester ∙ Andrés Orozco-Estrada",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex12-7-(6)": {
+    "youtube": "https://www.youtube.com/watch?v=qbcfuMlNRWg",
+    "label": "Brahms: 2. Sinfonie ∙ hr-Sinfonieorchester ∙ Andrés Orozco-Estrada",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex14-1": {
+    "youtube": "https://www.youtube.com/watch?v=2yrd2TLPDyA",
+    "label": "Roman Rabinovich plays Haydn sonata in G major Hob XVI 39",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex14-2": {
+    "youtube": "https://www.youtube.com/watch?v=2yrd2TLPDyA",
+    "label": "Roman Rabinovich plays Haydn sonata in G major Hob XVI 39",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex14-3": {
+    "youtube": "https://www.youtube.com/watch?v=2yrd2TLPDyA",
+    "label": "Roman Rabinovich plays Haydn sonata in G major Hob XVI 39",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex14-4": {
+    "youtube": "https://www.youtube.com/watch?v=2yrd2TLPDyA",
+    "label": "Roman Rabinovich plays Haydn sonata in G major Hob XVI 39",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex14-5": {
+    "youtube": "https://www.youtube.com/watch?v=GKkeDqJBlK8",
+    "label": "Maurice Ravel - Pavane for Dead Princess",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex14-6": {
+    "youtube": "https://www.youtube.com/watch?v=GKkeDqJBlK8",
+    "label": "Maurice Ravel - Pavane for Dead Princess",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex14-7": {
+    "youtube": "https://www.youtube.com/watch?v=GKkeDqJBlK8",
+    "label": "Maurice Ravel - Pavane for Dead Princess",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex14-8": {
+    "youtube": "https://www.youtube.com/watch?v=GKkeDqJBlK8",
+    "label": "Maurice Ravel - Pavane for Dead Princess",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex14-9": {
+    "youtube": "https://www.youtube.com/watch?v=GKkeDqJBlK8",
+    "label": "Maurice Ravel - Pavane for Dead Princess",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex15-1": {
+    "youtube": "https://www.youtube.com/watch?v=x_7HaIJSjY8",
+    "label": "András Schiff - Beethoven, Sonata No. 29, Op. 106 “Hammerklavier Sonate”",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex15-2": {
+    "youtube": "https://www.youtube.com/watch?v=0vfU4cmdx-s",
+    "label": "Mozart: Symphony No. 41 Jupiter | Hartmut Haenchen & Carl Philipp Emanuel Bach Chamber Orchestra",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex15-3": {
+    "youtube": "https://www.youtube.com/watch?v=I8aN6lPxogA",
+    "label": "Hilary Hahn - Prokofiev Violin Concerto No. 1 in D major",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex15-4": {
+    "youtube": "https://www.youtube.com/watch?v=zMf9XDQBAaI",
+    "label": "Bach - St John Passion BWV 245 - Van Veldhoven | Netherlands Bach Society",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex15-5": {
+    "youtube": "https://www.youtube.com/watch?v=J-qoaioG2UA",
+    "label": "Richard Wagner - \"Tristan und Isolde\", Prelude",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex15-6": {
+    "youtube": "https://www.youtube.com/watch?v=JAGip4nOsOg",
+    "label": "Beethoven: Symphony No. 1 | Michael Boder and the ORF Vienna Radio Symphony Orchestra",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex15-7": {
+    "youtube": "https://www.youtube.com/watch?v=pG26BMDVR9E",
+    "label": "Bartók: Konzert für Orchester ∙ hr-Sinfonieorchester ∙ Andrés Orozco-Estrada",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex16-1": {
+    "youtube": "https://www.youtube.com/watch?v=Rd0HnxWm5CY",
+    "label": "Beethoven: Symphony No. 7 | Bernard Haitink & the Royal Concertgebouw Orchestra",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex16-2": {
+    "youtube": "https://www.youtube.com/watch?v=HjeF99_ocfM",
+    "label": "Sibelius 4 Symphony Herbert Blomstedt Finnish Radio Symphony Orchestra",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex16-3": {
+    "youtube": "https://www.youtube.com/watch?v=HjeF99_ocfM",
+    "label": "Sibelius 4 Symphony Herbert Blomstedt Finnish Radio Symphony Orchestra",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex16-4": {
+    "youtube": "https://www.youtube.com/watch?v=rOjHhS5MtvA",
+    "label": "Muti Conducts Beethoven 9",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex16-5": {
+    "youtube": "https://www.youtube.com/watch?v=p5favl2Qtx0",
+    "label": "Beethoven, Symphony 9, 2nd movement (complete), Molto vivace, Philharmonia Baroque",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex18-1": {
+    "youtube": "https://www.youtube.com/watch?v=kkNPezHTWzU",
+    "label": "András Schiff - Bach. French Suite No.6 in E Major BWV817",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex19-1": {
+    "youtube": "https://www.youtube.com/watch?v=ZKs1WpMJ0X8",
+    "label": "Mozart Piano Sonata No. 8 in a-minor KV 310, Grigory Sokolov",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex19-2": {
+    "youtube": "https://www.youtube.com/watch?v=ZKs1WpMJ0X8",
+    "label": "Mozart Piano Sonata No. 8 in a-minor KV 310, Grigory Sokolov",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex19-3": {
+    "youtube": "https://www.youtube.com/watch?v=8ZRjsqZpgag",
+    "label": "Beethoven String Quartet No 8 Op 59 No 2 in E minor Alban Berg Quartet",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex19-4": {
+    "youtube": "https://www.youtube.com/watch?v=8ZRjsqZpgag",
+    "label": "Beethoven String Quartet No 8 Op 59 No 2 in E minor Alban Berg Quartet",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex19-5": {
+    "youtube": "https://www.youtube.com/watch?v=8ZRjsqZpgag",
+    "label": "Beethoven String Quartet No 8 Op 59 No 2 in E minor Alban Berg Quartet",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex20-1": {
+    "youtube": "https://www.youtube.com/watch?v=tgDE3klkmtQ",
+    "label": "Bach - Fantasia and fugue in G minor BWV 542 - Van Doeselaar | Netherlands Bach Society",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex20-2": {
+    "youtube": "https://www.youtube.com/watch?v=UFl9xuYP5T8",
+    "label": "Brahms: Violinkonzert ∙ hr-Sinfonieorchester ∙ Hilary Hahn ∙ Paavo Järvi",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex20-3": {
+    "youtube": "https://www.youtube.com/watch?v=lNWJt4orpZc",
+    "label": "(Zimerman)Chopin Mazurka Op.63, No.3",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex20-4": {
+    "youtube": "https://www.youtube.com/watch?v=mI-wlmMNU6c",
+    "label": "Claude Debussy - Sonata for Flute, Viola and Harp",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex20-5": {
+    "youtube": "https://www.youtube.com/watch?v=SMbgwEB5_NI",
+    "label": "Felix Mendelssohn - Rondo Capriccioso, Op. 14 - Jan Lisiecki",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex20-6": {
+    "youtube": "https://www.youtube.com/watch?v=GGU1P6lBW6Q",
+    "label": "Richard Wagner - Ride of The Valkyries",
+    "startSeconds": 0,
+    "endSeconds": null
+  },
+  "Ex20-7": {
+    "youtube": "https://www.youtube.com/watch?v=O4lzPz3NnI0",
+    "label": "Maurice Ravel - Daphnis et Chloé | Saraste | Orchestre symphonique de la WDR | WDR Rundfunkchor",
+    "startSeconds": 0,
+    "endSeconds": null
   }
 }
