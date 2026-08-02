@@ -2,8 +2,8 @@ import { formatTimestamp, parseYouTubeReference, type YouTubeEmbedKind } from "@
 
 type YouTubeEmbedProps = {
   youtube: string;
-  startSeconds?: number;
-  endSeconds?: number;
+  startSeconds?: number | null;
+  endSeconds?: number | null;
   kind?: YouTubeEmbedKind;
   title: string;
 };

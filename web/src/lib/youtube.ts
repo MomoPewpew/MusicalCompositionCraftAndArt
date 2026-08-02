@@ -11,8 +11,8 @@ export type ParsedYouTubeReference = {
 };
 
 export type ParseYouTubeOptions = {
-  startSeconds?: number;
-  endSeconds?: number;
+  startSeconds?: number | null;
+  endSeconds?: number | null;
   kind?: YouTubeEmbedKind;
 };
 

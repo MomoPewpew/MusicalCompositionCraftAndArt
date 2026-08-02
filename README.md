@@ -127,16 +127,18 @@ Attributed examples can link a real-world recording in `data/example-youtube.jso
 - Key by example id (`Ex3-4`, `Ex1-1-(1)`, …).
 - `startSeconds` / `endSeconds` are absolute times in the source video (YouTube embed `start` / `end`).
 - The site shows the embed on the **YouTube** tab when an entry exists.
+- During `npm run dev`, edits to `data/example-youtube.json` (including start/end) are read from disk on each page load — save the file and refresh; no need to restart the server.
 
 To ship a durable audio fallback, download the clipped excerpt **on your machine** (requires [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) and `ffmpeg`; **not** run in GitHub Actions):
 
 ```bash
 python3 scripts/download_youtube_archives.py
 python3 scripts/download_youtube_archives.py --example Ex3-4
-python3 scripts/download_youtube_archives.py --force   # re-download
+python3 scripts/download_youtube_archives.py --chapters 1-4
+python3 scripts/download_youtube_archives.py --chapters 1,3,5-7 --force
 ```
 
-Writes `youtube-archives/{example-id}.mp3`. `startSeconds` defaults to `0`; omit `endSeconds` to archive through the end of the video. Commit the MP3s; deploy copies them like mockups. The **YouTube archive** tab unlocks when that file is present.
+Writes `youtube-archives/{example-id}.mp3`. `startSeconds` defaults to `0`; omit `endSeconds` to archive through the end of the video. `--chapters` limits to textbook chapter numbers (from `data/examples.json`). Commit the MP3s; deploy copies them like mockups. The **YouTube archive** tab unlocks when that file is present.
 
 ---
 
