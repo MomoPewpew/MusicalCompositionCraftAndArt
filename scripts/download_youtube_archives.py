@@ -23,6 +23,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -94,27 +95,41 @@ def require_tools() -> str:
     return yt_dlp
 
 
-def probe_duration_seconds(yt_dlp: str, youtube: str) -> int:
-    result = subprocess.run(
-        [
-            yt_dlp,
-            "--no-playlist",
-            "--no-update",
-            "--print",
-            "%(duration)s",
-            "--",
-            youtube,
-        ],
-        check=True,
-        capture_output=True,
-        text=True,
-        cwd=ROOT,
-    )
-    line = result.stdout.strip().splitlines()[-1].strip()
-    duration = float(line)
-    if duration <= 0:
-        raise ValueError(f"Could not read duration for {youtube}: {line!r}")
-    return int(duration) if duration == int(duration) else int(duration) + 1
+def download_source_audio(yt_dlp: str, youtube: str, dest_dir: Path) -> Path:
+    """Download full audio with yt-dlp's own HTTP client (not ffmpeg).
+
+    `--download-sections` hands the signed googlevideo URL to ffmpeg, which
+    YouTube now rejects with HTTP 403. Native yt-dlp download still works.
+    """
+    output_template = str(dest_dir / "source.%(ext)s")
+    cmd = [
+        yt_dlp,
+        "--no-playlist",
+        "--no-update",
+        "--extractor-args",
+        "youtube:player_client=web,android",
+        "-f",
+        "ba/bestaudio/best",
+        "-o",
+        output_template,
+        "--",
+        youtube,
+    ]
+    subprocess.run(cmd, check=True, cwd=ROOT)
+    sources = [path for path in dest_dir.iterdir() if path.is_file() and path.stem == "source"]
+    if not sources:
+        raise FileNotFoundError(f"yt-dlp finished but no audio was written for {youtube}")
+    return sources[0]
+
+
+def clip_to_mp3(source: Path, dest: Path, start_seconds: int, end_seconds: int | None) -> None:
+    cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(source)]
+    if start_seconds > 0:
+        cmd.extend(["-ss", str(start_seconds)])
+    if end_seconds is not None:
+        cmd.extend(["-to", str(end_seconds)])
+    cmd.extend(["-vn", "-c:a", "libmp3lame", "-q:a", "0", str(dest)])
+    subprocess.run(cmd, check=True, cwd=ROOT)
 
 
 def download_clip(
@@ -125,45 +140,22 @@ def download_clip(
     end_seconds: int | None,
 ) -> Path:
     ARCHIVES_DIR.mkdir(parents=True, exist_ok=True)
-    output_template = str(ARCHIVES_DIR / f"{example_id}.%(ext)s")
+    dest = ARCHIVES_DIR / f"{example_id}.mp3"
 
-    resolved_end = end_seconds
-    if resolved_end is None:
-        if start_seconds > 0:
-            resolved_end = probe_duration_seconds(yt_dlp, youtube)
+    if end_seconds is None:
         range_label = f"{start_seconds}s–end"
     else:
-        range_label = f"{start_seconds}s–{resolved_end}s"
-
-    cmd = [
-        yt_dlp,
-        "--no-playlist",
-        "--no-update",
-        "--extract-audio",
-        "--audio-format",
-        "mp3",
-        "--audio-quality",
-        "0",
-        "-o",
-        output_template,
-    ]
-    if resolved_end is not None:
-        cmd.extend(
-            [
-                "--force-keyframes-at-cuts",
-                "--download-sections",
-                f"*{start_seconds}-{resolved_end}",
-            ]
-        )
-    cmd.extend(["--", youtube])
+        range_label = f"{start_seconds}s–{end_seconds}s"
 
     print(f"[{example_id}] {youtube}  ({range_label})")
-    subprocess.run(cmd, check=True, cwd=ROOT)
 
-    archive = existing_archive(example_id)
-    if archive is None:
-        raise FileNotFoundError(f"yt-dlp finished but no archive found for {example_id}")
-    return archive
+    with tempfile.TemporaryDirectory(prefix=f"{example_id}-", dir=ARCHIVES_DIR) as tmp:
+        source = download_source_audio(yt_dlp, youtube, Path(tmp))
+        clip_to_mp3(source, dest, start_seconds, end_seconds)
+
+    if not dest.is_file():
+        raise FileNotFoundError(f"ffmpeg finished but no archive found for {example_id}")
+    return dest
 
 
 def main() -> int:

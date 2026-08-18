@@ -138,7 +138,7 @@ python3 scripts/download_youtube_archives.py --chapters 1-4
 python3 scripts/download_youtube_archives.py --chapters 1,3,5-7 --force
 ```
 
-Writes `youtube-archives/{example-id}.mp3`. `startSeconds` defaults to `0`; omit `endSeconds` to archive through the end of the video. `--chapters` limits to textbook chapter numbers (from `data/examples.json`). Commit the MP3s; deploy copies them like mockups. The **YouTube archive** tab unlocks when that file is present.
+Writes `youtube-archives/{example-id}.mp3`. `startSeconds` defaults to `0`; omit `endSeconds` to archive through the end of the video. `--chapters` limits to textbook chapter numbers (from `data/examples.json`). The script downloads full audio with yt-dlp, then clips with ffmpeg (YouTube returns HTTP 403 if ffmpeg fetches the stream URL itself). Keep yt-dlp current (`yt-dlp -U`). Commit the MP3s; deploy copies them like mockups. The **YouTube archive** tab unlocks when that file is present.
 
 ---
 
