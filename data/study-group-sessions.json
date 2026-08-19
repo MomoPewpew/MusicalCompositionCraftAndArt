@@ -39,8 +39,16 @@
     "4": {
       "sessions": [
         {
-          "title": "Session 7 - Reading",
+          "title": "Session 7 - Reading & Exercises",
           "youtube": "https://youtu.be/oF1bYo2vQzk"
+        }
+      ]
+    },
+    "5": {
+      "sessions": [
+        {
+          "title": "Session 8 - Reading",
+          "youtube": "https://youtu.be/sFjqZepelME"
         }
       ]
     }
