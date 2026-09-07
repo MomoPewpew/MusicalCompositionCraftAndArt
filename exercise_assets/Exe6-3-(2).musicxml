@@ -7,8 +7,8 @@
   <identification>
     <creator type="composer">Composer / arranger</creator>
     <encoding>
-      <software>MuseScore Studio 4.7.3</software>
-      <encoding-date>2026-07-11</encoding-date>
+      <software>MuseScore Studio 4.7.4</software>
+      <encoding-date>2026-09-07</encoding-date>
       <supports element="accidental" type="yes"/>
       <supports element="beam" type="yes"/>
       <supports element="print" attribute="new-page" type="no"/>
@@ -20,6 +20,9 @@
       <miscellaneous-field name="platform">Linux</miscellaneous-field>
       </miscellaneous>
     </identification>
+  <defaults>
+    <concert-score/>
+    </defaults>
   <part-list>
     <score-part id="P1">
       <part-name>Clarinet in Bb</part-name>
@@ -65,7 +68,7 @@
       <attributes>
         <divisions>2</divisions>
         <key>
-          <fifths>-1</fifths>
+          <fifths>-3</fifths>
           </key>
         <time>
           <beats>2</beats>
@@ -75,10 +78,12 @@
           <sign>G</sign>
           <line>2</line>
           </clef>
-        <transpose>
-          <diatonic>-1</diatonic>
-          <chromatic>-2</chromatic>
-          </transpose>
+        <for-part>
+          <part-transpose>
+            <diatonic>-1</diatonic>
+            <chromatic>-2</chromatic>
+            </part-transpose>
+          </for-part>
         </attributes>
       <direction placement="above" system="only-top">
         <direction-type>
@@ -124,6 +129,7 @@
       <note>
         <pitch>
           <step>E</step>
+          <alter>-1</alter>
           <octave>5</octave>
           </pitch>
         <duration>1</duration>
@@ -136,6 +142,7 @@
       <note>
         <pitch>
           <step>A</step>
+          <alter>-1</alter>
           <octave>5</octave>
           </pitch>
         <duration>1</duration>
@@ -158,6 +165,7 @@
       <note>
         <pitch>
           <step>E</step>
+          <alter>-1</alter>
           <octave>5</octave>
           </pitch>
         <duration>1</duration>
