@@ -201,42 +201,42 @@
     "youtube": "https://www.youtube.com/watch?v=HAdIC_9iLN0",
     "label": "Gabriel Fauré - Thème et Variations Op. 73 (1895)",
     "startSeconds": 0,
-    "endSeconds": null
+    "endSeconds": 245
   },
   "Ex10-2": {
     "youtube": "https://www.youtube.com/watch?v=oGsnJn7yI6c",
     "label": "Ludwig van Beethoven - Quatuor n°16 en fa majeur op.135 - 3ème mouvement -",
-    "startSeconds": 0,
-    "endSeconds": null
+    "startSeconds": 33,
+    "endSeconds": 124
   },
   "Ex10-3": {
     "youtube": "https://www.youtube.com/watch?v=q9tbCkACbGU",
     "label": "Brahms: Variations and Fugue on a Theme by Handel, Op.24 (Kovacevich)",
     "startSeconds": 0,
-    "endSeconds": null
+    "endSeconds": 29
   },
   "Ex10-4": {
     "youtube": "https://www.youtube.com/watch?v=q9tbCkACbGU",
     "label": "Brahms: Variations and Fugue on a Theme by Handel, Op.24 (Kovacevich)",
-    "startSeconds": 0,
-    "endSeconds": null
+    "startSeconds": 57,
+    "endSeconds": 71
   },
   "Ex10-5": {
     "youtube": "https://www.youtube.com/watch?v=q9tbCkACbGU",
     "label": "Brahms: Variations and Fugue on a Theme by Handel, Op.24 (Kovacevich)",
-    "startSeconds": 0,
-    "endSeconds": null
+    "startSeconds": 362,
+    "endSeconds": 432
   },
   "Ex10-6": {
     "youtube": "https://www.youtube.com/watch?v=q9tbCkACbGU",
     "label": "Brahms: Variations and Fugue on a Theme by Handel, Op.24 (Kovacevich)",
-    "startSeconds": 0,
-    "endSeconds": null
+    "startSeconds": 933,
+    "endSeconds": 994
   },
   "Ex10-7": {
     "youtube": "https://www.youtube.com/watch?v=q9tbCkACbGU",
     "label": "Brahms: Variations and Fugue on a Theme by Handel, Op.24 (Kovacevich)",
-    "startSeconds": 0,
+    "startSeconds": 1293,
     "endSeconds": null
   },
   "Ex11-1": {

@@ -30,6 +30,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+
+from example_paths import example_dest_dir  # noqa: E402
+
 DEFAULT_EPUB = Path(
     "/mnt/files/Documents/Torrents/Books/Musical Composition/"
     "Belkin, Alan - Musical composition_ craft and art (2018, Yale University Press) - libgen.li.epub"
@@ -212,7 +215,14 @@ def main() -> int:
             for index, example in enumerate(examples):
                 image_rel = example.get("assets", {}).get("image")
                 if not image_rel:
-                    continue
+                    # Manifest only records image when the file already exists
+                    # (chicken-and-egg for never-downloaded PNGs like Ex10-7).
+                    example_id = example["id"]
+                    chapter_name = example.get("chapter") or f"Chapter {example.get('chapterNumber')}"
+                    dest_dir = example_dest_dir(downloads_dir / chapter_name, example_id)
+                    image_rel = str(
+                        (dest_dir / f"{example_id}.png").relative_to(downloads_dir)
+                    ).replace("\\", "/")
                 dest = downloads_dir / image_rel
                 if (
                     not args.dry_run

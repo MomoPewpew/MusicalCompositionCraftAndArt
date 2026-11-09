@@ -2833,7 +2833,7 @@
       "assets": {
         "image": "Chapter 10/Example 1/Ex10-1.png",
         "midi": "Chapter 10/Example 1/Ex10-1.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex10-1.mp3"
       }
     },
     {
@@ -2852,7 +2852,7 @@
       "assets": {
         "image": "Chapter 10/Example 2/Ex10-2.png",
         "midi": "Chapter 10/Example 2/Ex10-2.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex10-2.mp3"
       }
     },
     {
@@ -2871,7 +2871,7 @@
       "assets": {
         "image": "Chapter 10/Example 3/Ex10-3.png",
         "midi": "Chapter 10/Example 3/Ex10-3.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex10-3.mp3"
       }
     },
     {
@@ -2890,7 +2890,7 @@
       "assets": {
         "image": "Chapter 10/Example 4/Ex10-4.png",
         "midi": "Chapter 10/Example 4/Ex10-4.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex10-4.mp3"
       }
     },
     {
@@ -2909,7 +2909,7 @@
       "assets": {
         "image": "Chapter 10/Example 5/Ex10-5.png",
         "midi": "Chapter 10/Example 5/Ex10-5.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex10-5.mp3"
       }
     },
     {
@@ -2928,7 +2928,7 @@
       "assets": {
         "image": "Chapter 10/Example 6/Ex10-6.png",
         "midi": "Chapter 10/Example 6/Ex10-6.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex10-6.mp3"
       }
     },
     {
@@ -2945,9 +2945,9 @@
       "citation": "Brahms, Variations and Fugue on a Theme by Handel, fugue theme",
       "citationKind": "attributed",
       "assets": {
-        "image": null,
+        "image": "Chapter 10/Example 7/Ex10-7.png",
         "midi": "Chapter 10/Example 7/Ex10-7.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex10-7.mp3"
       }
     },
     {
@@ -2966,7 +2966,7 @@
       "assets": {
         "image": "Chapter 10/Example 8/Ex10-8.png",
         "midi": "Chapter 10/Example 8/Ex10-8.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex10-8.mp3"
       }
     },
     {
@@ -3254,7 +3254,7 @@
       "assets": {
         "image": "Chapter 12/Example 1/Ex12-1.png",
         "midi": "Chapter 12/Example 1/Ex12-1.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-1.mp3"
       }
     },
     {
@@ -3273,7 +3273,7 @@
       "assets": {
         "image": "Chapter 12/Example 2/Ex12-2.png",
         "midi": "Chapter 12/Example 2/Ex12-2.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-2.mp3"
       }
     },
     {
@@ -3311,7 +3311,7 @@
       "assets": {
         "image": "Chapter 12/Example 4/Ex12-4.png",
         "midi": "Chapter 12/Example 4/Ex12-4.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-4.mp3"
       }
     },
     {
@@ -3330,7 +3330,7 @@
       "assets": {
         "image": "Chapter 12/Example 5/Ex12-5.png",
         "midi": "Chapter 12/Example 5/Ex12-5.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-5.mp3"
       }
     },
     {
@@ -3349,7 +3349,7 @@
       "assets": {
         "image": "Chapter 12/Example 6/Ex12-6.png",
         "midi": "Chapter 12/Example 6/Ex12-6.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-6.mp3"
       }
     },
     {
@@ -3369,7 +3369,7 @@
       "assets": {
         "image": "Chapter 12/Example 7/Section 1/Ex12-7-(1).png",
         "midi": "Chapter 12/Example 7/Section 1/Ex12-7-(1).mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-7-(1).mp3"
       }
     },
     {
@@ -3389,7 +3389,7 @@
       "assets": {
         "image": "Chapter 12/Example 7/Section 2/Ex12-7-(2).png",
         "midi": "Chapter 12/Example 7/Section 2/Ex12-7-(2).mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-7-(2).mp3"
       }
     },
     {
@@ -3409,7 +3409,7 @@
       "assets": {
         "image": "Chapter 12/Example 7/Section 3/Ex12-7-(3).png",
         "midi": "Chapter 12/Example 7/Section 3/Ex12-7-(3).mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-7-(3).mp3"
       }
     },
     {
@@ -3429,7 +3429,7 @@
       "assets": {
         "image": "Chapter 12/Example 7/Section 4/Ex12-7-(4).png",
         "midi": "Chapter 12/Example 7/Section 4/Ex12-7-(4).mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-7-(4).mp3"
       }
     },
     {
@@ -3449,7 +3449,7 @@
       "assets": {
         "image": "Chapter 12/Example 7/Section 5/Ex12-7-(5).png",
         "midi": "Chapter 12/Example 7/Section 5/Ex12-7-(5).mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-7-(5).mp3"
       }
     },
     {
@@ -3469,7 +3469,7 @@
       "assets": {
         "image": "Chapter 12/Example 7/Section 6/Ex12-7-(6).png",
         "midi": "Chapter 12/Example 7/Section 6/Ex12-7-(6).mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-7-(6).mp3"
       }
     },
     {
@@ -3488,7 +3488,7 @@
       "assets": {
         "image": "Chapter 12/Example 8/Ex12-8.png",
         "midi": "Chapter 12/Example 8/Ex12-8.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-8.mp3"
       }
     },
     {
@@ -3507,7 +3507,7 @@
       "assets": {
         "image": "Chapter 12/Example 9/Ex12-9.png",
         "midi": "Chapter 12/Example 9/Ex12-9.mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-9.mp3"
       }
     },
     {
@@ -3527,7 +3527,7 @@
       "assets": {
         "image": "Chapter 12/Example 10/Section 1/Ex12-10-(1).png",
         "midi": "Chapter 12/Example 10/Section 1/Ex12-10-(1).mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-10-(1).mp3"
       }
     },
     {
@@ -3547,7 +3547,7 @@
       "assets": {
         "image": "Chapter 12/Example 10/Section 2/Ex12-10-(2).png",
         "midi": "Chapter 12/Example 10/Section 2/Ex12-10-(2).mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-10-(2).mp3"
       }
     },
     {
@@ -3567,7 +3567,7 @@
       "assets": {
         "image": "Chapter 12/Example 10/Section 3/Ex12-10-(3).png",
         "midi": "Chapter 12/Example 10/Section 3/Ex12-10-(3).mid",
-        "mockupAudio": null
+        "mockupAudio": "mockups/Ex12-10-(3).mp3"
       }
     },
     {
